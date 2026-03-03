@@ -1,6 +1,16 @@
 {
   "articles": [
     {
+      "id": "125278752f88b9b800bd5299efe48584c77ab754",
+      "title": "Apple unveils new MacBook Air and MacBook Pro with M5",
+      "url": "https://techcrunch.com/2026/03/03/apple-unveils-new-macbook-air-and-macbook-pro-with-m5/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 15:41:36 +0000",
+      "collected_at": "2026-03-04T00:47:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
       "id": "09293166c765a5d2a5a281c7a656879505b66822",
       "title": "Apple’s new Studio displays come with Thunderbolt 5",
       "url": "https://techcrunch.com/2026/03/03/apples-new-studio-displays-come-with-thunderbolt-5/",
