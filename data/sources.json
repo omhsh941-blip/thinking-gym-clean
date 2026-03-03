@@ -2,9 +2,7 @@
   "categories":[
     {
       "name":"Game Industry",
-      "rss":[
-        "https://www.gamesindustry.biz/rss"
-      ]
+      "rss":["https://www.gamesindustry.biz/rss"]
     },
     {
       "name": "Business",
