@@ -381,6 +381,18 @@ with tab_session:
             
 
             st.divider()
+            st.markdown("### 📄 기사 요약(한글)")
+
+            if "HF_TOKEN" not in st.secrets:
+                st.info("요약을 생성하려면 Streamlit Secrets에 HF_TOKEN이 필요합니다.")
+            else:
+                try:
+                    with st.spinner("요약 생성 중..."):
+                        summary_ko = make_korean_summary(article["url"])
+                    st.success("요약 완료")
+                    st.write(summary_ko)
+                except Exception as e:
+                    st.error(f"요약 생성 실패: {e}")
 
             st.markdown("### 질문 (고정 3개)")
             questions = [
