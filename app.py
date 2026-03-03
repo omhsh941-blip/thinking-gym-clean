@@ -344,35 +344,60 @@ with tab_list:
 # -------- 세션 --------
 with tab_session:
     st.subheader("세션 (10~15분)")
-    article = st.session_state.get("selected_article")
 
-    if not article:
+    # ✅ 세션 상태에 id만 저장하고, 매번 articles.json에서 최신 글을 다시 가져오기
+    selected_id = st.session_state.get("selected_article_id")
+
+    def _find_article_by_id(article_id: str):
+        for x in store.read_json(cfg["path_articles"], {"articles": []})["articles"]:
+            if x["id"] == article_id:
+                return x
+        return None
+
+    if not selected_id:
         st.info("먼저 ‘기사 목록’에서 ‘이 기사로 세션 시작’을 눌러주세요.")
     else:
-        st.markdown(f"### 📰 {article['title']}")
-        st.write(article["url"])
-        st.divider()
+        article = _find_article_by_id(selected_id)
 
-        st.markdown("### 질문 (고정 3개 + 추후 AI 질문 추가 가능)")
-        questions = [
-            "1) 이 변화의 근본 원인은 무엇인가?",
-            "2) 단기/중기/장기 영향은 어떻게 다를까?",
-            "3) 게임 산업(특히 운영/BM/UA/라이브) 관점에서 시사점은?"
-        ]
+        if not article:
+            st.error("선택한 기사를 articles.json에서 찾지 못했습니다. (데이터 파일 확인 필요)")
+        else:
+            st.markdown(f"### 📰 {article['title']}")
+            st.write(article["url"])
 
-        a1 = st.text_area(questions[0], height=120)
-        a2 = st.text_area(questions[1], height=120)
-        a3 = st.text_area(questions[2], height=120)
+            # ✅ 요약이 없으면 생성 시도
+            if not article.get("summary_ko"):
+                if cfg.get("hf_token"):
+                    with st.spinner("기사 본문 가져오는 중 → 한글 요약 생성 중..."):
+                        ko = ensure_article_summary_ko(store, cfg, article["id"])
+                        article["summary_ko"] = ko
+                else:
+                    article["summary_ko"] = "요약을 생성하려면 Streamlit Secrets에 HF_TOKEN이 필요합니다."
 
-        if st.button("✅ 논의 종료 & 기록 저장"):
-            session = save_session(store, cfg, article, questions, [a1, a2, a3], eval_cfg)
-            st.success("저장 완료! 성장 탭에서 확인하세요.")
-            st.json({
-                "total": session["score_total"],
-                "by_criteria": session["score_by_criteria"],
-                "final_summary": session["final_summary"]
-            })
+            st.markdown("### 🧾 기사 요약(한글)")
+            st.info(article.get("summary_ko", "요약이 없습니다."))
 
+            st.divider()
+
+            st.markdown("### 질문 (고정 3개)")
+            questions = [
+                "1) 이 변화의 근본 원인은 무엇인가?",
+                "2) 단기/중기/장기 영향은 어떻게 다를까?",
+                "3) 게임 산업(특히 운영/BM/UA/라이브) 관점에서 시사점은?"
+            ]
+
+            a1 = st.text_area(questions[0], height=120)
+            a2 = st.text_area(questions[1], height=120)
+            a3 = st.text_area(questions[2], height=120)
+
+            if st.button("✅ 논의 종료 & 기록 저장"):
+                session = save_session(store, cfg, article, questions, [a1, a2, a3], eval_cfg)
+                st.success("저장 완료! 성장 탭에서 확인하세요.")
+                st.json({
+                    "total": session["score_total"],
+                    "by_criteria": session["score_by_criteria"],
+                    "final_summary": session["final_summary"]
+                })
 # -------- 성장 --------
 with tab_growth:
     st.subheader("성장 대시보드")
