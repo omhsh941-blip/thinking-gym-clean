@@ -1,4 +1,6 @@
-﻿import json
+import requests
+import trafilatura
+import json
 import hashlib
 from datetime import datetime, timedelta
 from dateutil import tz
@@ -410,6 +412,49 @@ with tab_growth:
                 st.code(s["final_summary"])
                 st.write("**항목별 점수**")
                 st.json(s["score_by_criteria"])
+def fetch_article_text(url: str) -> str:
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; ThinkingGym/1.0)"}
+    r = requests.get(url, headers=headers, timeout=20)
+    r.raise_for_status()
+    text = trafilatura.extract(r.text, include_comments=False, include_tables=False)
+    return (text or "").strip()
+
+def hf_infer(model: str, payload: dict) -> dict:
+    token = st.secrets.get("HF_TOKEN", "")
+    if not token:
+        raise KeyError("HF_TOKEN is missing in Streamlit secrets.")
+    url = f"https://api-inference.huggingface.co/models/{model}"
+    headers = {"Authorization": f"Bearer {token}"}
+    res = requests.post(url, headers=headers, json=payload, timeout=60)
+    if res.status_code == 503:
+        raise RuntimeError("HF model is loading (503). Try again in a bit.")
+    res.raise_for_status()
+    return res.json()
+
+def summarize_en(text: str) -> str:
+    text = text[:6000]
+    out = hf_infer(
+        "facebook/bart-large-cnn",
+        {"inputs": text, "parameters": {"max_length": 180, "min_length": 60}}
+    )
+    if isinstance(out, list) and out and "summary_text" in out[0]:
+        return out[0]["summary_text"].strip()
+    return str(out)
+
+def translate_en_to_ko(text: str) -> str:
+    out = hf_infer("Helsinki-NLP/opus-mt-en-ko", {"inputs": text})
+    if isinstance(out, list) and out and "translation_text" in out[0]:
+        return out[0]["translation_text"].strip()
+    return str(out)
+
+@st.cache_data(show_spinner=False, ttl=60*60*24)
+def make_korean_summary(url: str) -> str:
+    body = fetch_article_text(url)
+    if not body:
+        return "요약 실패: 본문을 추출하지 못했습니다. (사이트 차단/구조 문제 가능)"
+    en_sum = summarize_en(body)
+    ko = translate_en_to_ko(en_sum)
+    return ko                
 
 # -------- 설정 --------
 with tab_settings:
