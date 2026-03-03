@@ -1,3 +1,104 @@
 {
-  "articles": []
+  "articles": [
+    {
+      "id": "09293166c765a5d2a5a281c7a656879505b66822",
+      "title": "Apple’s new Studio displays come with Thunderbolt 5",
+      "url": "https://techcrunch.com/2026/03/03/apples-new-studio-displays-come-with-thunderbolt-5/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 14:49:03 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "5c9603d146ed8815c57bf3c81d78a310ba0c9c87",
+      "title": "Apple unveils M5 Pro and M5 Max chips with new ‘Fusion Architecture’",
+      "url": "https://techcrunch.com/2026/03/03/apple-unveils-m5-pro-and-m5-max-chips-with-new-fusion-architecture/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 14:44:34 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "5b0c0914431ad538a84e9dfb0b1f60b9c6dcb529",
+      "title": "Fig Security emerges from stealth with $38M to help security teams deal with change",
+      "url": "https://techcrunch.com/2026/03/03/fig-security-emerges-from-stealth-with-38m-to-help-security-teams-deal-with-change/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 14:00:00 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "d69b9222b0e0b7481a71b2d83fe84acbc4b5f263",
+      "title": "The candidate that Silicon Valley built is now the one they want to tear down",
+      "url": "https://techcrunch.com/2026/03/03/the-candidate-that-silicon-valley-built-is-now-the-one-they-want-to-tear-down/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 12:30:00 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "1e433ff87b8870e1eaadc9983dd14ef71ebf50ea",
+      "title": "Cursor has reportedly surpassed $2B in annualized revenue",
+      "url": "https://techcrunch.com/2026/03/02/cursor-has-reportedly-surpassed-2b-in-annualized-revenue/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 01:53:59 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "8895bfbba1f9ee625f8dccb6d2f1f7cab999ff5c",
+      "title": "India’s Pronto formalizes house help as its valuation jumps 8x in under a year",
+      "url": "https://techcrunch.com/2026/03/02/indias-pronto-formalizes-house-help-as-its-valuation-jumps-8x-in-under-a-year/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 01:15:00 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "f0738da1a5911d3bd8b5662718c3037680ed7410",
+      "title": "ChatGPT uninstalls surged by 295% after DoD deal",
+      "url": "https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 00:03:37 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "740722f690378504529d69b9c570f9ffe0d6c0f2",
+      "title": "Stripe wants to turn your AI costs into a profit center",
+      "url": "https://techcrunch.com/2026/03/02/stripe-wants-to-turn-your-ai-costs-into-a-profit-center/",
+      "category": "Game Industry",
+      "published": "Mon, 02 Mar 2026 23:18:27 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "34062859acd1d2201fc5f03cbcfadd7dd38510e2",
+      "title": "Geopolitical drama reportedly stalls IPO of SoftBank-backed PayPay",
+      "url": "https://techcrunch.com/2026/03/02/geopolitical-drama-reportedly-stalls-ipo-of-softbank-backed-paypay/",
+      "category": "Game Industry",
+      "published": "Mon, 02 Mar 2026 23:01:57 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "8ffee99eae7bfabeb870fb4d0b3ab3efc204d682",
+      "title": "No one has a good plan for how AI companies should work with the government",
+      "url": "https://techcrunch.com/2026/03/02/openai-anthropic-department-of-defense-war-hegseth-ai-companies-work-with-us-government/",
+      "category": "Game Industry",
+      "published": "Mon, 02 Mar 2026 22:59:10 +0000",
+      "collected_at": "2026-03-03T23:50:26+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    }
+  ]
 }
