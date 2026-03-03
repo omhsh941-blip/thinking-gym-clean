@@ -2,3 +2,4 @@ streamlit
 feedparser
 PyGithub
 python-dateutil
+trafilatura
