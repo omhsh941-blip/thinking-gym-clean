@@ -235,11 +235,19 @@ def hf_infer(model: str, payload: dict) -> dict:
     return res.json()
 
 def summarize_en(text: str) -> str:
-    text = text[:6000]
+    text = text[:4000]
+
+    prompt = f"Summarize the following article in 5-6 sentences:\n\n{text}"
+
     out = hf_infer(
-        "facebook/bart-large-cnn",
-        {"inputs": text, "parameters": {"max_length": 180, "min_length": 60}}
+        "google/flan-t5-base",
+        {"inputs": prompt}
     )
+
+    if isinstance(out, list) and out and "generated_text" in out[0]:
+        return out[0]["generated_text"].strip()
+
+    return str(out)
     if isinstance(out, list) and out and "summary_text" in out[0]:
         return out[0]["summary_text"].strip()
     return str(out)
