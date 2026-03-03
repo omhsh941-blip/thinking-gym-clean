@@ -376,6 +376,9 @@ with tab_session:
 
             st.markdown("### 🧾 기사 요약(한글)")
             st.info(article.get("summary_ko", "요약이 없습니다."))
+            st.write("HF_TOKEN exists:", "HF_TOKEN" in st.secrets)
+            st.write("HF_TOKEN length:", len(st.secrets.get("HF_TOKEN","")))
+            
 
             st.divider()
 
