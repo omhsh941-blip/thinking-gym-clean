@@ -1,8 +1,10 @@
 {
-  "categories": [
+  "categories":[
     {
-      "name": "Game Industry",
-      "rss": []
+      "name":"Game Industry",
+      "rss":[
+        "https://www.gamesindustry.biz/rss"
+      ]
     },
     {
       "name": "Business",
