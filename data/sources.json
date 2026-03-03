@@ -2,7 +2,9 @@
   "categories":[
     {
       "name":"Game Industry",
-      "rss":["https://www.gamesindustry.biz/rss"]
+"rss": [
+  "https://techcrunch.com/feed/"
+]
     },
     {
       "name": "Business",
