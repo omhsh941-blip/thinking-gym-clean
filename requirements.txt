@@ -1,0 +1,4 @@
+streamlit
+feedparser
+PyGithub
+python-dateutil
