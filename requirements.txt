@@ -2,4 +2,5 @@ streamlit
 feedparser
 PyGithub
 python-dateutil
+openai
 trafilatura
