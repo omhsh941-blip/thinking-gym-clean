@@ -261,6 +261,13 @@ def make_korean_summary(url: str) -> str:
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
     )
+    
+    # ✅ store token usage for summary
+    try:
+        st.session_state["token_usage"]["summary"] = getattr(res, "usage", None)
+    except Exception:
+        pass
+        
     return res.choices[0].message.content.strip()
 
 
@@ -324,7 +331,13 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3,
     )
-
+    
+    # ✅ store token usage for evaluation
+    try:
+        st.session_state["token_usage"]["eval"] = getattr(res, "usage", None)
+    except Exception:
+        pass
+        
     text = res.choices[0].message.content
     parsed = _safe_json_from_text(text)
 
@@ -410,6 +423,10 @@ eval_cfg = store.read_json(cfg["path_eval"], default_eval())
 
 st.title("🧠 Thinking Gym")
 st.caption("매일 10~15분, 뉴스 1개로 전략 사고를 훈련하고 기록을 쌓습니다. (데이터는 GitHub에 저장)")
+
+# --- Token usage tracker (per session) ---
+if "token_usage" not in st.session_state:
+    st.session_state["token_usage"] = {"summary": None, "eval": None}
 
 tab_collect, tab_add, tab_list, tab_session, tab_growth, tab_settings = st.tabs(
     ["📡 자동 수집", "➕ 수동 추가", "🗂 기사 목록", "✍️ 세션", "📈 성장", "⚙️ 설정"]
@@ -526,6 +543,7 @@ with tab_list:
             st.session_state["selected_article_id"] = a["id"]
             st.session_state["summary_url"] = None
             st.session_state["summary_ko"] = None
+            st.session_state["token_usage"] = {"summary": None, "eval": None}
             st.success("세션 탭으로 이동하세요.")
             st.rerun()
 
@@ -578,6 +596,29 @@ with tab_session:
                     st.write(summary_ko)
 
             st.divider()
+            
+            st.markdown("### 🧾 이번 세션 토큰 사용량")
+            
+            u_sum = st.session_state.get("token_usage", {}).get("summary")
+            u_eval = st.session_state.get("token_usage", {}).get("eval")
+            
+            def _usage_to_str(u):
+                if not u:
+                    return "아직 없음"
+                # SDK 버전에 따라 dict 또는 객체일 수 있음
+                if isinstance(u, dict):
+                    pt = u.get("prompt_tokens")
+                    ct = u.get("completion_tokens")
+                    tt = u.get("total_tokens")
+                else:
+                    pt = getattr(u, "prompt_tokens", None)
+                    ct = getattr(u, "completion_tokens", None)
+                    tt = getattr(u, "total_tokens", None)
+                return f"prompt={pt}, completion={ct}, total={tt}"
+            
+            c1, c2 = st.columns(2)
+            c1.metric("요약(summary)", _usage_to_str(u_sum))
+            c2.metric("평가(eval)", _usage_to_str(u_eval))
 
             # --- 질문 ---
             st.markdown("### 질문 (고정 3개)")
