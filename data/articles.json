@@ -1,6 +1,106 @@
 {
   "articles": [
     {
+      "id": "0a13eb9d6819207dc8e5b29ea60d0735a58b4266",
+      "title": "디아블로2 레저렉션. 고령자 배려가 필요한 시대가 됐다",
+      "url": "https://game.donga.com/121756/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 15:58:27 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "a7ef8fa4793aa7a3281983a4e9167d8121cffa2f",
+      "title": "[현장취재] 심형탁과 함께한 캡콤 ‘프래그마타’ 쇼케이스, “뇌지컬 슈터 액션 즐겨 달라”",
+      "url": "https://game.donga.com/121755/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 15:50:11 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "4a0df1d842145bd1bc73e12185c5f38f0ac9d12a",
+      "title": "심리 공포 게임 ‘서브리미널’, 3월 31일 정식 출시 확정",
+      "url": "https://game.donga.com/121754/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 15:25:07 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "9b05abe738d8cccb3c3bd767e6cf6a3dbc74b3e6",
+      "title": "라인게임즈, 캐주얼 방치형 RPG '애니멀 버스터즈' 사전 등록 시작!",
+      "url": "https://game.donga.com/121753/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 14:47:30 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "71998142d15560e1ed9a0d7b641098318c9a78ce",
+      "title": "코리아보드게임즈, 온 가족이 즐기는 ‘패밀리 보드게임’ 4종 출시",
+      "url": "https://game.donga.com/121752/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 12:31:32 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "c8d63bcb13b65b4d522bf9b6efe53636e2e2d885",
+      "title": "스마일게이트 ‘카제나’, 총 상금 1,500만원 규모 ‘2026 봄 일러스트 콘테스트’ 개최",
+      "url": "https://game.donga.com/121751/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 12:10:08 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "cd00d5f4b911a7b989193b973754bc3e0b3ff9f6",
+      "title": "전 세계에 50개 있는 타입문 ‘월희’ 체험판... 美 세관에서 파괴됐다?",
+      "url": "https://game.donga.com/121750/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 11:48:43 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "79075832b69e425267b9e0dd12c7cb280ab00627",
+      "title": "넥써쓰-플레이위드코리아, ‘씰M 온 크로쓰’ 3월 19일 출시",
+      "url": "https://game.donga.com/121749/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 10:57:42 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "f1ca5060445f610374955ecbb2f1df610ff84519",
+      "title": "엔씨(NC) 리니지M, 신서버 ‘켄트’, ‘오렌’ 사전 캐릭터 생성 진행",
+      "url": "https://game.donga.com/121748/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 10:54:54 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "40a0665f3e0ff307a597b9b53f41eb102fb4022e",
+      "title": "‘제 2의 콘코드’ 하이가드 서비스 종료... “약 45일 만”",
+      "url": "https://game.donga.com/121747/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 10:43:08 +0900",
+      "collected_at": "2026-03-05T00:30:11+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
       "id": "274b709b5f98cba8bb919f86702383980583c9ba",
       "title": "Father sues Google, claiming Gemini chatbot drove son into fatal delusion",
       "url": "https://techcrunch.com/2026/03/04/father-sues-google-claiming-gemini-chatbot-drove-son-into-fatal-delusion/",
