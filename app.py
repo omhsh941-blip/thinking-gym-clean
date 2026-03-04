@@ -23,7 +23,9 @@ def _now_kst_iso():
 
 def _sha1(s: str) -> str:
     return hashlib.sha1(s.encode("utf-8")).hexdigest()
-    def evaluate_thinking(article_title, summary, user_answer):
+
+
+def evaluate_thinking(article_title, summary, user_answer):
 
     client = get_openai_client()
 
@@ -90,9 +92,6 @@ def _sha1(s: str) -> str:
             "game": 0
         }
     }
-
-import json
-return json.loads(res.choices[0].message.content)
 
 # ---------------------------
 # Config
