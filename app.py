@@ -65,34 +65,34 @@ def evaluate_thinking(article_title, summary, user_answer):
 }}
 """
 
-    res = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.3
-    )
+res = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[{"role": "user", "content": prompt}],
+    temperature=0.3
+)
 
-    text = res.choices[0].message.content
+text = res.choices[0].message.content
 
-    import re
-    match = re.search(r'\{.*\}', text, re.S)
+import re
+match = re.search(r'\{.*\}', text, re.S)
 
-    if match:
-        import json
-        return json.loads(match.group())
+if match:
+    import json
+    return json.loads(match.group())
 
-    return {
-        "ai_analysis": text,
-        "score": {
-            "cause": 0,
-            "timeline": 0,
-            "impact": 0,
-            "risk": 0,
-            "game": 0
-        }
+return {
+    "ai_analysis": text,
+    "score": {
+        "cause": 0,
+        "timeline": 0,
+        "impact": 0,
+        "risk": 0,
+        "game": 0
+    }
     }
 
-    import json
-    return json.loads(res.choices[0].message.content)
+import json
+return json.loads(res.choices[0].message.content)
 
 # ---------------------------
 # Config
