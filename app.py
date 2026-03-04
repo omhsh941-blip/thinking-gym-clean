@@ -606,9 +606,12 @@ with tab_session:
                 u_eval = tu.get("eval")
 
             c1, c2 = st.columns(2)
-            c1.metric("요약(summary)", _usage_to_str(u_sum))
-            c2.metric("평가(eval)", _usage_to_str(u_eval))
-
+            c1.markdown("**요약(summary)**")
+            c1.caption(_usage_to_str(u_sum))
+            
+            c2.markdown("**평가(eval)**")
+            c2.caption(_usage_to_str(u_eval))
+            
             st.markdown("### 질문 (고정 3개)")
             questions = [
                 "1) 이 변화의 근본 원인은 무엇인가?",
