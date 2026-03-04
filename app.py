@@ -53,8 +53,6 @@ def evaluate_thinking(article_title, summary, user_answer):
 
 반드시 JSON으로 출력
 
-예시
-
 {{
 "ai_analysis":"...",
 "score":{{
@@ -67,29 +65,31 @@ def evaluate_thinking(article_title, summary, user_answer):
 }}
 """
 
-       res = client.chat.completions.create(
+    res = client.chat.completions.create(
         model="gpt-4o-mini",
-        messages=[{"role":"user","content":prompt}],
+        messages=[{"role": "user", "content": prompt}],
         temperature=0.3
     )
 
     text = res.choices[0].message.content
 
-    # JSON 안전 파싱
+    import re
     match = re.search(r'\{.*\}', text, re.S)
+
     if match:
+        import json
         return json.loads(match.group())
-    else:
-        return {
-            "ai_analysis": text,
-            "score":{
-                "cause":0,
-                "timeline":0,
-                "impact":0,
-                "risk":0,
-                "game":0
-            }
+
+    return {
+        "ai_analysis": text,
+        "score": {
+            "cause": 0,
+            "timeline": 0,
+            "impact": 0,
+            "risk": 0,
+            "game": 0
         }
+    }
 
     import json
     return json.loads(res.choices[0].message.content)
