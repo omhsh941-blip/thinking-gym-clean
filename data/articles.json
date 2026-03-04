@@ -1,42 +1,22 @@
 {
   "articles": [
     {
-      "id": "db36fa18d5758e93264bb5e4fcc6e25863031a64",
-      "title": "Build a Rocket Boy confirms more layoffs amid further claims of \"organized espionage and corporate sabotage\"",
-      "url": "https://www.gamesindustry.biz/build-a-rocket-boy-confirms-more-layoffs-amid-further-claims-of-organized-espionage-and-corporate-sabotage",
+      "id": "7287ce70dbcb1092f4d9fd78dd35696c4001eb98",
+      "title": "Google cuts fees for mobile apps and games",
+      "url": "https://www.pocketgamer.biz/google-cuts-fees-for-mobile-apps-and-games/",
       "category": "Game Industry",
-      "published": "Wed, 04 Mar 2026 21:10:45 +0000",
-      "collected_at": "2026-03-05T08:45:43+09:00",
+      "published": "Wed, 04 Mar 2026 18:42:00 +0000",
+      "collected_at": "2026-03-05T08:45:44+09:00",
       "used_in_session": false,
       "added_by": "auto"
     },
     {
-      "id": "864a9d550174a5ca6a103583366e9e3b53491144",
-      "title": "Former Blizzard CCO and Bonfire CEO Rob Pardo to present keynote address at GDC Festival of Gaming",
-      "url": "https://www.gamesindustry.biz/former-blizzard-cco-and-bonfire-ceo-rob-pardo-to-present-keynote-address-at-gdc-festival-of-gaming",
+      "id": "fde172aa2e675ac72f0dbd9e6b19fc6485e3c82c",
+      "title": "ThinkingData Summit: Global studios coming together to rethink live ops and data during GDC",
+      "url": "https://www.pocketgamer.biz/thinkingdata-summit-global-studios-coming-together-to-rethink-liveops-and-data-during-gdc/",
       "category": "Game Industry",
-      "published": "Wed, 04 Mar 2026 18:37:31 +0000",
-      "collected_at": "2026-03-05T08:45:43+09:00",
-      "used_in_session": false,
-      "added_by": "auto"
-    },
-    {
-      "id": "8b755a84361b88012937abcf2f5ec4af2e46f67b",
-      "title": "Turkish mobile developer Vento Games secures $4m in seed round funding",
-      "url": "https://www.gamesindustry.biz/turkish-mobile-developer-vento-games-secures-4m-in-seed-round-funding",
-      "category": "Game Industry",
-      "published": "Wed, 04 Mar 2026 16:27:16 +0000",
-      "collected_at": "2026-03-05T08:45:43+09:00",
-      "used_in_session": false,
-      "added_by": "auto"
-    },
-    {
-      "id": "58c4473bc700c62b3fbfb49430c0eaa2068ab162",
-      "title": "Good Games Group has bought the Humble and Firestoke back catalogues. Now, newly renamed as Balor Games, it wants to invest in triple-I",
-      "url": "https://www.gamesindustry.biz/good-games-group-has-bought-the-humble-and-firestoke-back-catalogues-now-newly-renamed-as-balor-games-it-wants-to-invest-in-triple-i",
-      "category": "Game Industry",
-      "published": "Wed, 04 Mar 2026 16:00:00 +0000",
-      "collected_at": "2026-03-05T08:45:43+09:00",
+      "published": "Wed, 04 Mar 2026 17:00:00 +0000",
+      "collected_at": "2026-03-05T08:45:44+09:00",
       "used_in_session": false,
       "added_by": "auto"
     },
