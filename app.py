@@ -262,6 +262,9 @@ def make_korean_summary(url: str) -> str:
         temperature=0.2,
     )
     
+    st.write("DEBUG usage raw:", getattr(res, "usage", None))
+    st.write("DEBUG res keys:", list(res.__dict__.keys()) if hasattr(res, "__dict__") else type(res))
+    
     # ✅ store token usage for summary
     try:
         st.session_state["token_usage"]["summary"] = getattr(res, "usage", None)
