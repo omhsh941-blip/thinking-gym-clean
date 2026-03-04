@@ -297,18 +297,18 @@ session = {
         "score_total": total,
         "score_by_criteria": per,
         "final_summary": make_final_summary(article, answers),
-    }
+}
 
-    sessions_db["sessions"].insert(0, session)
-    store.write_json(cfg["path_sessions"], sessions_db, "add session")
+sessions_db["sessions"].insert(0, session)
+store.write_json(cfg["path_sessions"], sessions_db, "add session")
 
-    # mark article used
-    for a in articles_db["articles"]:
-        if a["id"] == article["id"]:
-            a["used_in_session"] = True
-    store.write_json(cfg["path_articles"], articles_db, "mark article used")
+# mark article used
+for a in articles_db["articles"]:
+    if a["id"] == article["id"]:
+        a["used_in_session"] = True
+store.write_json(cfg["path_articles"], articles_db, "mark article used")
 
-    return session
+return session
 
 
 # ---------------------------
