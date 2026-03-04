@@ -273,6 +273,7 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
     반환:
     {
       "ai_analysis": "...",
+      "ai_feedback": "좋은 점/부족한 점/개선 팁",
       "ai_score": {"cause":0..5, "timeline":..., "impact":..., "risk":..., "game":...},
       "ai_model_answer": "AI가 작성한 모범답안(간단)",
     }
@@ -305,12 +306,17 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
 
 반드시 JSON으로만 출력하라. (설명 텍스트 금지)
 
+채점 규칙(매우 중요):
+- 아래 예시는 "형식"만 참고해라. 숫자(4,3,4,2,3)는 절대 복사하지 마라.
+
 형식:
 {{
   "ai_analysis": "...",
+  "ai_feedback": "좋은 점/부족한 점/개선 팁",
   "ai_score": {{"cause":4,"timeline":3,"impact":4,"risk":2,"game":3}},
   "ai_model_answer": "..."
 }}
+
 """.strip()
 
     res = client.chat.completions.create(
@@ -325,6 +331,7 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
     if parsed and isinstance(parsed, dict):
         # 최소 키 보정
         parsed.setdefault("ai_analysis", text)
+        parsed.setdefault("ai_feedback", "") 
         parsed.setdefault("ai_model_answer", "")
         score = parsed.get("ai_score", {})
         if not isinstance(score, dict):
@@ -369,6 +376,7 @@ def save_session(store, cfg, article, questions, answers, eval_cfg, article_summ
         # ✅ AI 평가/비교 데이터
         "ai_analysis": ai_pack.get("ai_analysis", ""),
         "ai_score": ai_pack.get("ai_score", {}),
+        "ai_feedback": ai_pack.get("ai_feedback", ""),
         "ai_model_answer": ai_pack.get("ai_model_answer", ""),
 
         # 기존 점수(규칙 기반)
@@ -691,6 +699,9 @@ with tab_growth:
 
                 st.write("**AI 모범 답안(짧게)**")
                 st.write(s.get("ai_model_answer", ""))
+
+                st.write("**사용자 분석 평가(피드백)**")
+                st.write(s.get("ai_feedback", ""))
 
                 st.write("**AI 평가 점수**")
                 st.json(s.get("ai_score", {}))
