@@ -1,6 +1,106 @@
 {
   "articles": [
     {
+      "id": "3488b76eed6cf49ae321f3b21e85a2939814c978",
+      "title": "Industry, AI and everything in-between - Seven fabulous fireside chats from PGC London 2026",
+      "url": "https://www.pocketgamer.biz/industry-ai-and-everything-in-between-seven-fabulous-fireside-chats-from-pgc-london-2026/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 14:00:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "f95116d1b5f23e2dd4c7ecdb76845a568a67a980",
+      "title": "Beyond The Pixels strengthens leadership ahead of its debut title Astro Burn",
+      "url": "https://www.pocketgamer.biz/beyond-the-pixels-strengthens-leadership-ahead-of-its-debut-title-astro-burn/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 13:25:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "814094f5efbe08536b2a84a671db1543ada8a008",
+      "title": "Unity Asset Store to remove content from developers in Greater China region",
+      "url": "https://www.pocketgamer.biz/unity-to-remove-assets-from-chinese-developers-on-the-asset-store/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 12:48:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "1f33b039c16bf550c70e9b15c7d75d14509a4b39",
+      "title": "TIGA calls on the UK government to strengthen the Video Games Expenditure Credit in the upcoming Autumn Budget",
+      "url": "https://www.pocketgamer.biz/tiga-calls-on-the-uk-government-to-strengthen-the-video-games-expenditure-credit-in-the-upcoming-autumn-budget/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 12:30:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "4d22d3889d4a499f480b6ee264cbda64fc4d004d",
+      "title": "How Gossip Harbor builds live ops from day one",
+      "url": "https://www.pocketgamer.biz/how-gossip-harbor-builds-live-ops-from-day-one/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 11:30:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "71c4c13c47303a881c25c9c27803951ff35aa411",
+      "title": "Report: Trump administration reviews Tencent gaming investments over security concerns",
+      "url": "https://www.pocketgamer.biz/trump-administration-reviews-tencent-gaming-investments-over-security-concerns/",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 11:28:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "3d82a01d8e40d0e11ced71e5ec16deb2b1c79183",
+      "title": "Hay Day Match is the latest match-3 attempt for Supercell’s IP",
+      "url": "https://www.pocketgamer.biz/hay-day-match-is-the-latest-match-3-attempt-for-supercells-ip/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 17:12:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "5abfd6c5ef71a512999c7a1e2a350db993073583",
+      "title": "Aurora Awards Europe - nominations now open!",
+      "url": "https://www.pocketgamer.biz/aurora-awards-europe-nominations-now-open/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 17:00:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "0dcac8a3c2451c5aa6ed429797ddc378a64b04b0",
+      "title": "Antihero Studios raises $4.5m in seed funding ahead of Misfitz open alpha",
+      "url": "https://www.pocketgamer.biz/antihero-studios-raises-45m-in-seed-funding-ahead-of-misfitz-open-alpha/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 16:16:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "5a39c460a031312249d646a38861cb1b76404153",
+      "title": "Nordic Networking? Come meet PGC Summit Malmö 2026 this May 27th and 28th",
+      "url": "https://www.pocketgamer.biz/nordic-networking-come-meet-pgc-summit-malmo-2026-this-may-27th-and-28th/",
+      "category": "Game Industry",
+      "published": "Tue, 03 Mar 2026 16:02:00 +0000",
+      "collected_at": "2026-03-05T00:30:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
       "id": "6fc8557f3f462caaef0fe03d7d01df7be8928141",
       "title": "Sony reportedly scaling back PC ports for PlayStation exclusives",
       "url": "https://www.gamesindustry.biz/sony-reportedly-scaling-back-pc-ports-for-playstation-exclusives",
