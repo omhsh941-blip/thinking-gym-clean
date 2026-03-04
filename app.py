@@ -26,10 +26,6 @@ def _sha1(s: str) -> str:
 
 
 def _safe_json_from_text(text: str):
-    """
-    모델이 JSON 외 텍스트를 섞어서 내보내도 최대한 JSON만 뽑아 파싱.
-    실패하면 None 반환
-    """
     m = re.search(r"\{.*\}", text, re.S)
     if not m:
         return None
@@ -39,13 +35,32 @@ def _safe_json_from_text(text: str):
         return None
 
 
+def _ensure_token_usage():
+    if "token_usage" not in st.session_state:
+        st.session_state["token_usage"] = {"article_id": None, "summary": None, "eval": None}
+
+
+def _usage_to_str(u):
+    if not u:
+        return "아직 없음"
+    if isinstance(u, dict):
+        pt = u.get("prompt_tokens")
+        ct = u.get("completion_tokens")
+        tt = u.get("total_tokens")
+    else:
+        pt = getattr(u, "prompt_tokens", None)
+        ct = getattr(u, "completion_tokens", None)
+        tt = getattr(u, "total_tokens", None)
+    return f"prompt={pt}, completion={ct}, total={tt}"
+
+
 # ---------------------------
 # Config
 # ---------------------------
 def load_cfg():
     return {
         "token": st.secrets["GITHUB_TOKEN"],
-        "repo_name": st.secrets["REPO_NAME"],  # 예: "omhsh941-blip/thinking-gym-clean"
+        "repo_name": st.secrets["REPO_NAME"],
         "branch": st.secrets.get("BRANCH", "main"),
         "path_articles": st.secrets.get("ARTICLES_PATH", "data/articles.json"),
         "path_sessions": st.secrets.get("SESSIONS_PATH", "data/sessions.json"),
@@ -178,7 +193,7 @@ def collect_from_rss(store, cfg, category_name, rss_url, max_items=10):
 
 
 # ---------------------------
-# Simple scoring (rule-based) - 사용자 글 길이/키워드 기반
+# Rule scoring (simple)
 # ---------------------------
 def simple_scoring(answer_text: str, eval_cfg):
     text = (answer_text or "").strip()
@@ -261,33 +276,21 @@ def make_korean_summary(url: str) -> str:
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
     )
-    
-    st.write("DEBUG usage raw:", getattr(res, "usage", None))
-    st.write("DEBUG res keys:", list(res.__dict__.keys()) if hasattr(res, "__dict__") else type(res))
-    
-    # ✅ store token usage for summary
+
+    _ensure_token_usage()
     try:
         st.session_state["token_usage"]["summary"] = getattr(res, "usage", None)
     except Exception:
         pass
-        
+
     return res.choices[0].message.content.strip()
 
 
 # ---------------------------
-# AI Evaluation (내 답변 vs AI 기준)
+# AI Evaluation
 # ---------------------------
 @st.cache_data(show_spinner=False, ttl=60 * 60 * 24)
 def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
-    """
-    반환:
-    {
-      "ai_analysis": "...",
-      "ai_feedback": "좋은 점/부족한 점/개선 팁",
-      "ai_score": {"cause":0..5, "timeline":..., "impact":..., "risk":..., "game":...},
-      "ai_model_answer": "AI가 작성한 모범답안(간단)",
-    }
-    """
     client = get_openai_client()
 
     prompt = f"""
@@ -307,16 +310,17 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
 2) 사용자 분석 평가(좋은 점 / 부족한 점 / 개선 팁)
 3) AI 모범 답안(짧게)
 
-또한 점수(0~5)를 매겨라:
+채점(0~5):
 - cause: 원인 분석
 - timeline: 시간 축(단기/중기/장기)
 - impact: 2차 파급
 - risk: 리스크/불확실성
 - game: 게임 산업 연결
 
-반드시 JSON으로만 출력하라. (설명 텍스트 금지)
+반드시 JSON으로만 출력하라.
 
 채점 규칙(매우 중요):
+- 사용자 분석이 80자 미만이거나 "테스트", "asdf" 같은 의미 없는 내용이면 ai_score의 모든 값은 0으로 해라.
 - 아래 예시는 "형식"만 참고해라. 숫자(4,3,4,2,3)는 절대 복사하지 마라.
 
 형식:
@@ -326,7 +330,6 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
   "ai_score": {{"cause":4,"timeline":3,"impact":4,"risk":2,"game":3}},
   "ai_model_answer": "..."
 }}
-
 """.strip()
 
     res = client.chat.completions.create(
@@ -334,20 +337,19 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3,
     )
-    
-    # ✅ store token usage for evaluation
+
+    _ensure_token_usage()
     try:
         st.session_state["token_usage"]["eval"] = getattr(res, "usage", None)
     except Exception:
         pass
-        
+
     text = res.choices[0].message.content
     parsed = _safe_json_from_text(text)
 
     if parsed and isinstance(parsed, dict):
-        # 최소 키 보정
         parsed.setdefault("ai_analysis", text)
-        parsed.setdefault("ai_feedback", "") 
+        parsed.setdefault("ai_feedback", "")
         parsed.setdefault("ai_model_answer", "")
         score = parsed.get("ai_score", {})
         if not isinstance(score, dict):
@@ -357,9 +359,9 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
         parsed["ai_score"] = score
         return parsed
 
-    # 파싱 실패시
     return {
         "ai_analysis": text,
+        "ai_feedback": "",
         "ai_score": {"cause": 0, "timeline": 0, "impact": 0, "risk": 0, "game": 0},
         "ai_model_answer": ""
     }
@@ -389,13 +391,11 @@ def save_session(store, cfg, article, questions, answers, eval_cfg, article_summ
         "questions": questions,
         "answers": answers,
 
-        # ✅ AI 평가/비교 데이터
         "ai_analysis": ai_pack.get("ai_analysis", ""),
         "ai_score": ai_pack.get("ai_score", {}),
         "ai_feedback": ai_pack.get("ai_feedback", ""),
         "ai_model_answer": ai_pack.get("ai_model_answer", ""),
 
-        # 기존 점수(규칙 기반)
         "score_total": total,
         "score_by_criteria": per,
         "final_summary": make_final_summary(article, answers),
@@ -404,7 +404,6 @@ def save_session(store, cfg, article, questions, answers, eval_cfg, article_summ
     sessions_db["sessions"].insert(0, session)
     store.write_json(cfg["path_sessions"], sessions_db, "add session")
 
-    # mark article used
     for a in articles_db["articles"]:
         if a.get("id") == article.get("id"):
             a["used_in_session"] = True
@@ -427,9 +426,17 @@ eval_cfg = store.read_json(cfg["path_eval"], default_eval())
 st.title("🧠 Thinking Gym")
 st.caption("매일 10~15분, 뉴스 1개로 전략 사고를 훈련하고 기록을 쌓습니다. (데이터는 GitHub에 저장)")
 
-# --- Token usage tracker (per session) ---
-if "token_usage" not in st.session_state:
-    st.session_state["token_usage"] = {"summary": None, "eval": None}
+_ensure_token_usage()
+
+# ---- URL query로 탭 이동 구현 ----
+# tab 값: collect/add/list/session/growth/settings
+qp = st.query_params
+tab_from_url = qp.get("tab", None)
+
+tabs = ["collect", "add", "list", "session", "growth", "settings"]
+default_index = 0
+if tab_from_url in tabs:
+    default_index = tabs.index(tab_from_url)
 
 tab_collect, tab_add, tab_list, tab_session, tab_growth, tab_settings = st.tabs(
     ["📡 자동 수집", "➕ 수동 추가", "🗂 기사 목록", "✍️ 세션", "📈 성장", "⚙️ 설정"]
@@ -546,8 +553,12 @@ with tab_list:
             st.session_state["selected_article_id"] = a["id"]
             st.session_state["summary_url"] = None
             st.session_state["summary_ko"] = None
-            st.session_state["token_usage"] = {"summary": None, "eval": None}
-            st.success("세션 탭으로 이동하세요.")
+
+            st.session_state["token_usage"] = {"article_id": a["id"], "summary": None, "eval": None}
+
+            # ✅ 바로 세션 탭으로 이동: URL query를 session으로 변경 후 rerun
+            st.query_params["tab"] = "session"
+            st.success("세션 탭으로 이동합니다.")
             st.rerun()
 
 # -------- 세션 --------
@@ -575,7 +586,6 @@ with tab_session:
             st.write(article.get("url", ""))
             st.divider()
 
-            # --- 요약 자동 생성 ---
             st.markdown("### 📄 기사 요약(한글)")
 
             if "OPENAI_API_KEY" not in st.secrets:
@@ -599,31 +609,21 @@ with tab_session:
                     st.write(summary_ko)
 
             st.divider()
-            
+
             st.markdown("### 🧾 이번 세션 토큰 사용량")
-            
-            u_sum = st.session_state.get("token_usage", {}).get("summary")
-            u_eval = st.session_state.get("token_usage", {}).get("eval")
-            
-            def _usage_to_str(u):
-                if not u:
-                    return "아직 없음"
-                # SDK 버전에 따라 dict 또는 객체일 수 있음
-                if isinstance(u, dict):
-                    pt = u.get("prompt_tokens")
-                    ct = u.get("completion_tokens")
-                    tt = u.get("total_tokens")
-                else:
-                    pt = getattr(u, "prompt_tokens", None)
-                    ct = getattr(u, "completion_tokens", None)
-                    tt = getattr(u, "total_tokens", None)
-                return f"prompt={pt}, completion={ct}, total={tt}"
-            
+
+            tu = st.session_state.get("token_usage", {})
+            if tu.get("article_id") != selected_id:
+                u_sum = None
+                u_eval = None
+            else:
+                u_sum = tu.get("summary")
+                u_eval = tu.get("eval")
+
             c1, c2 = st.columns(2)
             c1.metric("요약(summary)", _usage_to_str(u_sum))
             c2.metric("평가(eval)", _usage_to_str(u_eval))
 
-            # --- 질문 ---
             st.markdown("### 질문 (고정 3개)")
             questions = [
                 "1) 이 변화의 근본 원인은 무엇인가?",
@@ -638,8 +638,8 @@ with tab_session:
             if st.button("✅ 논의 종료 & 기록 저장"):
                 user_answer_all = "\n".join([a1, a2, a3]).strip()
 
-                # AI 평가/모범답안 생성
-                ai_pack = {"ai_analysis": "", "ai_score": {}, "ai_model_answer": ""}
+                ai_pack = {"ai_analysis": "", "ai_score": {}, "ai_feedback": "", "ai_model_answer": ""}
+
                 if summary_ko and user_answer_all and "OPENAI_API_KEY" in st.secrets:
                     with st.spinner("AI가 당신의 답변을 평가/비교 중..."):
                         try:
@@ -701,7 +701,6 @@ with tab_growth:
                 break
         c3.metric("연속 학습(일)", str(streak))
 
-        # --- 그래프(최근 20개) ---
         try:
             import pandas as pd
             scores = [s.get("score_total", 0) for s in sessions[:20]]
@@ -714,7 +713,6 @@ with tab_growth:
         except Exception as e:
             st.info(f"(그래프 비활성) pandas 설치 필요 또는 오류: {e}")
 
-        # --- 최근 세션 리스트 ---
         st.markdown("### 최근 세션")
         for s in sessions[:10]:
             art = s.get("article", {})
