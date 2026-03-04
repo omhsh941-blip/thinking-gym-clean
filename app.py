@@ -603,7 +603,7 @@ with tab_growth:
             "score": scores
         })
         
-        st.markdown("### 사고력 성장 그래프")
+        st.markdown("### 최근 20개 세션 사고력 성장 그래프")
         st.line_chart(df.set_index("session"))
         st.markdown("### 최근 세션")
         for s in sessions[:10]:
