@@ -616,7 +616,7 @@ with tab_growth:
                 st.write("**항목별 점수**")
                 st.json(s["score_by_criteria"])
                 st.write("**AI 분석**")
-                st.write(s.get("ai_analysis","")
+                st.write(s.get("ai_analysis",""))
                 st.write("**AI 평가 점수**")
                 st.json(s.get("ai_score",{}))
 
