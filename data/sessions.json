@@ -1,6 +1,46 @@
 {
   "sessions": [
     {
+      "session_id": "9742541ccdf352d3553d876c95705a49ef5237c8",
+      "date": "2026-03-04T23:01:47+09:00",
+      "article": {
+        "id": "09b729bf5f7071315cd516fd480eb8ea6bf3e0bf",
+        "title": "One startup’s pitch to provide more reliable AI answers: crowdsource the chatbots",
+        "url": "https://techcrunch.com/2026/03/04/one-startups-pitch-to-provide-more-reliable-ai-answers-crowdsource-the-chatbots/",
+        "category": "Game Industry",
+        "published": "Wed, 04 Mar 2026 14:00:00 +0000"
+      },
+      "article_summary_ko": "• John Davie는 AI 혁명을 활용하기 위해 Buyers Edge Platform의 자회사 CollectivIQ를 설립했다.  \n• CollectivIQ는 ChatGPT, Gemini, Claude 등 여러 AI 모델의 정보를 동시에 활용하여 더 정확한 답변을 제공하는 소프트웨어를 개발했다.  \n• Davie는 직원들이 다양한 AI 도구를 사용할 경우 회사 정보가 유출될 수 있다는 우려로 인해 더 안전한 AI 솔루션을 찾게 되었다.  \n• CollectivIQ는 사용량 기반의 요금제를 도입하여 고객이 실제로 얻는 가치에 따라 비용을 지불하도록 설계되었다.  \n• CollectivIQ는 2026년 초에 내부 직원들에게 소프트웨어를 배포하였고, 긍정적인 반응을 얻은 후 공개 출시를 결정했다.  \n\n한 줄 결론: CollectivIQ는 여러 AI 모델을 통합하여 더 정확한 정보를 제공하는 새로운 솔루션을 시장에 출시했다.",
+      "questions": [
+        "1) 이 변화의 근본 원인은 무엇인가?",
+        "2) 단기/중기/장기 영향은 어떻게 다를까?",
+        "3) 게임 산업(특히 운영/BM/UA/라이브) 관점에서 시사점은?"
+      ],
+      "answers": [
+        "테스트",
+        "테스트",
+        "테스트"
+      ],
+      "ai_analysis": "CollectivIQ는 여러 AI 모델을 통합하여 더 정확한 정보를 제공하는 혁신적인 접근 방식을 채택하고 있으며, 이는 게임 산업에서도 유용하게 활용될 수 있다. 게임 개발자들은 다양한 AI 도구를 통해 플레이어의 행동을 분석하고, 맞춤형 콘텐츠를 제공하는 데 도움을 받을 수 있다. 또한, CollectivIQ의 사용량 기반 요금제는 게임 산업의 다양한 규모의 개발사들에게 유연한 비용 구조를 제공할 수 있다.",
+      "ai_score": {
+        "cause": 4,
+        "timeline": 3,
+        "impact": 4,
+        "risk": 2,
+        "game": 3
+      },
+      "ai_model_answer": "CollectivIQ는 여러 AI 모델을 통합하여 더 정확한 정보를 제공하는 혁신적인 소프트웨어를 출시하였으며, 이는 게임 산업에서도 사용자 경험을 개선하는 데 기여할 수 있다.",
+      "score_total": 1,
+      "score_by_criteria": {
+        "원인 분석": 0,
+        "시간 축": 0,
+        "2차 파급": 0,
+        "리스크": 0,
+        "게임 연결": 0
+      },
+      "final_summary": "- 기사: One startup’s pitch to provide more reliable AI answers: crowdsource the chatbots\n- 핵심 판단: 테스트\n- 근거/가정: 테스트\n- 다음 행동/검증: 테스트"
+    },
+    {
       "session_id": "20e9f6aee0fb72c202081e75a2db3e2fac886fa2",
       "date": "2026-03-04T22:21:49+09:00",
       "article": {
