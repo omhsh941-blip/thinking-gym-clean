@@ -4,3 +4,4 @@ PyGithub
 python-dateutil
 openai
 trafilatura
+pandas
