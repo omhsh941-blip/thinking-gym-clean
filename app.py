@@ -2,6 +2,7 @@ import requests
 import trafilatura
 import json
 import hashlib
+from openai import OpenAI
 from datetime import datetime, timedelta
 from dateutil import tz
 
@@ -13,7 +14,7 @@ KST = tz.gettz("Asia/Seoul")
 
 
 # ---------------------------
-# GitHub JSON Store (무료 영구 저장)
+# Utils
 # ---------------------------
 def _now_kst_iso():
     return datetime.now(tz=KST).isoformat(timespec="seconds")
@@ -23,10 +24,13 @@ def _sha1(s: str) -> str:
     return hashlib.sha1(s.encode("utf-8")).hexdigest()
 
 
+# ---------------------------
+# Config
+# ---------------------------
 def load_cfg():
     return {
         "token": st.secrets["GITHUB_TOKEN"],
-        "repo_name": st.secrets["REPO_NAME"],          # 예: "omhsh941-blip/thinking-gym"
+        "repo_name": st.secrets["REPO_NAME"],  # 예: "omhsh941-blip/thinking-gym-clean"
         "branch": st.secrets.get("BRANCH", "main"),
         "path_articles": st.secrets.get("ARTICLES_PATH", "data/articles.json"),
         "path_sessions": st.secrets.get("SESSIONS_PATH", "data/sessions.json"),
@@ -35,6 +39,9 @@ def load_cfg():
     }
 
 
+# ---------------------------
+# GitHub JSON Store
+# ---------------------------
 class GitHubJSONStore:
     def __init__(self, cfg):
         self.cfg = cfg
@@ -73,7 +80,7 @@ def get_store():
 
 
 # ---------------------------
-# 초기 데이터
+# Default data
 # ---------------------------
 def default_sources():
     return {
@@ -87,7 +94,6 @@ def default_sources():
 
 
 def default_eval():
-    # 5개 기준(나중에 수정 가능하게 설계)
     return {
         "criteria": [
             {"name": "원인 분석", "desc": "현상의 근본 원인을 설명했는가", "weight": 20},
@@ -103,19 +109,22 @@ def ensure_bootstrap(store, cfg):
     sources = store.read_json(cfg["path_sources"], None)
     if sources is None:
         store.write_json(cfg["path_sources"], default_sources(), "bootstrap sources")
+
     eval_cfg = store.read_json(cfg["path_eval"], None)
     if eval_cfg is None:
         store.write_json(cfg["path_eval"], default_eval(), "bootstrap eval")
+
     articles = store.read_json(cfg["path_articles"], None)
     if articles is None:
         store.write_json(cfg["path_articles"], {"articles": []}, "bootstrap articles")
+
     sessions = store.read_json(cfg["path_sessions"], None)
     if sessions is None:
         store.write_json(cfg["path_sessions"], {"sessions": []}, "bootstrap sessions")
 
 
 # ---------------------------
-# RSS 수집
+# RSS Collect
 # ---------------------------
 def collect_from_rss(store, cfg, category_name, rss_url, max_items=10):
     articles_db = store.read_json(cfg["path_articles"], {"articles": []})
@@ -123,10 +132,12 @@ def collect_from_rss(store, cfg, category_name, rss_url, max_items=10):
 
     feed = feedparser.parse(rss_url)
     new_count = 0
+
     for entry in feed.entries[:max_items]:
         link = entry.get("link", "").strip()
         title = entry.get("title", "").strip()
         published = entry.get("published", "") or entry.get("updated", "")
+
         if not link or not title:
             continue
 
@@ -152,29 +163,43 @@ def collect_from_rss(store, cfg, category_name, rss_url, max_items=10):
 
 
 # ---------------------------
-# 세션 저장 + 간단 점수(규칙 기반)
+# Simple scoring (rule-based)
 # ---------------------------
 def simple_scoring(answer_text: str, eval_cfg):
-    # AI 없이도 “대충이라도” 점수 주는 규칙(나중에 AI로 교체 가능)
     text = (answer_text or "").strip()
-    length_score = min(len(text) / 400, 1.0)  # 400자 이상이면 만점에 가깝게
+    length_score = min(len(text) / 400, 1.0)
+
     keyword_hits = 0
     for kw in ["단기", "중기", "장기", "리스크", "위험", "기회", "BM", "UA", "LTV", "서버", "운영", "라이브", "경쟁"]:
         if kw in text:
             keyword_hits += 1
     kw_score = min(keyword_hits / 8, 1.0)
 
-    # 100점 환산(간단)
     total = int((0.6 * length_score + 0.4 * kw_score) * 100)
 
-    # 항목 점수는 “균등 분배 + 키워드로 가중” (초기 버전용)
     per = {}
     for c in eval_cfg["criteria"]:
         per[c["name"]] = int(total * (c["weight"] / 100))
     return total, per
 
 
-def save_session(store, cfg, article, questions, answers, eval_cfg):
+def make_final_summary(article, answers):
+    a = (answers[0] if len(answers) > 0 else "").strip()
+    b = (answers[1] if len(answers) > 1 else "").strip()
+    c = (answers[2] if len(answers) > 2 else "").strip()
+
+    lines = []
+    lines.append(f"- 기사: {article['title']}")
+    if a:
+        lines.append(f"- 핵심 판단: {a[:220]}")
+    if b:
+        lines.append(f"- 근거/가정: {b[:220]}")
+    if c:
+        lines.append(f"- 다음 행동/검증: {c[:220]}")
+    return "\n".join(lines)
+
+
+def save_session(store, cfg, article, questions, answers, eval_cfg, article_summary_ko: str):
     sessions_db = store.read_json(cfg["path_sessions"], {"sessions": []})
     articles_db = store.read_json(cfg["path_articles"], {"articles": []})
 
@@ -185,16 +210,18 @@ def save_session(store, cfg, article, questions, answers, eval_cfg):
         "session_id": _sha1(article["id"] + _now_kst_iso()),
         "date": _now_kst_iso(),
         "article": article,
+        "article_summary_ko": article_summary_ko or "",
         "questions": questions,
         "answers": answers,
         "score_total": total,
         "score_by_criteria": per,
         "final_summary": make_final_summary(article, answers),
     }
+
     sessions_db["sessions"].insert(0, session)
     store.write_json(cfg["path_sessions"], sessions_db, "add session")
 
-    # used 표시
+    # mark article used
     for a in articles_db["articles"]:
         if a["id"] == article["id"]:
             a["used_in_session"] = True
@@ -203,18 +230,14 @@ def save_session(store, cfg, article, questions, answers, eval_cfg):
     return session
 
 
-def make_final_summary(article, answers):
-    # AI 없이도 남는 “정리 템플릿”
-    a = (answers[0] if len(answers) > 0 else "").strip()
-    b = (answers[1] if len(answers) > 1 else "").strip()
-    c = (answers[2] if len(answers) > 2 else "").strip()
+# ---------------------------
+# OpenAI Summary (Korean)
+# ---------------------------
+@st.cache_resource
+def get_openai_client():
+    return OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-    lines = []
-    lines.append(f"- 기사: {article['title']}")
-    if a: lines.append(f"- 핵심 판단: {a[:220]}")
-    if b: lines.append(f"- 근거/가정: {b[:220]}")
-    if c: lines.append(f"- 다음 행동/검증: {c[:220]}")
-    return "\n".join(lines)
+
 def fetch_article_text(url: str) -> str:
     headers = {"User-Agent": "Mozilla/5.0 (compatible; ThinkingGym/1.0)"}
     r = requests.get(url, headers=headers, timeout=20)
@@ -222,50 +245,37 @@ def fetch_article_text(url: str) -> str:
     text = trafilatura.extract(r.text, include_comments=False, include_tables=False)
     return (text or "").strip()
 
-def hf_infer(model: str, payload: dict) -> dict:
-    token = st.secrets.get("HF_TOKEN", "")
-    if not token:
-        raise KeyError("HF_TOKEN is missing in Streamlit secrets.")
-    url = f"https://api-inference.huggingface.co/models/{model}"
-    headers = {"Authorization": f"Bearer {token}"}
-    res = requests.post(url, headers=headers, json=payload, timeout=60)
-    if res.status_code == 503:
-        raise RuntimeError("HF model is loading (503). Try again in a bit.")
-    res.raise_for_status()
-    return res.json()
 
-def summarize_en(text: str) -> str:
-    text = text[:4000]
-
-    prompt = f"Summarize the following article in 5-6 sentences:\n\n{text}"
-
-    out = hf_infer(
-        "google/flan-t5-base",
-        {"inputs": prompt}
-    )
-
-    if isinstance(out, list) and out and "generated_text" in out[0]:
-        return out[0]["generated_text"].strip()
-
-    return str(out)
-    if isinstance(out, list) and out and "summary_text" in out[0]:
-        return out[0]["summary_text"].strip()
-    return str(out)
-
-def translate_en_to_ko(text: str) -> str:
-    out = hf_infer("Helsinki-NLP/opus-mt-en-ko", {"inputs": text})
-    if isinstance(out, list) and out and "translation_text" in out[0]:
-        return out[0]["translation_text"].strip()
-    return str(out)
-
-@st.cache_data(show_spinner=False, ttl=60*60*24)
+@st.cache_data(show_spinner=False, ttl=60 * 60 * 24)
 def make_korean_summary(url: str) -> str:
     body = fetch_article_text(url)
     if not body:
         return "요약 실패: 본문을 추출하지 못했습니다. (사이트 차단/구조 문제 가능)"
-    en_sum = summarize_en(body)
-    ko = translate_en_to_ko(en_sum)
-    return ko               
+
+    body = body[:12000]
+
+    prompt = f"""
+너는 뉴스 요약 전문가다.
+아래 기사 내용을 한국어로 요약해줘.
+
+규칙:
+- 핵심 요약 5개 불릿(•)
+- 숫자/고유명사(회사/제품/인물) 유지
+- 과장/추측 금지. 기사에 없는 내용은 '알 수 없음'
+- 마지막 줄에 '한 줄 결론:' 추가
+
+기사 본문:
+{body}
+""".strip()
+
+    client = get_openai_client()
+    res = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,
+    )
+    return res.choices[0].message.content.strip()
+
 
 # ---------------------------
 # UI
@@ -281,7 +291,7 @@ articles_db = store.read_json(cfg["path_articles"], {"articles": []})
 sessions_db = store.read_json(cfg["path_sessions"], {"sessions": []})
 
 st.title("🧠 Thinking Gym")
-st.caption("매일 10~15분, 뉴스 1개로 전략 사고를 훈련하고 기록을 쌓습니다. (데이터는 GitHub에 영구 저장)")
+st.caption("매일 10~15분, 뉴스 1개로 전략 사고를 훈련하고 기록을 쌓습니다. (데이터는 GitHub에 저장)")
 
 tab_collect, tab_add, tab_list, tab_session, tab_growth, tab_settings = st.tabs(
     ["📡 자동 수집", "➕ 수동 추가", "🗂 기사 목록", "✍️ 세션", "📈 성장", "⚙️ 설정"]
@@ -292,6 +302,7 @@ with tab_collect:
     st.subheader("카테고리별 RSS 자동 수집")
 
     col1, col2 = st.columns([1, 1])
+
     with col1:
         st.markdown("### 카테고리 & RSS")
         for cat in sources["categories"]:
@@ -301,6 +312,7 @@ with tab_collect:
                     cat["rss"].append(new_rss.strip())
                     store.write_json(cfg["path_sources"], sources, "add rss")
                     st.success("추가됨! (저장 완료)")
+                    st.rerun()
                 if cat["rss"]:
                     st.write(cat["rss"])
 
@@ -309,16 +321,16 @@ with tab_collect:
         cat_names = [c["name"] for c in sources["categories"]]
         sel = st.selectbox("수집할 카테고리", cat_names)
         max_items = st.slider("RSS당 가져올 글 수", 3, 30, 10)
+
         if st.button("🚀 수집 실행"):
             cat = next(c for c in sources["categories"] if c["name"] == sel)
-            total_new = 0
             if not cat["rss"]:
                 st.warning("이 카테고리에 RSS가 없습니다. 먼저 RSS를 추가하세요.")
             else:
+                total_new = 0
                 for url in cat["rss"]:
                     try:
-                        n = collect_from_rss(store, cfg, sel, url, max_items=max_items)
-                        total_new += n
+                        total_new += collect_from_rss(store, cfg, sel, url, max_items=max_items)
                     except Exception as e:
                         st.error(f"RSS 수집 실패: {url}\n{e}")
                 st.success(f"수집 완료! 새 글 {total_new}개")
@@ -327,7 +339,6 @@ with tab_collect:
 # -------- 수동 추가 --------
 with tab_add:
     st.subheader("내가 찾은 기사/블로그 글을 추가")
-    st.caption("사이트가 크롤링을 막아도, 최소한 '링크+제목'으로 기록할 수 있습니다.")
 
     url = st.text_input("추가할 글 URL")
     title = st.text_input("제목(자동 추출이 어려우면 직접 입력)")
@@ -359,7 +370,8 @@ with tab_add:
 
 # -------- 기사 목록 --------
 with tab_list:
-    st.subheader("기사 목록 (카테고리별)")
+    st.subheader("기사 목록")
+
     col1, col2, col3 = st.columns([1, 1, 2])
     with col1:
         cat_names = ["(전체)"] + [c["name"] for c in sources["categories"]]
@@ -367,7 +379,7 @@ with tab_list:
     with col2:
         only_unused = st.checkbox("세션 안한 글만", value=True)
     with col3:
-        q = st.text_input("검색(제목)", placeholder="예: Unity, NVIDIA, monetization ...")
+        q = st.text_input("검색(제목)", placeholder="예: Unity, NVIDIA ...")
 
     filtered = []
     for a in articles_db["articles"]:
@@ -380,14 +392,18 @@ with tab_list:
         filtered.append(a)
 
     st.write(f"표시 중: {len(filtered)}개")
+
     for a in filtered[:50]:
         cols = st.columns([6, 2, 2])
         cols[0].markdown(f"**{a['title']}**  \n{a['url']}")
         cols[1].write(a["category"])
         cols[2].write("✅ 사용" if a.get("used_in_session") else "🟡 미사용")
+
         if st.button("이 기사로 세션 시작", key=f"start_{a['id']}"):
             st.session_state["selected_article_id"] = a["id"]
-            st.session_state["selected_article"] = a
+            # 요약 상태 초기화
+            st.session_state["summary_url"] = None
+            st.session_state["summary_ko"] = None
             st.success("세션 탭으로 이동하세요.")
             st.rerun()
 
@@ -395,11 +411,11 @@ with tab_list:
 with tab_session:
     st.subheader("세션 (10~15분)")
 
-    # ✅ 세션 상태에 id만 저장하고, 매번 articles.json에서 최신 글을 다시 가져오기
     selected_id = st.session_state.get("selected_article_id")
 
     def _find_article_by_id(article_id: str):
-        for x in store.read_json(cfg["path_articles"], {"articles": []})["articles"]:
+        db = store.read_json(cfg["path_articles"], {"articles": []})
+        for x in db["articles"]:
             if x["id"] == article_id:
                 return x
         return None
@@ -410,40 +426,38 @@ with tab_session:
         article = _find_article_by_id(selected_id)
 
         if not article:
-            st.error("선택한 기사를 articles.json에서 찾지 못했습니다. (데이터 파일 확인 필요)")
+            st.error("선택한 기사를 articles.json에서 찾지 못했습니다.")
         else:
             st.markdown(f"### 📰 {article['title']}")
             st.write(article["url"])
-
-            # ✅ 요약이 없으면 생성 시도
-            if not article.get("summary_ko"):
-                if cfg.get("hf_token"):
-                    with st.spinner("기사 본문 가져오는 중 → 한글 요약 생성 중..."):
-                        ko = ensure_article_summary_ko(store, cfg, article["id"])
-                        article["summary_ko"] = ko
-                else:
-                    article["summary_ko"] = "요약을 생성하려면 Streamlit Secrets에 HF_TOKEN이 필요합니다."
-
-            st.markdown("### 🧾 기사 요약(한글)")
-            st.info(article.get("summary_ko", "요약이 없습니다."))
-            st.write("HF_TOKEN exists:", "HF_TOKEN" in st.secrets)
-            st.write("HF_TOKEN length:", len(st.secrets.get("HF_TOKEN","")))
-            
-
             st.divider()
+
+            # --- 요약 자동 생성 ---
             st.markdown("### 📄 기사 요약(한글)")
 
-            if "HF_TOKEN" not in st.secrets:
-                st.info("요약을 생성하려면 Streamlit Secrets에 HF_TOKEN이 필요합니다.")
+            if "OPENAI_API_KEY" not in st.secrets:
+                st.error("OPENAI_API_KEY가 Streamlit Secrets에 없습니다.")
+                summary_ko = ""
             else:
-                try:
-                    with st.spinner("요약 생성 중..."):
-                        summary_ko = make_korean_summary(article["url"])
-                    st.success("요약 완료")
-                    st.write(summary_ko)
-                except Exception as e:
-                    st.error(f"요약 생성 실패: {e}")
+                current_url = article["url"]
+                prev_url = st.session_state.get("summary_url")
 
+                if st.session_state.get("summary_ko") is None or prev_url != current_url:
+                    st.session_state["summary_url"] = current_url
+                    with st.spinner("AI가 기사 요약 중..."):
+                        try:
+                            st.session_state["summary_ko"] = make_korean_summary(current_url)
+                        except Exception as e:
+                            st.session_state["summary_ko"] = None
+                            st.error(f"요약 생성 실패: {e}")
+
+                summary_ko = st.session_state.get("summary_ko") or ""
+                if summary_ko:
+                    st.write(summary_ko)
+
+            st.divider()
+
+            # --- 질문 ---
             st.markdown("### 질문 (고정 3개)")
             questions = [
                 "1) 이 변화의 근본 원인은 무엇인가?",
@@ -456,38 +470,43 @@ with tab_session:
             a3 = st.text_area(questions[2], height=120)
 
             if st.button("✅ 논의 종료 & 기록 저장"):
-                session = save_session(store, cfg, article, questions, [a1, a2, a3], eval_cfg)
+                session = save_session(
+                    store, cfg, article, questions, [a1, a2, a3], eval_cfg,
+                    article_summary_ko=summary_ko
+                )
                 st.success("저장 완료! 성장 탭에서 확인하세요.")
                 st.json({
                     "total": session["score_total"],
                     "by_criteria": session["score_by_criteria"],
-                    "final_summary": session["final_summary"]
+                    "final_summary": session["final_summary"],
+                    "article_summary_ko": session["article_summary_ko"]
                 })
+                st.rerun()
+
 # -------- 성장 --------
 with tab_growth:
     st.subheader("성장 대시보드")
-    sessions = sessions_db["sessions"]
 
+    sessions = sessions_db["sessions"]
     if not sessions:
         st.info("아직 기록이 없습니다. 세션을 한 번 저장해보세요.")
     else:
-        # 최근 7일 평균 점수
         now = datetime.now(tz=KST)
         last7 = []
         for s in sessions:
             dt = datetime.fromisoformat(s["date"])
             if now - dt <= timedelta(days=7):
                 last7.append(s["score_total"])
-        avg7 = sum(last7)/len(last7) if last7 else 0
+        avg7 = sum(last7) / len(last7) if last7 else 0
 
         c1, c2, c3 = st.columns(3)
         c1.metric("최근 7일 평균 점수", f"{avg7:.1f}")
         c2.metric("총 세션 수", str(len(sessions)))
-        # 스트릭(간단)
+
         dates = sorted({s["date"][:10] for s in sessions}, reverse=True)
         streak = 1
         for i in range(1, len(dates)):
-            d0 = datetime.fromisoformat(dates[i-1])
+            d0 = datetime.fromisoformat(dates[i - 1])
             d1 = datetime.fromisoformat(dates[i])
             if (d0 - d1).days == 1:
                 streak += 1
@@ -498,11 +517,13 @@ with tab_growth:
         st.markdown("### 최근 세션")
         for s in sessions[:10]:
             with st.expander(f"{s['date'][:10]} | {s['article']['title']} | {s['score_total']}점"):
+                if s.get("article_summary_ko"):
+                    st.write("**기사 요약(한글)**")
+                    st.code(s["article_summary_ko"])
                 st.write("**최종 요약**")
                 st.code(s["final_summary"])
                 st.write("**항목별 점수**")
                 st.json(s["score_by_criteria"])
- 
 
 # -------- 설정 --------
 with tab_settings:
