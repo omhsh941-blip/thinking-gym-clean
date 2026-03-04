@@ -2,6 +2,7 @@ import requests
 import trafilatura
 import json
 import hashlib
+import re
 from openai import OpenAI
 from datetime import datetime, timedelta
 from dateutil import tz
@@ -22,7 +23,76 @@ def _now_kst_iso():
 
 def _sha1(s: str) -> str:
     return hashlib.sha1(s.encode("utf-8")).hexdigest()
+def evaluate_thinking(article_title, summary, user_answer):
 
+    client = get_openai_client()
+
+    prompt = f"""
+다음 뉴스 기사에 대한 사용자의 분석을 평가하라.
+
+기사 제목
+{article_title}
+
+기사 요약
+{summary}
+
+사용자 분석
+{user_answer}
+
+1. 기사 핵심 분석
+2. 사용자 분석 평가
+3. 모범 전략 분석
+
+그리고 아래 기준으로 점수도 매겨라 (0~5점)
+
+- 원인 분석
+- 시간 축
+- 2차 파급
+- 리스크
+- 게임 산업 연결
+
+반드시 JSON으로 출력
+
+예시
+
+{{
+"ai_analysis":"...",
+"score":{{
+"cause":4,
+"timeline":3,
+"impact":4,
+"risk":2,
+"game":3
+}}
+}}
+"""
+
+       res = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role":"user","content":prompt}],
+        temperature=0.3
+    )
+
+    text = res.choices[0].message.content
+
+    # JSON 안전 파싱
+    match = re.search(r'\{.*\}', text, re.S)
+    if match:
+        return json.loads(match.group())
+    else:
+        return {
+            "ai_analysis": text,
+            "score":{
+                "cause":0,
+                "timeline":0,
+                "impact":0,
+                "risk":0,
+                "game":0
+            }
+        }
+
+    import json
+    return json.loads(res.choices[0].message.content)
 
 # ---------------------------
 # Config
@@ -206,13 +276,24 @@ def save_session(store, cfg, article, questions, answers, eval_cfg, article_summ
     combined = "\n".join([a for a in answers if a])
     total, per = simple_scoring(combined, eval_cfg)
 
-    session = {
+    # AI 분석 생성
+ai_eval = evaluate_thinking(
+    article["title"],
+    article_summary_ko,
+    "\n".join(answers)
+)
+
+session = {
         "session_id": _sha1(article["id"] + _now_kst_iso()),
         "date": _now_kst_iso(),
         "article": article,
         "article_summary_ko": article_summary_ko or "",
         "questions": questions,
         "answers": answers,
+
+        "ai_analysis": ai_eval["ai_analysis"],
+        "ai_score": ai_eval["score"],
+
         "score_total": total,
         "score_by_criteria": per,
         "final_summary": make_final_summary(article, answers),
@@ -513,7 +594,17 @@ with tab_growth:
             else:
                 break
         c3.metric("연속 학습(일)", str(streak))
-
+        import pandas as pd
+        
+        scores = [s["score_total"] for s in sessions[:20]]
+        
+        df = pd.DataFrame({
+            "session": range(len(scores)),
+            "score": scores
+        })
+        
+        st.markdown("### 사고력 성장 그래프")
+        st.line_chart(df.set_index("session"))
         st.markdown("### 최근 세션")
         for s in sessions[:10]:
             with st.expander(f"{s['date'][:10]} | {s['article']['title']} | {s['score_total']}점"):
@@ -524,6 +615,10 @@ with tab_growth:
                 st.code(s["final_summary"])
                 st.write("**항목별 점수**")
                 st.json(s["score_by_criteria"])
+                st.write("**AI 분석**")
+                st.write(s.get("ai_analysis","")
+                st.write("**AI 평가 점수**")
+                st.json(s.get("ai_score",{}))
 
 # -------- 설정 --------
 with tab_settings:
