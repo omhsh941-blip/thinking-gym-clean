@@ -1,18 +1,33 @@
 {
-  "categories":[
+  "categories": [
     {
-      "name":"Game Industry",
-"rss": [
-  "https://techcrunch.com/feed/"
-]
+      "name": "Game Industry",
+      "rss": [
+        "https://game.donga.com/feeds/rss/news/",
+        "https://koreagamedesk.com/feed/",
+        "http://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss",
+        "http://www.pocketgamer.biz/rss/"
+      ]
     },
     {
       "name": "Business",
-      "rss": []
+      "rss": [
+        "https://feeds.bbci.co.uk/news/business/rss.xml",
+        "http://feeds.theguardian.com/theguardian/uk/business/rss",
+        "http://news.sky.com/feeds/rss/business.xml"
+      ]
     },
     {
       "name": "AI/Tech",
-      "rss": []
+      "rss": [
+        "https://www.koreaittimes.com/rss/S1N1.xml",
+        "https://www.koreatechtoday.com/feed/",
+        "https://techcrunch.com/feed/",
+        "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "https://venturebeat.com/category/ai/feed/",
+        "https://the-decoder.com/feed/",
+        "https://syncedreview.com/feed/"
+      ]
     }
   ],
   "manual_urls": []
