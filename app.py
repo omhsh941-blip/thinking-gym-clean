@@ -428,16 +428,6 @@ st.caption("매일 10~15분, 뉴스 1개로 전략 사고를 훈련하고 기록
 
 _ensure_token_usage()
 
-# ---- URL query로 탭 이동 구현 ----
-# tab 값: collect/add/list/session/growth/settings
-qp = st.query_params
-tab_from_url = qp.get("tab", None)
-
-tabs = ["collect", "add", "list", "session", "growth", "settings"]
-default_index = 0
-if tab_from_url in tabs:
-    default_index = tabs.index(tab_from_url)
-
 tab_collect, tab_add, tab_list, tab_session, tab_growth, tab_settings = st.tabs(
     ["📡 자동 수집", "➕ 수동 추가", "🗂 기사 목록", "✍️ 세션", "📈 성장", "⚙️ 설정"]
 )
@@ -553,12 +543,7 @@ with tab_list:
             st.session_state["selected_article_id"] = a["id"]
             st.session_state["summary_url"] = None
             st.session_state["summary_ko"] = None
-
             st.session_state["token_usage"] = {"article_id": a["id"], "summary": None, "eval": None}
-
-            # ✅ 바로 세션 탭으로 이동: URL query를 session으로 변경 후 rerun
-            st.query_params["tab"] = "session"
-            st.success("세션 탭으로 이동합니다.")
             st.rerun()
 
 # -------- 세션 --------
