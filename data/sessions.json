@@ -1,6 +1,330 @@
 {
   "sessions": [
     {
+      "session_id": "01536bdeccd55dbcee551d624c42af6830a53823",
+      "date": "2026-03-05T23:21:38+09:00",
+      "article": {
+        "id": "58c4473bc700c62b3fbfb49430c0eaa2068ab162",
+        "title": "Good Games Group has bought the Humble and Firestoke back catalogues. Now, newly renamed as Balor Games, it wants to invest in triple-I",
+        "url": "https://www.gamesindustry.biz/good-games-group-has-bought-the-humble-and-firestoke-back-catalogues-now-newly-renamed-as-balor-games-it-wants-to-invest-in-triple-i",
+        "category": "Game Industry",
+        "published": "Wed, 04 Mar 2026 16:00:00 +0000"
+      },
+      "tags": [
+        "Triple-I",
+        "커뮤니티 구축",
+        "유연한 자금 조달 모델"
+      ],
+      "planner_summary_json": {
+        "article_meta": {
+          "title": "Good Games Group has bought the Humble and Firestoke back catalogues. Now, newly renamed as Balor Games, it wants to invest in triple-I",
+          "url": "https://www.gamesindustry.biz/good-games-group-has-bought-the-humble-and-firestoke-back-catalogues-now-newly-renamed-as-balor-games-it-wants-to-invest-in-triple-i",
+          "published_at": "Wed, 04 Mar 2026 16:00:00 +0000",
+          "category": "Game Industry"
+        },
+        "summary": {
+          "market_insight": [
+            "Triple-I 게임 시장은 높은 품질과 영향력을 중시하며, 이는 새로운 기회를 창출할 수 있는 잠재력이 있다.",
+            "인디 게임 시장에서의 다양성과 복잡성이 증가함에 따라, 각 프로젝트의 필요에 맞춘 맞춤형 지원이 중요해지고 있다.",
+            "자금 조달이 어려운 환경 속에서, 중간 규모의 게임들이 종종 간과되고 있으나, 이들 프로젝트는 높은 수익 가능성을 지닌다."
+          ],
+          "system_tech": [
+            "Balor Games는 다양한 예산 범위의 프로젝트를 수용할 수 있는 유연한 지원 시스템을 구축하고 있다.",
+            "기존 게임의 퍼블리싱 권리를 인수하여 자금을 조달하는 새로운 모델을 모색하고 있다.",
+            "개발 과정의 원활함을 보장하기 위해 각 파트너와의 긴밀한 협력이 필수적이다."
+          ],
+          "ux": [
+            "커뮤니티 구축을 중시하는 게임 디자인이 필요하며, 이는 게임의 성공적인 런칭에 기여할 수 있다.",
+            "게임이 출시될 때까지 커뮤니티와의 상호작용을 통해 긍정적인 환경을 조성해야 한다.",
+            "각 게임의 독특한 경험을 보장하기 위해 다양한 협업 모델을 고려해야 한다."
+          ]
+        },
+        "keywords": [
+          {
+            "keyword": "Triple-I",
+            "why_it_matters": "Triple-I는 고품질 게임을 지향하며, 이는 시장에서의 차별화된 경쟁력을 제공할 수 있다."
+          },
+          {
+            "keyword": "커뮤니티 구축",
+            "why_it_matters": "게임의 성공적인 런칭과 지속적인 유저 참여를 위해 커뮤니티의 역할이 중요하다."
+          },
+          {
+            "keyword": "유연한 자금 조달 모델",
+            "why_it_matters": "자금 조달의 어려움 속에서 다양한 프로젝트에 대한 지원 가능성을 높여줄 수 있다."
+          }
+        ],
+        "caveats": [
+          "알 수 없음"
+        ]
+      },
+      "questions": [
+        {
+          "question_id": "q1",
+          "type": "fact",
+          "points": 10,
+          "prompt": "What is the new name of the company that acquired the Humble and Firestoke back catalogs?",
+          "intent": "To verify the rebranding of the company after the acquisition.",
+          "answer_format_hint": "Single word or phrase.",
+          "rubric": [
+            "Correct identification of the company name",
+            "Understanding of recent industry changes",
+            "Knowledge of acquisitions in the gaming sector"
+          ],
+          "tags": [
+            "BusinessAcumen",
+            "TrendInsight"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": null,
+            "reference": "Good Games Group has been renamed as Balor Games."
+          }
+        },
+        {
+          "question_id": "q2",
+          "type": "logic",
+          "points": 20,
+          "prompt": "Given the increasing complexity in the indie game market, why is tailored support for each project becoming crucial?",
+          "intent": "To explore the reasoning behind the need for customized support in game development.",
+          "answer_format_hint": "Explanation in a few sentences.",
+          "rubric": [
+            "Logical reasoning",
+            "Connection to market trends",
+            "Understanding of project management in game development"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "DetailLogic"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "market_insight",
+            "reference": "The increasing diversity and complexity in the indie game market necessitates tailored support."
+          }
+        },
+        {
+          "question_id": "q3",
+          "type": "system",
+          "points": 30,
+          "prompt": "How is Balor Games planning to ensure smooth development processes through close collaboration with partners?",
+          "intent": "To analyze the operational strategies of Balor Games in project management.",
+          "answer_format_hint": "Detailed explanation of collaboration strategies.",
+          "rubric": [
+            "Understanding of collaboration models",
+            "Analysis of operational efficiency",
+            "Insight into partnership dynamics"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "BusinessAcumen"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "system_tech",
+            "reference": "Close collaboration with partners is essential for ensuring smooth development processes."
+          }
+        },
+        {
+          "question_id": "q4",
+          "type": "reverse_apply",
+          "points": 40,
+          "prompt": "If you were to implement a community-building strategy for a new game launch, what specific actions would you take to foster positive interactions with the community?",
+          "intent": "To apply community-building concepts to a practical scenario in game design.",
+          "answer_format_hint": "List of actionable strategies.",
+          "rubric": [
+            "Practical application of community strategies",
+            "Creativity in engagement methods",
+            "Understanding of user interaction dynamics"
+          ],
+          "tags": [
+            "UserCentric",
+            "TrendInsight"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "ux",
+            "reference": "Building a community is crucial for a successful game launch."
+          }
+        },
+        {
+          "question_id": "q5",
+          "type": "role_lens",
+          "points": 10,
+          "prompt": "How might the concept of 'balance abuse' manifest in the context of Balor Games' flexible funding model?",
+          "intent": "To explore potential negative outcomes of the funding model through the lens of balance abuse.",
+          "answer_format_hint": "Brief explanation of potential issues.",
+          "rubric": [
+            "Identification of balance issues",
+            "Understanding of funding dynamics",
+            "Critical thinking about game design implications"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "DetailLogic"
+          ],
+          "role_key": "balance_abuse",
+          "grounding": {
+            "from_keywords": [
+              "유연한 자금 조달 모델"
+            ],
+            "from_summary_section": "system_tech",
+            "reference": "Balor Games is exploring new funding models to support various projects."
+          }
+        },
+        {
+          "question_id": "q6",
+          "type": "role_lens",
+          "points": 10,
+          "prompt": "In what ways could psychological retention strategies be integrated into the community-building efforts for Balor Games?",
+          "intent": "To connect psychological retention concepts with community engagement in game design.",
+          "answer_format_hint": "Suggestions for integrating retention strategies.",
+          "rubric": [
+            "Understanding of psychological principles",
+            "Application to community strategies",
+            "Creativity in user engagement"
+          ],
+          "tags": [
+            "UserCentric",
+            "TrendInsight"
+          ],
+          "role_key": "psych_retention",
+          "grounding": {
+            "from_keywords": [
+              "커뮤니티 구축"
+            ],
+            "from_summary_section": "ux",
+            "reference": "Community building is essential for successful game launches."
+          }
+        },
+        {
+          "question_id": "q7",
+          "type": "role_lens",
+          "points": 10,
+          "prompt": "What operational challenges might arise from implementing a flexible funding model for Balor Games?",
+          "intent": "To analyze potential operational issues related to the funding model.",
+          "answer_format_hint": "List of possible challenges.",
+          "rubric": [
+            "Identification of operational challenges",
+            "Understanding of funding implications",
+            "Critical thinking about business operations"
+          ],
+          "tags": [
+            "BusinessAcumen",
+            "SystemicThinking"
+          ],
+          "role_key": "bm_ops",
+          "grounding": {
+            "from_keywords": [
+              "유연한 자금 조달 모델"
+            ],
+            "from_summary_section": "system_tech",
+            "reference": "Balor Games is developing a flexible support system for various projects."
+          }
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q1",
+          "answer": "test"
+        },
+        {
+          "question_id": "q2",
+          "answer": "test"
+        },
+        {
+          "question_id": "q3",
+          "answer": "test"
+        },
+        {
+          "question_id": "q4",
+          "answer": "test"
+        },
+        {
+          "question_id": "q5",
+          "answer": "test"
+        },
+        {
+          "question_id": "q6",
+          "answer": "test"
+        },
+        {
+          "question_id": "q7",
+          "answer": "test"
+        }
+      ],
+      "eval_pack": {
+        "question_results": [
+          {
+            "question_id": "q1",
+            "score": 0,
+            "max_score": 10,
+            "feedback": "답변이 의미가 없으며, 질문의 핵심을 전혀 반영하지 못했습니다. 회사 이름을 정확히 기재해야 합니다.",
+            "model_answer": "Balor Games"
+          },
+          {
+            "question_id": "q2",
+            "score": 0,
+            "max_score": 20,
+            "feedback": "답변이 의미가 없으며, 인디 게임 시장의 복잡성을 설명하는 데 필요한 논리적 연결이 부족합니다.",
+            "model_answer": "인디 게임 시장의 다양성과 복잡성이 증가함에 따라, 각 프로젝트에 맞춘 맞춤형 지원이 필요해지고 있습니다. 이는 프로젝트의 성공 가능성을 높이고, 자원의 효율적인 배분을 가능하게 합니다."
+          },
+          {
+            "question_id": "q3",
+            "score": 0,
+            "max_score": 30,
+            "feedback": "답변이 의미가 없으며, Balor Games의 운영 전략에 대한 분석이 전혀 없습니다.",
+            "model_answer": "Balor Games는 파트너와의 긴밀한 협력을 통해 개발 과정의 원활함을 보장할 계획입니다. 이를 위해 정기적인 회의와 피드백 세션을 통해 의사소통을 강화하고, 각 파트너의 요구 사항을 반영하여 협업 모델을 최적화할 것입니다."
+          },
+          {
+            "question_id": "q4",
+            "score": 0,
+            "max_score": 40,
+            "feedback": "답변이 의미가 없으며, 커뮤니티 구축 전략에 대한 구체적인 실행 방안이 없습니다.",
+            "model_answer": "1. 게임 출시 전 커뮤니티 이벤트를 개최하여 유저와의 소통을 강화한다. 2. 소셜 미디어 플랫폼을 통해 유저 피드백을 적극적으로 수집하고 반영한다. 3. 게임 내에서 유저가 참여할 수 있는 콘텐츠를 제공하여 지속적인 관심을 유도한다."
+          },
+          {
+            "question_id": "q5",
+            "score": 0,
+            "max_score": 10,
+            "feedback": "답변이 의미가 없으며, 자금 조달 모델의 악용 가능성에 대한 식견이 부족합니다.",
+            "model_answer": "유연한 자금 조달 모델이 특정 프로젝트에 과도한 자원을 집중하게 하여 다른 프로젝트의 자금 부족을 초래할 수 있습니다. 이는 프로젝트 간의 불균형을 초래할 수 있습니다."
+          },
+          {
+            "question_id": "q6",
+            "score": 0,
+            "max_score": 10,
+            "feedback": "답변이 의미가 없으며, 심리적 유지 전략을 커뮤니티 구축에 통합하는 방법에 대한 창의성이 부족합니다.",
+            "model_answer": "유저의 성취감을 높이기 위해 게임 내 보상 시스템을 강화하고, 커뮤니티 내에서 리더보드를 운영하여 경쟁을 유도합니다. 또한, 유저의 피드백을 반영하여 지속적으로 게임을 개선하는 모습을 보여줍니다."
+          },
+          {
+            "question_id": "q7",
+            "score": 0,
+            "max_score": 10,
+            "feedback": "답변이 의미가 없으며, 유연한 자금 조달 모델의 운영적 도전 과제에 대한 통찰력이 부족합니다.",
+            "model_answer": "1. 자금의 분배가 불균형해질 수 있다. 2. 프로젝트 간 우선 순위 설정의 어려움이 있을 수 있다. 3. 자금 조달의 투명성을 유지하는 것이 어려울 수 있다."
+          }
+        ],
+        "total_score": 0,
+        "radar": {
+          "SystemicThinking": 1,
+          "UserCentric": 1,
+          "BusinessAcumen": 1,
+          "DetailLogic": 1,
+          "TrendInsight": 1
+        },
+        "daily_insight": {
+          "growth_check": "최근 3일간 성장한 부분이 없습니다.",
+          "weakness_fix": "모든 질문에서 답변이 의미가 없으며, 기초적인 이해가 부족합니다.",
+          "recommended_next_topic": "인디 게임 시장의 트렌드와 성공적인 커뮤니티 구축 전략"
+        }
+      },
+      "final_summary": "- test\n- test\n- test"
+    },
+    {
       "session_id": "e10b9e6d64df357891f7eb891c4747c9363f9180",
       "date": "2026-03-05T08:58:01+09:00",
       "article": {
