@@ -1154,14 +1154,7 @@ with tab_session:
                     )
                     
                     st.divider()
-# ✅ RSS 연관 기사 추천 (변수 생성 → 출력 순서 고정)
-overlap_pick, opposite_pick = recommend_related_articles(
-    store=store,
-    cfg=cfg,
-    current_article=article,
-    current_tags=session_tags,
-    limit_each=5
-)
+
 
 st.divider()
 st.markdown("## 🔗 RSS '연관 기사' 추천")
