@@ -1,6 +1,56 @@
 {
   "articles": [
     {
+      "id": "5bb5be2451af7da4c4c948f53550d64c6eae61cc",
+      "title": "Industry veteran launches indie-focused talent agency Rocket Game Talent",
+      "url": "https://www.gamesindustry.biz/industry-veteran-launches-indie-focused-talent-agency-rocket-game-talent",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 08:50:12 +0000",
+      "collected_at": "2026-03-05T20:06:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "db36fa18d5758e93264bb5e4fcc6e25863031a64",
+      "title": "Build a Rocket Boy confirms more layoffs amid further claims of \"organized espionage and corporate sabotage\"",
+      "url": "https://www.gamesindustry.biz/build-a-rocket-boy-confirms-more-layoffs-amid-further-claims-of-organized-espionage-and-corporate-sabotage",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 21:10:45 +0000",
+      "collected_at": "2026-03-05T20:06:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "864a9d550174a5ca6a103583366e9e3b53491144",
+      "title": "Former Blizzard CCO and Bonfire CEO Rob Pardo to present keynote address at GDC Festival of Gaming",
+      "url": "https://www.gamesindustry.biz/former-blizzard-cco-and-bonfire-ceo-rob-pardo-to-present-keynote-address-at-gdc-festival-of-gaming",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 18:37:31 +0000",
+      "collected_at": "2026-03-05T20:06:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "8b755a84361b88012937abcf2f5ec4af2e46f67b",
+      "title": "Turkish mobile developer Vento Games secures $4m in seed round funding",
+      "url": "https://www.gamesindustry.biz/turkish-mobile-developer-vento-games-secures-4m-in-seed-round-funding",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 16:27:16 +0000",
+      "collected_at": "2026-03-05T20:06:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "58c4473bc700c62b3fbfb49430c0eaa2068ab162",
+      "title": "Good Games Group has bought the Humble and Firestoke back catalogues. Now, newly renamed as Balor Games, it wants to invest in triple-I",
+      "url": "https://www.gamesindustry.biz/good-games-group-has-bought-the-humble-and-firestoke-back-catalogues-now-newly-renamed-as-balor-games-it-wants-to-invest-in-triple-i",
+      "category": "Game Industry",
+      "published": "Wed, 04 Mar 2026 16:00:00 +0000",
+      "collected_at": "2026-03-05T20:06:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
       "id": "caced93e56faef0405263c0dccb55d9966b14aa0",
       "title": "게임, 관광 산업에 도움을 줘! [게임 인더스트리]",
       "url": "https://game.donga.com/121771/",
