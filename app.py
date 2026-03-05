@@ -1307,6 +1307,12 @@ with tab_growth:
 
                 st.markdown("**질문 & 내 답변**")
                 qmap = {q.get("question_id"): q for q in (s.get("questions") or []) if isinstance(q, dict)}
+                qres_map = {}
+                if isinstance(ep, dict):
+                    for r in (ep.get("question_results") or []):
+                        qid = r.get("question_id")
+                        if qid:
+                            qres_map[qid] = r
                 ans = s.get("answers") or []
                 if isinstance(ans, list) and ans and isinstance(ans[0], dict):
                     for a in ans:
@@ -1316,6 +1322,15 @@ with tab_growth:
                         if q.get("intent"):
                             st.caption(f"intent: {q.get('intent')}")
                         st.write(a.get("answer", ""))
+                        qres = qres_map.get(qid, {})
+                        model_answer = qres.get("model_answer")
+                        if model_answer:
+                            score = qres.get("score")
+                            max_score = qres.get("max_score")
+                            if score is not None and max_score is not None:
+                                st.caption(f"AI 평가: {score}/{max_score}")
+                            with st.expander("AI 모범답안 보기", expanded=False):
+                                st.write(model_answer)
                         st.write("---")
                 # --- START: 평가 결과(핵심 요약) ---
                 if ep:
@@ -1351,7 +1366,7 @@ with tab_growth:
                         if daily.get("weakness_fix"):
                             st.write(f"  - 약점 보완: {daily.get('weakness_fix')}")
                         if daily.get("recommended_next_topic"):
-                            st.write(f"  - 異붿쿇 怨쇱젣: {daily.get('recommended_next_topic')}")
+                            st.write(f"  - 추천 과제: {daily.get('recommended_next_topic')}")
                 # --- END: 평가 결과(핵심 요약) ---
 
                 if s.get("final_summary"):
