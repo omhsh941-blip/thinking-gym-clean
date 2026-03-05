@@ -484,6 +484,11 @@ def generate_planner_questions(planner_summary_json: dict, selected_lenses: list
 # 없으면 []
 
 [INSTRUCTIONS]
+
+0) 매우 중요: 반드시 한국어로만 작성한다. (prompt/intent/rubric/answer_format_hint/reference 모두 한국어)
+   - 영문 고유명사(회사명/게임명/제품명)는 원문 그대로 유지 가능
+   - 그 외 문장/설명은 한국어
+
 1) 기사 기반 질문 4개(필수) 생성:
    - 사실 확인형: type="fact", points=10
    - 논리 추론형: type="logic", points=20
@@ -1007,10 +1012,33 @@ with tab_session:
 
                 st.divider()
 
-                # Step 4: role lens (checkbox)
+                # --- START: Step3 자동 생성 + Step4 렌즈 추가 생성 UI (교체 블록) ---
+                
+                # (1) Step 3: 기사 기반 4문항 자동 생성
+                st.markdown("### ❓ Step 3. 질문 생성 (기사 기반 4문항)")
+                
+                # base 질문팩이 없거나, 기사 URL이 바뀌었으면 자동 생성
+                base_key_url = st.session_state.get("base_questions_url")
+                if st.session_state.get("base_questions_pack") is None or base_key_url != article.get("url"):
+                    st.session_state["base_questions_url"] = article.get("url")
+                    with st.spinner("기사 기반 4문항 자동 생성 중..."):
+                        st.session_state["base_questions_pack"] = generate_planner_questions(planner_summary, selected_lenses=[])
+                
+                # base 질문들
+                base_pack = st.session_state.get("base_questions_pack") or {}
+                base_questions = base_pack.get("questions", []) or []
+                
+                # 렌즈 질문(추가분) 저장소
+                if "lens_questions" not in st.session_state or st.session_state.get("lens_questions_url") != article.get("url"):
+                    st.session_state["lens_questions_url"] = article.get("url")
+                    st.session_state["lens_questions"] = []  # 기사 변경 시 렌즈 질문 초기화
+                
+                lens_questions = st.session_state.get("lens_questions") or []
+                
+                # (2) Step 4: 선택형 렌즈(체크박스) + "렌즈 질문만" 추가 생성
                 st.markdown("### 🛠️ Step 4. 선택형 질문 (Role Lens)")
-                st.caption("체크하면 기사 내용과 밀착된 '기획자 전용 심화 질문'이 추가로 생성됩니다.")
-
+                st.caption("체크 후 아래 버튼을 누르면, 기사 내용과 밀착된 '렌즈 질문'만 추가 생성됩니다. (기존 4문항은 유지)")
+                
                 colA, colB, colC = st.columns(3)
                 with colA:
                     lens_balance = st.checkbox("밸런스/어뷰징 렌즈", value=False)
@@ -1021,124 +1049,104 @@ with tab_session:
                 with colC:
                     lens_bm = st.checkbox("BM/운영 렌즈", value=False)
                     st.caption("(인플레 방지 + 수익 기여 + 라이브 운영 관점)")
-
+                
                 selected_lenses = []
-                if lens_balance:
-                    selected_lenses.append("balance_abuse")
-                if lens_psych:
-                    selected_lenses.append("psych_retention")
-                if lens_bm:
-                    selected_lenses.append("bm_ops")
+                if lens_balance: selected_lenses.append("balance_abuse")
+                if lens_psych: selected_lenses.append("psych_retention")
+                if lens_bm: selected_lenses.append("bm_ops")
+                
+                # 렌즈 질문만 추가 생성 버튼
+                if st.button("➕ 렌즈 질문 추가 생성", key="btn_add_lens_questions"):
+                    if not selected_lenses:
+                        st.warning("렌즈를 최소 1개 선택하세요.")
+                    else:
+                        with st.spinner("선택한 렌즈 질문만 생성 중..."):
+                            lens_pack = generate_role_lens_questions(planner_summary, selected_lenses)
+                            new_lens_qs = lens_pack.get("questions", []) or []
+                
+                            # 중복 방지(같은 question_id)
+                            existing_ids = {q.get("question_id") for q in lens_questions if isinstance(q, dict)}
+                            for q in new_lens_qs:
+                                if q.get("question_id") not in existing_ids:
+                                    lens_questions.append(q)
+                
+                            st.session_state["lens_questions"] = lens_questions
+                            st.success(f"렌즈 질문 {len(new_lens_qs)}개 추가 생성 완료!")
+                
+                # (3) 최종 질문 리스트 = base 4문항 + 렌즈 질문(추가)
+                qs = base_questions + lens_questions
+                total_pts = sum(int(q.get("points", 0)) for q in qs if isinstance(q, dict))
+                
+                st.caption(f"총 배점: {total_pts}점 (렌즈 질문은 선택 시 +10점씩 추가)")
+                
+                show_intent = st.checkbox("intent(출제 의도) 보기", value=True)
+                
+                # Answers (⚠️ key가 question_id 기반이라 기존 답변 유지됨)
+                answers = []
+                for qobj in qs:
+                    qid = qobj.get("question_id")
+                    pts = qobj.get("points", 0)
+                    qtype = qobj.get("type", "")
+                    st.markdown(f"#### [{pts}점] ({qtype}) {qobj.get('prompt','')}")
+                    if show_intent:
+                        st.caption(f"intent: {qobj.get('intent','')}")
+                    hint = qobj.get("answer_format_hint") or "자유 형식"
+                    st.caption(f"답변 힌트: {hint}")
+                
+                    ans = st.text_area("내 답변", height=150, key=f"ans_{qid}")
+                    answers.append({"question_id": qid, "answer": ans})
+                
+                st.divider()
+                
+                # 저장/평가 버튼(기존 로직 유지)
+                left, right = st.columns([1, 1])
+                
+                with left:
+                    if st.button("💾 저장만", key="btn_save_only"):
+                        session = save_session(
+                            store=store,
+                            cfg=cfg,
+                            article=article,
+                            planner_summary_json=planner_summary,
+                            session_tags=session_tags,
+                            questions=qs,
+                            answers=answers,
+                            eval_pack=None,
+                        )
+                        st.session_state["last_saved_session_id"] = session.get("session_id")
+                        st.success("저장 완료! (평가 없음)")
+                
+                with right:
+                    if st.button("🧠 평가 + 저장", key="btn_eval_and_save"):
+                        sessions_db = store.read_json(cfg["path_sessions"], {"sessions": []})
+                        recent = sessions_db.get("sessions", [])[:10]
+                        recent_min = []
+                        for s in recent:
+                            ep = (s.get("eval_pack") or {})
+                            radar = ep.get("radar") if isinstance(ep, dict) else None
+                            if radar:
+                                recent_min.append({"date": s.get("date"), "radar": radar})
+                        if not recent_min:
+                            recent_min = None
+                
+                        with st.spinner("AI가 채점/피드백/모범답안을 생성 중..."):
+                            eval_pack = evaluate_planner(planner_summary, qs, answers, recent_min)
+                
+                        session = save_session(
+                            store=store,
+                            cfg=cfg,
+                            article=article,
+                            planner_summary_json=planner_summary,
+                            session_tags=session_tags,
+                            questions=qs,
+                            answers=answers,
+                            eval_pack=eval_pack,
+                        )
+                        st.session_state["last_saved_session_id"] = session.get("session_id")
+                        st.success("평가+저장 완료!")
+                        st.json(eval_pack)
 
-                st.markdown("### ❓ Step 3. 질문 생성 (기사 기반 4문항)")
-                if st.button("질문 생성 / 갱신", key="btn_generate_questions"):
-                    with st.spinner("질문 생성 중..."):
-                        st.session_state["planner_questions_pack"] = generate_planner_questions(planner_summary, selected_lenses)
-
-                questions_pack = st.session_state.get("planner_questions_pack")
-                if not questions_pack:
-                    st.info("위 버튼을 눌러 질문을 생성하세요. (렌즈 체크 후 다시 생성하면 심화 질문이 추가됩니다.)")
-                else:
-                    qs = questions_pack.get("questions", [])
-                    total_pts = questions_pack.get("total_points", 0)
-
-                    st.caption(f"총 배점: {total_pts}점 (렌즈 질문 포함 시 +10점씩)")
-
-                    show_intent = st.checkbox("intent(출제 의도) 보기", value=True)
-
-                    # Answers
-                    answers = []
-                    for qobj in qs:
-                        qid = qobj.get("question_id")
-                        pts = qobj.get("points", 0)
-                        qtype = qobj.get("type", "")
-                        st.markdown(f"#### [{pts}점] ({qtype}) {qobj.get('prompt','')}")
-                        if show_intent:
-                            st.caption(f"intent: {qobj.get('intent','')}")
-                        hint = qobj.get("answer_format_hint") or "자유 형식"
-                        st.caption(f"답변 힌트: {hint}")
-
-                        ans = st.text_area("내 답변", height=150, key=f"ans_{qid}")
-                        answers.append({"question_id": qid, "answer": ans})
-
-                    st.divider()
-
-                    # Evaluation + Save
-                    left, right = st.columns([1, 1])
-
-                    with left:
-                        if st.button("💾 저장만", key="btn_save_only"):
-                            session = save_session(
-                                store=store,
-                                cfg=cfg,
-                                article=article,
-                                planner_summary_json=planner_summary,
-                                session_tags=session_tags,
-                                questions=qs,
-                                answers=answers,
-                                eval_pack=None,
-                            )
-                            st.session_state["last_saved_session_id"] = session.get("session_id")
-                            st.success("저장 완료! (평가 없음)")
-                            # show related recommendations after save
-                            overlap_pick, opposite_pick = recommend_related_articles(
-                                store=store, cfg=cfg, current_article=article, current_tags=session_tags, limit_each=5
-                            )
-                            st.divider()
-                            st.markdown("## 🔗 RSS '연관 기사' 추천")
-                            st.caption("오늘 읽은 기사 tags[]와 겹치거나, 반대되는 성향의 기사를 추천합니다.")
-                            cL, cR = st.columns(2)
-                            with cL:
-                                st.markdown("### ✅ tags가 겹치는 기사")
-                                if not overlap_pick:
-                                    st.write("(추천 없음)")
-                                else:
-                                    for a in overlap_pick:
-                                        sim = jaccard(session_tags, a.get("tags", []))
-                                        st.markdown(
-                                            f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
-                                        )
-                            with cR:
-                                st.markdown("### 🌓 반대 성향 기사")
-                                if not opposite_pick:
-                                    st.write("(추천 없음)")
-                                else:
-                                    for a in opposite_pick:
-                                        sim = jaccard(session_tags, a.get("tags", []))
-                                        st.markdown(
-                                            f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
-                                        )
-
-                    with right:
-                        if st.button("🧠 평가 + 저장", key="btn_eval_and_save"):
-                            # recent sessions for daily insight
-                            sessions_db = store.read_json(cfg["path_sessions"], {"sessions": []})
-                            recent = sessions_db.get("sessions", [])[:10]
-                            # keep only minimal fields to reduce prompt size
-                            recent_min = []
-                            for s in recent:
-                                ep = (s.get("eval_pack") or {})
-                                radar = ep.get("radar") if isinstance(ep, dict) else None
-                                if radar:
-                                    recent_min.append({"date": s.get("date"), "radar": radar})
-                            if not recent_min:
-                                recent_min = None
-
-                            with st.spinner("AI가 채점/피드백/모범답안을 생성 중..."):
-                                eval_pack = evaluate_planner(planner_summary, qs, answers, recent_min)
-
-                            session = save_session(
-                                store=store,
-                                cfg=cfg,
-                                article=article,
-                                planner_summary_json=planner_summary,
-                                session_tags=session_tags,
-                                questions=qs,
-                                answers=answers,
-                                eval_pack=eval_pack,
-                            )
-                            st.session_state["last_saved_session_id"] = session.get("session_id")
-                            st.success("평가+저장 완료!")
+# --- END: Step3 자동 생성 + Step4 렌즈 추가 생성 UI (교체 블록) ---
 
                             # show eval summary
                             st.markdown("### ✅ 평가 요약")
@@ -1237,8 +1245,33 @@ with tab_growth:
                 if tags:
                     st.caption("tags: " + ", ".join(tags))
 
-                st.markdown("**Step 2 요약(JSON)**")
-                st.json(s.get("planner_summary_json", {}))
+                # --- START: Step 2 요약(읽기 쉬운 버전) ---
+                planner = s.get("planner_summary_json", {}) or {}
+                summ = (planner.get("summary") or {})
+                kws = (planner.get("keywords") or [])
+                
+                st.markdown("**Step 2 요약(읽기 쉬운 버전)**")
+                
+                st.markdown("**시장 인사이트**")
+                for x in (summ.get("market_insight") or []):
+                    st.write(f"- {x}")
+                
+                st.markdown("**시스템/기술**")
+                for x in (summ.get("system_tech") or []):
+                    st.write(f"- {x}")
+                
+                st.markdown("**UX**")
+                for x in (summ.get("ux") or []):
+                    st.write(f"- {x}")
+                
+                st.markdown("**키워드 3개**")
+                for k in kws:
+                    if isinstance(k, dict):
+                        kw = k.get("keyword", "")
+                        why = k.get("why_it_matters", "")
+                        if kw:
+                            st.write(f"- **{kw}**: {why}")
+                # --- END: Step 2 요약(읽기 쉬운 버전) ---
 
                 st.markdown("**질문 & 내 답변**")
                 qmap = {q.get("question_id"): q for q in (s.get("questions") or []) if isinstance(q, dict)}
@@ -1252,10 +1285,42 @@ with tab_growth:
                             st.caption(f"intent: {q.get('intent')}")
                         st.write(a.get("answer", ""))
                         st.write("---")
-
-                if ep:
-                    st.markdown("**평가 결과(eval_pack)**")
-                    st.json(ep)
+                        # --- START: 평가 결과(핵심 요약) ---
+                        if ep:
+                            st.markdown("**평가 요약**")
+                        
+                            total = ep.get("total_score")
+                            radar = ep.get("radar") or {}
+                            daily = ep.get("daily_insight") or {}
+                            qres = ep.get("question_results") or []
+                        
+                            if total is not None:
+                                st.write(f"- 총점: **{total}**")
+                        
+                            if radar:
+                                st.write("- 레이다(5축):")
+                                st.write(
+                                    f"  - SystemicThinking: {radar.get('SystemicThinking')}, "
+                                    f"UserCentric: {radar.get('UserCentric')}, "
+                                    f"BusinessAcumen: {radar.get('BusinessAcumen')}, "
+                                    f"DetailLogic: {radar.get('DetailLogic')}, "
+                                    f"TrendInsight: {radar.get('TrendInsight')}"
+                                )
+                        
+                            if qres:
+                                st.write("- 질문별 점수(상위 3개):")
+                                for r in qres[:3]:
+                                    st.write(f"  - {r.get('question_id')}: {r.get('score')}/{r.get('max_score')}")
+                        
+                            if daily:
+                                st.write("- 데일리 인사이트:")
+                                if daily.get("growth_check"):
+                                    st.write(f"  - 성장 확인: {daily.get('growth_check')}")
+                                if daily.get("weakness_fix"):
+                                    st.write(f"  - 약점 보완: {daily.get('weakness_fix')}")
+                                if daily.get("recommended_next_topic"):
+                                    st.write(f"  - 추천 과제: {daily.get('recommended_next_topic')}")
+                        # --- END: 평가 결과(핵심 요약) ---
 
                 if s.get("final_summary"):
                     st.markdown("**내 답변 요약**")
