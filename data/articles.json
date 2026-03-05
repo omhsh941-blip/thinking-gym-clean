@@ -1,6 +1,99 @@
 {
   "articles": [
     {
+      "id": "83a825c33728e2a23daf7e91c4d4a8cc68058f5a",
+      "title": "Mario Kart Live: Home Circuit dev Velan Studios opens office in Toronto",
+      "url": "https://www.gamesindustry.biz/mario-kart-live-home-circuit-dev-velan-studios-opens-office-in-toronto",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 15:00:00 +0000",
+      "collected_at": "2026-03-06T01:56:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mario",
+        "kart",
+        "live",
+        "home",
+        "circuit",
+        "dev",
+        "velan"
+      ]
+    },
+    {
+      "id": "548bb2452f655e4941f238388f2c99a90633638e",
+      "title": "Cheer Games raises $4.5m in pre-seed funding",
+      "url": "https://www.gamesindustry.biz/cheer-games-raises-45m-in-pre-seed-funding",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 14:00:00 +0000",
+      "collected_at": "2026-03-06T01:56:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "cheer",
+        "raises",
+        "5m",
+        "pre-seed",
+        "funding"
+      ]
+    },
+    {
+      "id": "f3a404368259954298d45a6523002d1528724061",
+      "title": "New VR publisher launched to help devs innovate and survive until VR's \"true breakout moment\" arrives",
+      "url": "https://www.gamesindustry.biz/new-vr-publisher-launched-to-help-devs-innovate-and-survive-until-vrs-true-breakout-moment-arrives",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 14:00:00 +0000",
+      "collected_at": "2026-03-06T01:56:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "vr",
+        "new",
+        "publisher",
+        "launched",
+        "help",
+        "devs",
+        "innovate"
+      ]
+    },
+    {
+      "id": "8cda416a26583e2a495db07cb07bc1b06a0bf94a",
+      "title": "Pitchify launches new service to connect developers and publishers",
+      "url": "https://www.gamesindustry.biz/pitchify-launches-new-service-to-connect-developers-and-publishers",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 13:50:44 +0000",
+      "collected_at": "2026-03-06T01:56:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pitchify",
+        "launches",
+        "new",
+        "service",
+        "connect",
+        "developers",
+        "and"
+      ]
+    },
+    {
+      "id": "daf1e87fb5d90f77da1ccd7e6c3a45dba94538c1",
+      "title": "nDreams announces restructuring with \"significant\" staff reduction, two studios closed",
+      "url": "https://www.gamesindustry.biz/ndreams-announces-restructuring-with-significant-staff-reduction-two-studios-closed",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 12:57:50 +0000",
+      "collected_at": "2026-03-06T01:56:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ndreams",
+        "announces",
+        "restructuring",
+        "significant",
+        "staff",
+        "reduction",
+        "two"
+      ]
+    },
+    {
       "id": "4828ece1a6010c4e7a9d75da29bdd2983631942e",
       "title": "Open World acquires Drope.me to scale creator-driven games marketing",
       "url": "https://www.pocketgamer.biz/open-world-acquires-dropeme-to-scale-creator-driven-games-marketing/",
