@@ -20,7 +20,7 @@ import streamlit as st
 import feedparser
 from github import Github
 from dateutil import tz
-from openai import OpenAI
+from openai import OpenAI, BadRequestError
 
 KST = tz.gettz("Asia/Seoul")
 
@@ -69,6 +69,28 @@ def _usage_to_str(u):
         ct = getattr(u, "completion_tokens", None)
         tt = getattr(u, "total_tokens", None)
     return f"prompt={pt}, completion={ct}, total={tt}"
+
+
+def _create_chat_with_fallback(client, preferred_models, messages, temperature):
+    """
+    Try preferred chat models in order and fallback on BadRequestError
+    (e.g., unavailable model in current project/account).
+    """
+    last_error = None
+    for model in preferred_models:
+        try:
+            res = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                temperature=temperature,
+            )
+            return res, model
+        except BadRequestError as e:
+            last_error = e
+            continue
+    if last_error:
+        raise last_error
+    raise RuntimeError("No model candidates were provided.")
 
 
 # ---------------------------
@@ -400,8 +422,9 @@ GDD, DAU, Retention, LTV, Economy Balance, UX/UI, Core Loop 등의 용어를 적
 """.strip()
 
     client = get_openai_client()
-    res = client.chat.completions.create(
-        model="gpt-5-mini",
+    res, _used_model = _create_chat_with_fallback(
+        client=client,
+        preferred_models=["gpt-5-mini", "gpt-4o-mini"],
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
     )
@@ -543,8 +566,9 @@ def generate_planner_questions(planner_summary_json: dict, selected_lenses: list
 """.strip()
 
     client = get_openai_client()
-    res = client.chat.completions.create(
-        model="gpt-4o-mini",
+    res, _used_model = _create_chat_with_fallback(
+        client=client,
+        preferred_models=["gpt-4o-mini"],
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3,
     )
@@ -657,8 +681,9 @@ def evaluate_planner(planner_summary_json: dict, questions: list, answers: list,
 """.strip()
 
     client = get_openai_client()
-    res = client.chat.completions.create(
-        model="gpt-5-mini",
+    res, _used_model = _create_chat_with_fallback(
+        client=client,
+        preferred_models=["gpt-5-mini", "gpt-4o-mini"],
         messages=[{"role": "user", "content": prompt}],
         temperature=0.25,
     )
