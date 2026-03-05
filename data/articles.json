@@ -57,8 +57,17 @@
       "category": "Game Industry",
       "published": "Wed, 04 Mar 2026 16:00:00 +0000",
       "collected_at": "2026-03-05T20:06:08+09:00",
-      "used_in_session": false,
-      "added_by": "auto"
+      "used_in_session": true,
+      "added_by": "auto",
+      "tags": [
+        "has",
+        "humble",
+        "and",
+        "firestoke",
+        "renamed",
+        "balor",
+        "triple-i"
+      ]
     },
     {
       "id": "caced93e56faef0405263c0dccb55d9966b14aa0",
