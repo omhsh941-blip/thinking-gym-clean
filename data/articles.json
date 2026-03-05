@@ -1,6 +1,106 @@
 {
   "articles": [
     {
+      "id": "caced93e56faef0405263c0dccb55d9966b14aa0",
+      "title": "게임, 관광 산업에 도움을 줘! [게임 인더스트리]",
+      "url": "https://game.donga.com/121771/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 17:54:24 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "34c0bd4d26219a1c04d236c4434c1db2cb718b9d",
+      "title": "위메이드, 글로벌 대회 ‘이미르컵 월드 챔피언십’ 성료",
+      "url": "https://game.donga.com/121770/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 17:36:01 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "bb98e8871643e63875912a23fa64ac94f0339e21",
+      "title": "'승리의 여신: 니케', 기관단총을 쓰는 신규 SSR 니케 'E.H.' 등장",
+      "url": "https://game.donga.com/121769/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 17:23:42 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "1c42ae0ca54857158aab83f5aa2ce733289ce068",
+      "title": "넷마블, 방치형 신작 '스톤에이지 키우기', 양대 마켓 인기 1위",
+      "url": "https://game.donga.com/121768/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 17:19:16 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "2c2f5fd4b9193a47a4cea3b5ee702c353e3a2a59",
+      "title": "'스노우 브라더스 스페셜' 30만 장 판매 돌파… 콘솔 시장, 인디 게임사 '약진'",
+      "url": "https://game.donga.com/121767/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 17:06:41 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "6ffc4d222a5282309109ca428295661d59263827",
+      "title": "메이저나인 ‘아우터플레인’, 3연속 글로벌 투어 성료",
+      "url": "https://game.donga.com/121766/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 16:48:39 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "54e4aba3a6841056219a5277b3aabf16ab9ba7e6",
+      "title": "\"디비전 모바일 버전 출격!\" '더 디비전 리서전스' 31일 글로벌 출시",
+      "url": "https://game.donga.com/121764/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 16:00:07 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "b8e73c3bf1d782f5a2e5d08380c205765664da28",
+      "title": "아주르 프로밀리아, ‘코믹월드 330 일산’ 상세 프로그램 공개",
+      "url": "https://game.donga.com/121763/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 15:46:48 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "7191dd5902e82b4ceabc0eeca41d017664a5c407",
+      "title": "전설의 미출시 콘솔 ‘닌텐도 플레이스테이션’, 미국 박물관이 확보했다",
+      "url": "https://game.donga.com/121762/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 10:47:32 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
+      "id": "8897153e177e003fba5557ab93d5b470668c826b",
+      "title": "“이용자 데이터 안보 우려”... 美 트럼프 정부, 텐센트의 라이엇 지분 뺏어가나?",
+      "url": "https://game.donga.com/121761/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 10:44:16 +0900",
+      "collected_at": "2026-03-05T20:06:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto"
+    },
+    {
       "id": "7287ce70dbcb1092f4d9fd78dd35696c4001eb98",
       "title": "Google cuts fees for mobile apps and games",
       "url": "https://www.pocketgamer.biz/google-cuts-fees-for-mobile-apps-and-games/",
