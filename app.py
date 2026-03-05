@@ -1,8 +1,10 @@
+# /mnt/data/app.py
 import requests
 import trafilatura
 import json
 import hashlib
 import re
+from collections import Counter
 from openai import OpenAI
 from datetime import datetime, timedelta
 from dateutil import tz
@@ -52,6 +54,58 @@ def _usage_to_str(u):
         ct = getattr(u, "completion_tokens", None)
         tt = getattr(u, "total_tokens", None)
     return f"prompt={pt}, completion={ct}, total={tt}"
+
+
+def _normalize_tokens(text: str):
+    """
+    아주 가벼운 태그 추출용 토큰화.
+    - 한글/영문/숫자/특수 섞인 기사 요약/제목에서도 대충 돌아가게.
+    """
+    if not text:
+        return []
+    text = text.lower()
+    # 한글/영문/숫자만 남기고 나머지는 공백 처리
+    text = re.sub(r"[^0-9a-z가-힣\s]+", " ", text)
+    parts = [p.strip() for p in text.split() if p.strip()]
+    return parts
+
+
+_STOPWORDS = set(
+    """
+    기사 요약 내용 관련 오늘 이번 해당 통해 대한 그리고 하지만 또한
+    있다 없다 된다 했다 한다 한 것 등 수 로 의 에서 으로 에게 보다
+    the a an to of in on for with from at by as is are was were be been
+    this that these those it its their them they you your we our
+    """.split()
+)
+
+
+def extract_tags_from_text(text: str, max_tags: int = 7):
+    """
+    - 목적: "연관 기사 추천"용 tags[] 생성
+    - 정확한 NLP 태깅이 아니라, '겹치는 주제'를 찾을 수 있을 정도의 간단 태그.
+    """
+    tokens = _normalize_tokens(text)
+    tokens = [t for t in tokens if len(t) >= 2 and t not in _STOPWORDS]
+    if not tokens:
+        return []
+    freq = Counter(tokens)
+    # 너무 흔한 숫자만 토큰은 제외
+    cand = []
+    for tok, c in freq.most_common(50):
+        if tok.isdigit():
+            continue
+        cand.append(tok)
+        if len(cand) >= max_tags:
+            break
+    return cand
+
+
+def jaccard(a, b):
+    sa, sb = set(a or []), set(b or [])
+    if not sa and not sb:
+        return 0.0
+    return len(sa & sb) / max(1, len(sa | sb))
 
 
 # ---------------------------
@@ -119,7 +173,7 @@ def default_sources():
             {"name": "Business", "rss": []},
             {"name": "AI/Tech", "rss": []},
         ],
-        "manual_urls": []
+        "manual_urls": [],
     }
 
 
@@ -175,6 +229,9 @@ def collect_from_rss(store, cfg, category_name, rss_url, max_items=10):
         if aid in existing:
             continue
 
+        # 제목 기반 1차 태그(가벼운 기본값) — 연관 기사 추천에 활용
+        tags = extract_tags_from_text(title, max_tags=7)
+
         existing[aid] = {
             "id": aid,
             "title": title,
@@ -184,6 +241,7 @@ def collect_from_rss(store, cfg, category_name, rss_url, max_items=10):
             "collected_at": _now_kst_iso(),
             "used_in_session": False,
             "added_by": "auto",
+            "tags": tags,  # ✅ 추가
         }
         new_count += 1
 
@@ -200,8 +258,8 @@ def simple_scoring(answer_text: str, eval_cfg):
     length_score = min(len(text) / 400, 1.0)
 
     keyword_hits = 0
-    for kw in ["단기", "중기", "장기", "리스크", "위험", "기회", "BM", "UA", "LTV", "서버", "운영", "라이브", "경쟁"]:
-        if kw in text:
+    for kw in ["단기", "중기", "장기", "리스크", "위험", "기회", "bm", "ua", "ltv", "서버", "운영", "라이브", "경쟁"]:
+        if kw in text.lower():
             keyword_hits += 1
     kw_score = min(keyword_hits / 8, 1.0)
 
@@ -213,13 +271,18 @@ def simple_scoring(answer_text: str, eval_cfg):
     return total, per
 
 
-def make_final_summary(article, answers):
-    a = (answers[0] if len(answers) > 0 else "").strip()
-    b = (answers[1] if len(answers) > 1 else "").strip()
-    c = (answers[2] if len(answers) > 2 else "").strip()
-
+def make_final_summary(article, answers_by_id):
+    """
+    answers_by_id: dict(question_id -> answer_text)
+    """
+    # 기존 템플릿 감성 유지 (짧게)
     lines = []
     lines.append(f"- 기사: {article.get('title','')}")
+    # 대표 3개만 뽑아서 보여주기 (ID 기준)
+    a = (answers_by_id.get("q1") or "").strip()
+    b = (answers_by_id.get("q2") or "").strip()
+    c = (answers_by_id.get("q3") or "").strip()
+
     if a:
         lines.append(f"- 핵심 판단: {a[:220]}")
     if b:
@@ -287,7 +350,7 @@ def make_korean_summary(url: str) -> str:
 
 
 # ---------------------------
-# AI Evaluation
+# AI Evaluation (기존 유지: 입력은 text, 출력은 JSON)
 # ---------------------------
 @st.cache_data(show_spinner=False, ttl=60 * 60 * 24)
 def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
@@ -302,7 +365,7 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
 기사 요약(한글):
 {summary_ko}
 
-사용자 분석(3개 답변 포함):
+사용자 분석(여러 답변 포함):
 {user_answer}
 
 요구:
@@ -363,19 +426,78 @@ def evaluate_thinking(article_title: str, summary_ko: str, user_answer: str):
         "ai_analysis": text,
         "ai_feedback": "",
         "ai_score": {"cause": 0, "timeline": 0, "impact": 0, "risk": 0, "game": 0},
-        "ai_model_answer": ""
+        "ai_model_answer": "",
     }
 
 
 # ---------------------------
-# Save session
+# RSS "연관 기사" 추천
+# - 오늘 읽은 기사 tags[]와 겹치거나
+# - 반대되는 성향(카테고리 대비 opposite category) 기사 추천
 # ---------------------------
-def save_session(store, cfg, article, questions, answers, eval_cfg, article_summary_ko: str, ai_pack: dict):
+def get_opposite_category(cat: str) -> str:
+    """
+    아주 단순한 '반대 성향' 정의:
+    - AI/Tech ↔ Business
+    - Game Industry ↔ AI/Tech
+    - Business ↔ AI/Tech
+    """
+    if cat == "AI/Tech":
+        return "Business"
+    if cat == "Business":
+        return "AI/Tech"
+    if cat == "Game Industry":
+        return "AI/Tech"
+    return "Business"
+
+
+def recommend_related_articles(store, cfg, current_article: dict, current_tags: list, limit_each: int = 5):
+    articles_db = store.read_json(cfg["path_articles"], {"articles": []})
+    candidates = [a for a in articles_db.get("articles", []) if a.get("id") != current_article.get("id")]
+
+    # 후보 태그가 없으면 제목 기반으로 임시 생성
+    for a in candidates:
+        if "tags" not in a or not isinstance(a["tags"], list) or len(a["tags"]) == 0:
+            a["tags"] = extract_tags_from_text(a.get("title", ""), max_tags=7)
+
+    # 1) tags overlap 추천
+    scored = []
+    for a in candidates:
+        sim = jaccard(current_tags, a.get("tags", []))
+        if sim > 0:
+            scored.append((sim, a))
+    scored.sort(key=lambda x: (x[0], x[1].get("collected_at", "")), reverse=True)
+    overlap_pick = [a for _, a in scored[:limit_each]]
+
+    # 2) opposite 성향 추천: category를 반대로 잡고, 그 중에서 tags가 '덜 겹치는' 것도 섞음
+    opp_cat = get_opposite_category(current_article.get("category", ""))
+    opp = [a for a in candidates if a.get("category") == opp_cat and not a.get("used_in_session")]
+    opp_scored = []
+    for a in opp:
+        sim = jaccard(current_tags, a.get("tags", []))
+        # "반대 성향"이므로 너무 겹치지 않는 것도 가치가 있음: (1 - sim) 기준
+        opp_scored.append((1.0 - sim, a))
+    opp_scored.sort(key=lambda x: (x[0], x[1].get("collected_at", "")), reverse=True)
+    opposite_pick = [a for _, a in opp_scored[:limit_each]]
+
+    return overlap_pick, opposite_pick
+
+
+# ---------------------------
+# Save session
+# - questions: Question Object 배열 (intent 포함)
+# - answers: [{question_id, answer}]
+# - session.tags: 이번 기사 태그
+# ---------------------------
+def save_session(store, cfg, article, questions, answers, eval_cfg, article_summary_ko: str, ai_pack: dict, session_tags: list):
     sessions_db = store.read_json(cfg["path_sessions"], {"sessions": []})
     articles_db = store.read_json(cfg["path_articles"], {"articles": []})
 
-    combined = "\n".join([a for a in answers if a])
+    # answers(list[dict]) -> combined text
+    combined = "\n".join([(a.get("answer") or "") for a in answers if a.get("answer")]).strip()
     total, per = simple_scoring(combined, eval_cfg)
+
+    answers_by_id = {a.get("question_id"): (a.get("answer") or "") for a in answers if a.get("question_id")}
 
     session = {
         "session_id": _sha1(article["id"] + _now_kst_iso()),
@@ -387,9 +509,10 @@ def save_session(store, cfg, article, questions, answers, eval_cfg, article_summ
             "category": article.get("category", ""),
             "published": article.get("published", ""),
         },
+        "tags": session_tags or [],  # ✅ 추가: 오늘 읽은 기사 태그
         "article_summary_ko": article_summary_ko or "",
-        "questions": questions,
-        "answers": answers,
+        "questions": questions,  # ✅ Question Object 배열(intent 포함)
+        "answers": answers,      # ✅ [{question_id, answer}]
 
         "ai_analysis": ai_pack.get("ai_analysis", ""),
         "ai_score": ai_pack.get("ai_score", {}),
@@ -398,16 +521,19 @@ def save_session(store, cfg, article, questions, answers, eval_cfg, article_summ
 
         "score_total": total,
         "score_by_criteria": per,
-        "final_summary": make_final_summary(article, answers),
+        "final_summary": make_final_summary(article, answers_by_id),
     }
 
     sessions_db["sessions"].insert(0, session)
     store.write_json(cfg["path_sessions"], sessions_db, "add session")
 
+    # 기사 used 표시 + tags 저장(없었을 경우)
     for a in articles_db["articles"]:
         if a.get("id") == article.get("id"):
             a["used_in_session"] = True
-    store.write_json(cfg["path_articles"], articles_db, "mark article used")
+            if "tags" not in a or not isinstance(a["tags"], list) or len(a["tags"]) == 0:
+                a["tags"] = session_tags or []
+    store.write_json(cfg["path_articles"], articles_db, "mark article used (+tags)")
 
     return session
 
@@ -492,6 +618,7 @@ with tab_add:
             if aid in existing_ids:
                 st.info("이미 저장된 글입니다.")
             else:
+                tags = extract_tags_from_text(title.strip(), max_tags=7)
                 articles_db["articles"].insert(0, {
                     "id": aid,
                     "title": title.strip(),
@@ -501,8 +628,9 @@ with tab_add:
                     "collected_at": _now_kst_iso(),
                     "used_in_session": False,
                     "added_by": "manual",
+                    "tags": tags,  # ✅ 추가
                 })
-                store.write_json(cfg["path_articles"], articles_db, "add manual article")
+                store.write_json(cfg["path_articles"], articles_db, "add manual article (+tags)")
                 st.success("추가 완료!")
                 st.rerun()
 
@@ -543,6 +671,7 @@ with tab_list:
             st.session_state["selected_article_id"] = a["id"]
             st.session_state["summary_url"] = None
             st.session_state["summary_ko"] = None
+            st.session_state["summary_tags"] = None  # ✅ 추가: 이번 기사 tags 캐시
             st.session_state["token_usage"] = {"article_id": a["id"], "summary": None, "eval": None}
             st.rerun()
 
@@ -589,9 +718,17 @@ with tab_session:
                             st.session_state["summary_ko"] = None
                             st.error(f"요약 생성 실패: {e}")
 
+                    # ✅ 요약 갱신 시 tags도 새로 만들기
+                    st.session_state["summary_tags"] = extract_tags_from_text(st.session_state.get("summary_ko") or "", max_tags=7)
+
                 summary_ko = st.session_state.get("summary_ko") or ""
                 if summary_ko:
                     st.write(summary_ko)
+
+            # ✅ tags 표시
+            session_tags = st.session_state.get("summary_tags") or []
+            if session_tags:
+                st.caption("tags: " + ", ".join(session_tags))
 
             st.divider()
 
@@ -608,23 +745,48 @@ with tab_session:
             c1, c2 = st.columns(2)
             c1.markdown("**요약(summary)**")
             c1.caption(_usage_to_str(u_sum))
-            
+
             c2.markdown("**평가(eval)**")
             c2.caption(_usage_to_str(u_eval))
-            
+
+            st.divider()
+
+            # ✅ Question Object (intent 포함)
             st.markdown("### 질문 (고정 3개)")
+
             questions = [
-                "1) 이 변화의 근본 원인은 무엇인가?",
-                "2) 단기/중기/장기 영향은 어떻게 다를까?",
-                "3) 게임 산업(특히 운영/BM/UA/라이브) 관점에서 시사점은?"
+                {
+                    "question_id": "q1",
+                    "prompt": "이 변화의 근본 원인은 무엇인가?",
+                    "intent": "이 질문은 표면 현상(뉴스 헤드라인) 아래의 '원인/구조'를 파악하는 훈련입니다.",
+                },
+                {
+                    "question_id": "q2",
+                    "prompt": "단기/중기/장기 영향은 어떻게 다를까?",
+                    "intent": "이 질문은 같은 사건도 시간 축에 따라 KPI/리스크/기회가 달라진다는 점을 점검하기 위한 것입니다.",
+                },
+                {
+                    "question_id": "q3",
+                    "prompt": "게임 산업(특히 운영/BM/UA/라이브) 관점에서 시사점은?",
+                    "intent": "이 질문은 기사 내용을 '게임 사업/라이브 운영 의사결정'으로 번역하는 능력을 확인하기 위한 것입니다.",
+                },
             ]
 
-            a1 = st.text_area(questions[0], height=120)
-            a2 = st.text_area(questions[1], height=120)
-            a3 = st.text_area(questions[2], height=120)
+            # intent 표시 옵션
+            show_intent = st.checkbox("출제 의도(intent) 보기", value=True)
 
+            answers = []
+            for qobj in questions:
+                if show_intent:
+                    st.caption(f"intent: {qobj['intent']}")
+                ans = st.text_area(qobj["prompt"], height=120, key=f"ans_{qobj['question_id']}")
+                answers.append({"question_id": qobj["question_id"], "answer": ans})
+
+            st.divider()
+
+            # ✅ 저장 버튼
             if st.button("✅ 논의 종료 & 기록 저장"):
-                user_answer_all = "\n".join([a1, a2, a3]).strip()
+                user_answer_all = "\n".join([(a.get("answer") or "") for a in answers]).strip()
 
                 ai_pack = {"ai_analysis": "", "ai_score": {}, "ai_feedback": "", "ai_model_answer": ""}
 
@@ -640,9 +802,15 @@ with tab_session:
                             st.error(f"AI 평가 실패: {e}")
 
                 session = save_session(
-                    store, cfg, article, questions, [a1, a2, a3], eval_cfg,
+                    store=store,
+                    cfg=cfg,
+                    article=article,
+                    questions=questions,
+                    answers=answers,
+                    eval_cfg=eval_cfg,
                     article_summary_ko=summary_ko,
-                    ai_pack=ai_pack
+                    ai_pack=ai_pack,
+                    session_tags=session_tags,
                 )
 
                 st.success("저장 완료! 성장 탭에서 확인하세요.")
@@ -650,7 +818,41 @@ with tab_session:
                     "score_total": session.get("score_total"),
                     "rule_score_by_criteria": session.get("score_by_criteria"),
                     "ai_score": session.get("ai_score"),
+                    "tags": session.get("tags"),
                 })
+
+                # ✅ RSS '연관 기사' 추천 섹션 (요청 반영)
+                st.divider()
+                st.markdown("## 🔗 연관 기사 추천 (RSS)")
+                st.caption("오늘 읽은 기사 tags[]가 겹치거나, 반대되는 성향의 기사를 추천합니다.")
+
+                overlap_pick, opposite_pick = recommend_related_articles(
+                    store=store,
+                    cfg=cfg,
+                    current_article=article,
+                    current_tags=session_tags,
+                    limit_each=5,
+                )
+
+                colA, colB = st.columns(2)
+                with colA:
+                    st.markdown("### ✅ tags 겹치는 기사")
+                    if not overlap_pick:
+                        st.write("(추천 없음) — tags가 부족하거나 후보가 없을 수 있어요.")
+                    else:
+                        for a in overlap_pick:
+                            sim = jaccard(session_tags, a.get("tags", []))
+                            st.markdown(f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_")
+
+                with colB:
+                    st.markdown("### 🌓 반대 성향 기사")
+                    if not opposite_pick:
+                        st.write("(추천 없음) — 반대 카테고리 후보가 부족할 수 있어요.")
+                    else:
+                        for a in opposite_pick:
+                            sim = jaccard(session_tags, a.get("tags", []))
+                            st.markdown(f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_")
+
                 st.rerun()
 
 # -------- 성장 --------
@@ -713,13 +915,26 @@ with tab_growth:
                 if url:
                     st.markdown(f"**원문 링크:** {url}")
 
+                if s.get("tags"):
+                    st.caption("tags: " + ", ".join(s.get("tags")))
+
                 if s.get("article_summary_ko"):
                     st.write("**기사 요약(한글)**")
                     st.code(s["article_summary_ko"])
 
                 st.write("**내 답변**")
                 ans = s.get("answers", [])
-                if isinstance(ans, list) and ans:
+                # ✅ 새로운 포맷: list[dict]
+                if isinstance(ans, list) and ans and isinstance(ans[0], dict):
+                    out = []
+                    qmap = {q.get("question_id"): q for q in (s.get("questions") or []) if isinstance(q, dict)}
+                    for a in ans:
+                        qid = a.get("question_id")
+                        qprompt = (qmap.get(qid) or {}).get("prompt", qid)
+                        out.append(f"[{qid}] {qprompt}\n{a.get('answer','')}")
+                    st.code("\n\n".join(out))
+                # 구버전 포맷: list[str]
+                elif isinstance(ans, list) and ans:
                     st.code("\n\n".join([x for x in ans if x]))
                 else:
                     st.write("(없음)")
