@@ -1,6 +1,100 @@
 {
   "articles": [
     {
+      "id": "1f2ff97b54d5a57a3015f3953f60cc50db5a9be3",
+      "title": "AppsFlyer halts $1.9bn sale talks after private equity bidders seek revised terms",
+      "url": "https://www.pocketgamer.biz/appsflyer-halts-19bn-sale-talks-after-private-equity-bidders-seek-revised-terms/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 15:32:00 +0000",
+      "collected_at": "2026-03-06T01:56:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "appsflyer",
+        "halts",
+        "9bn",
+        "sale",
+        "talks",
+        "after",
+        "private"
+      ]
+    },
+    {
+      "id": "42dbe56d349e72111103847b849a3dc0b97d9477",
+      "title": "nDreams proposes restructuring with 78 roles at risk and two studios set to close",
+      "url": "https://www.pocketgamer.biz/ndreams-proposes-restructuring-with-78-roles-at-risk-and-two-studios-set-to-close/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 15:31:00 +0000",
+      "collected_at": "2026-03-06T01:56:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ndreams",
+        "proposes",
+        "restructuring",
+        "roles",
+        "risk",
+        "and",
+        "two"
+      ]
+    },
+    {
+      "id": "8965ddb5e419fab848fb6f03190794fe6f780136",
+      "title": "Lessons in mastering live ops from Marvel Snap",
+      "url": "https://www.pocketgamer.biz/lessons-in-mastering-live-ops-from-marvel-snap/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 15:30:00 +0000",
+      "collected_at": "2026-03-06T01:56:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "lessons",
+        "mastering",
+        "live",
+        "ops",
+        "marvel",
+        "snap"
+      ]
+    },
+    {
+      "id": "6012c43a9fe84bc4fd296a5cce91a6f50d0c14fa",
+      "title": "Making Candy Crush All Stars match ready with fresh mechanics and first official partnership",
+      "url": "https://www.pocketgamer.biz/making-candy-crush-all-stars-match-ready-with-fresh-mechanics-and-first-official-partnership/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 15:29:00 +0000",
+      "collected_at": "2026-03-06T01:56:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "making",
+        "candy",
+        "crush",
+        "all",
+        "stars",
+        "match",
+        "ready"
+      ]
+    },
+    {
+      "id": "25b358f0591d6b840996f53d6267e4e108d26727",
+      "title": "Pokémon TCG Pocket hits six-month high as franchise turns 30 years old",
+      "url": "https://www.pocketgamer.biz/pokmon-tcg-pocket-hits-six-month-high-as-franchise-turns-30-years-old/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 15:28:00 +0000",
+      "collected_at": "2026-03-06T01:56:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pok",
+        "mon",
+        "tcg",
+        "pocket",
+        "hits",
+        "six-month",
+        "high"
+      ]
+    },
+    {
       "id": "83a825c33728e2a23daf7e91c4d4a8cc68058f5a",
       "title": "Mario Kart Live: Home Circuit dev Velan Studios opens office in Toronto",
       "url": "https://www.gamesindustry.biz/mario-kart-live-home-circuit-dev-velan-studios-opens-office-in-toronto",
