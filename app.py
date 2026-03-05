@@ -1154,33 +1154,42 @@ with tab_session:
                     )
                     
                     st.divider()
-                    st.markdown("## 🔗 RSS '연관 기사' 추천")
-                    st.caption("오늘 읽은 기사 tags[]가 겹치거나, 반대되는 성향의 기사를 추천합니다.")
-                    
-                    cL, cR = st.columns(2)
-                    
-                    with cL:
-                        st.markdown("### ✅ tags가 겹치는 기사")
-                        if not overlap_pick:
-                            st.write("(추천 없음)")
-                        else:
-                            for a in overlap_pick:
-                                sim = jaccard(session_tags, a.get("tags", []))
-                                st.markdown(
-                                    f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
-                                )
-                    
-                    with cR:
-                        st.markdown("### 🌓 반대 성향 기사")
-                        if not opposite_pick:
-                            st.write("(추천 없음)")
-                        else:
-                            for a in opposite_pick:
-                                sim = jaccard(session_tags, a.get("tags", []))
-                                st.markdown(
-                                    f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
-                                )
+# ✅ RSS 연관 기사 추천 (변수 생성 → 출력 순서 고정)
+overlap_pick, opposite_pick = recommend_related_articles(
+    store=store,
+    cfg=cfg,
+    current_article=article,
+    current_tags=session_tags,
+    limit_each=5
+)
 
+st.divider()
+st.markdown("## 🔗 RSS '연관 기사' 추천")
+st.caption("오늘 읽은 기사 tags[]가 겹치거나, 반대되는 성향의 기사를 추천합니다.")
+
+cL, cR = st.columns(2)
+
+with cL:
+    st.markdown("### ✅ tags가 겹치는 기사")
+    if not overlap_pick:
+        st.write("(추천 없음)")
+    else:
+        for a in overlap_pick:
+            sim = jaccard(session_tags, a.get("tags", []))
+            st.markdown(
+                f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
+            )
+
+with cR:
+    st.markdown("### 🌓 반대 성향 기사")
+    if not opposite_pick:
+        st.write("(추천 없음)")
+    else:
+        for a in opposite_pick:
+            sim = jaccard(session_tags, a.get("tags", []))
+            st.markdown(
+                f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
+            )
 # -------- 성장 --------
 with tab_growth:
     st.subheader("성장 대시보드 (Planner)")
