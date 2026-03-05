@@ -401,7 +401,7 @@ GDD, DAU, Retention, LTV, Economy Balance, UX/UI, Core Loop 등의 용어를 적
 
     client = get_openai_client()
     res = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-5-mini",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
     )
@@ -658,7 +658,7 @@ def evaluate_planner(planner_summary_json: dict, questions: list, answers: list,
 
     client = get_openai_client()
     res = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-5-mini",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.25,
     )
