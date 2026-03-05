@@ -1,6 +1,6 @@
 # /mnt/data/app.py
 # ------------------------------------------------------------
-# 🎮 Thinking Gym — Game Planner Edition (Full Script)
+# 🎮 Thinking Gym  Game Planner Edition (Full Script)
 # - Step 1~4 화면 포맷(메타/3파트 요약/키워드/기사기반 4문항 + 선택 렌즈 질문)
 # - Question Object: intent 포함
 # - RSS '연관 기사' 추천: tags overlap + 반대 성향(카테고리 opposite)
@@ -567,6 +567,20 @@ def generate_planner_questions(planner_summary_json: dict, selected_lenses: list
     return parsed
 
 
+def generate_role_lens_questions(planner_summary_json: dict, selected_lenses: list) -> dict:
+    """
+    Generate only role-lens questions.
+    Safety wrapper to avoid NameError if lens-only helper is referenced in UI code.
+    """
+    pack = generate_planner_questions(planner_summary_json, selected_lenses or [])
+    qs = pack.get("questions", []) if isinstance(pack, dict) else []
+    role_qs = [q for q in qs if isinstance(q, dict) and q.get("type") == "role_lens"]
+    return {
+        "questions": role_qs,
+        "total_points": int(sum(int(q.get("points", 0)) for q in role_qs)),
+    }
+
+
 # ---------------------------
 # Planner Evaluation (Step 5~8)
 # ---------------------------
@@ -684,8 +698,8 @@ def evaluate_planner(planner_summary_json: dict, questions: list, answers: list,
 def get_opposite_category(cat: str) -> str:
     """
     Simple opposite mapping:
-    - AI/Tech ↔ Business
-    - Game Industry ↔ Business (or AI/Tech). choose Business as "business angle"
+    - AI/Tech -> Business
+    - Game Industry -> Business (or AI/Tech). choose Business as "business angle"
     """
     if cat == "AI/Tech":
         return "Business"
@@ -725,38 +739,6 @@ def recommend_related_articles(store, cfg, current_article: dict, current_tags: 
     opposite_pick = [a for _, a in opp_scored[:limit_each]]
 
     return overlap_pick, opposite_pick
-
-
-
-def render_related_articles_section(overlap_pick, opposite_pick, session_tags):
-    """Render RSS related articles section safely (expects lists)."""
-    st.divider()
-    st.markdown("## 🔗 RSS '연관 기사' 추천")
-    st.caption("오늘 읽은 기사 tags[]가 겹치거나, 반대되는 성향의 기사를 추천합니다.")
-
-    cL, cR = st.columns(2)
-
-    with cL:
-        st.markdown("### ✅ tags가 겹치는 기사")
-        if not overlap_pick:
-            st.write("(추천 없음)")
-        else:
-            for a in overlap_pick:
-                sim = jaccard(session_tags, a.get("tags", []))
-                st.markdown(
-                    f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
-                )
-
-    with cR:
-        st.markdown("### 🌓 반대 성향 기사")
-        if not opposite_pick:
-            st.write("(추천 없음)")
-        else:
-            for a in opposite_pick:
-                sim = jaccard(session_tags, a.get("tags", []))
-                st.markdown(
-                    f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
-                )
 
 
 # ---------------------------
@@ -819,7 +801,7 @@ def save_session(
 # ---------------------------
 # UI
 # ---------------------------
-st.set_page_config(page_title="Thinking Gym — Game Planner Edition", layout="wide")
+st.set_page_config(page_title="Thinking Gym  Game Planner Edition", layout="wide")
 
 store, cfg = get_store()
 ensure_bootstrap(store, cfg)
@@ -827,11 +809,11 @@ ensure_bootstrap(store, cfg)
 sources = store.read_json(cfg["path_sources"], default_sources())
 _ensure_token_usage()
 
-st.title("🧠 Thinking Gym — Game Planner Edition")
+st.title("🧠 Thinking Gym  Game Planner Edition")
 st.caption("뉴스 1개로 게임 기획자 관점 사고를 훈련하고 기록을 쌓습니다. (데이터는 GitHub에 저장)")
 
 tab_collect, tab_add, tab_list, tab_session, tab_growth, tab_settings = st.tabs(
-    ["📡 자동 수집", "➕ 수동 추가", "🗂 기사 목록", "✍️ 세션", "📈 성장", "⚙️ 설정"]
+    ["📡 자동 수집", " 수동 추가", "🗂 기사 목록", " 세션", "📈 성장", " 설정"]
 )
 
 # -------- 자동 수집 --------
@@ -845,7 +827,7 @@ with tab_collect:
         for cat in sources["categories"]:
             with st.expander(f"{cat['name']} (RSS {len(cat['rss'])}개)", expanded=False):
                 new_rss = st.text_input(f"{cat['name']} RSS 추가", key=f"rss_add_{cat['name']}")
-                if st.button(f"➕ {cat['name']}에 RSS 추가", key=f"btn_add_{cat['name']}") and new_rss:
+                if st.button(f" {cat['name']}에 RSS 추가", key=f"btn_add_{cat['name']}") and new_rss:
                     cat["rss"].append(new_rss.strip())
                     store.write_json(cfg["path_sources"], sources, "add rss")
                     st.success("추가됨! (저장 완료)")
@@ -883,7 +865,7 @@ with tab_add:
     cat_names = [c["name"] for c in sources["categories"]]
     category = st.selectbox("카테고리", cat_names)
 
-    if st.button("➕ 기사 추가"):
+    if st.button(" 기사 추가"):
         if not url or not title:
             st.warning("URL과 제목을 입력하세요.")
         else:
@@ -941,14 +923,17 @@ with tab_list:
         cols = st.columns([6, 2, 2])
         cols[0].markdown(f"**{a.get('title','')}**  \n{a.get('url','')}")
         cols[1].write(a.get("category", ""))
-        cols[2].write("✅ 사용" if a.get("used_in_session") else "🟡 미사용")
+        cols[2].write("사용" if a.get("used_in_session") else "미사용")
 
         if st.button("이 기사로 세션 시작", key=f"start_{a['id']}"):
             st.session_state["selected_article_id"] = a["id"]
             st.session_state["planner_summary_url"] = None
             st.session_state["planner_summary"] = None
             st.session_state["planner_questions_pack"] = None
+            st.session_state["base_questions_pack"] = None
+            st.session_state["lens_questions"] = []
             st.session_state["last_saved_session_id"] = None
+            st.session_state["last_eval_pack"] = None
             st.session_state["token_usage"] = {"article_id": a["id"], "summary": None, "questions": None, "eval": None}
             st.rerun()
 
@@ -966,7 +951,7 @@ with tab_session:
         return None
 
     if not selected_id:
-        st.info("먼저 ‘기사 목록’에서 ‘이 기사로 세션 시작’을 눌러주세요.")
+        st.info("먼저 기사 목록에서 이 기사로 세션 시작을 눌러주세요.")
     else:
         article = _find_article_by_id(selected_id)
         if not article:
@@ -1044,12 +1029,12 @@ with tab_session:
 
                 st.divider()
 
-                # --- START: Step3 자동 생성 + Step4 렌즈 추가 생성 UI (교체 블록) ---
+                # --- START: Step3 ?먮룞 ?앹꽦 + Step4 ?뚯쫰 異붽? ?앹꽦 UI (援먯껜 釉붾줉) ---
                 
-                # (1) Step 3: 기사 기반 4문항 자동 생성
-                st.markdown("### ❓ Step 3. 질문 생성 (기사 기반 4문항)")
+                # (1) Step 3: 湲곗궗 湲곕컲 4臾명빆 ?먮룞 ?앹꽦
+                st.markdown("### ✅ Step 3. 질문 생성 (기사 기반 4문항)")
                 
-                # base 질문팩이 없거나, 기사 URL이 바뀌었으면 자동 생성
+                # base 吏덈Ц?⑹씠 ?녾굅?? 湲곗궗 URL??諛붾뚯뿀?쇰㈃ ?먮룞 ?앹꽦
                 base_key_url = st.session_state.get("base_questions_url")
                 if st.session_state.get("base_questions_pack") is None or base_key_url != article.get("url"):
                     st.session_state["base_questions_url"] = article.get("url")
@@ -1060,15 +1045,14 @@ with tab_session:
                 base_pack = st.session_state.get("base_questions_pack") or {}
                 base_questions = base_pack.get("questions", []) or []
                 
-                # 렌즈 질문(추가분) 저장소
+                # ?뚯쫰 吏덈Ц(異붽?遺? ??μ냼
                 if "lens_questions" not in st.session_state or st.session_state.get("lens_questions_url") != article.get("url"):
                     st.session_state["lens_questions_url"] = article.get("url")
                     st.session_state["lens_questions"] = []  # 기사 변경 시 렌즈 질문 초기화
-                
                 lens_questions = st.session_state.get("lens_questions") or []
                 
                 # (2) Step 4: 선택형 렌즈(체크박스) + "렌즈 질문만" 추가 생성
-                st.markdown("### 🛠️ Step 4. 선택형 질문 (Role Lens)")
+                st.markdown("### 🛠 Step 4. 선택형 질문 (Role Lens)")
                 st.caption("체크 후 아래 버튼을 누르면, 기사 내용과 밀착된 '렌즈 질문'만 추가 생성됩니다. (기존 4문항은 유지)")
                 
                 colA, colB, colC = st.columns(3)
@@ -1087,8 +1071,8 @@ with tab_session:
                 if lens_psych: selected_lenses.append("psych_retention")
                 if lens_bm: selected_lenses.append("bm_ops")
                 
-                # 렌즈 질문만 추가 생성 버튼
-                if st.button("➕ 렌즈 질문 추가 생성", key="btn_add_lens_questions"):
+                # ?뚯쫰 吏덈Ц留?異붽? ?앹꽦 踰꾪듉
+                if st.button(" 렌즈 질문 추가 생성", key="btn_add_lens_questions"):
                     if not selected_lenses:
                         st.warning("렌즈를 최소 1개 선택하세요.")
                     else:
@@ -1096,7 +1080,7 @@ with tab_session:
                             lens_pack = generate_role_lens_questions(planner_summary, selected_lenses)
                             new_lens_qs = lens_pack.get("questions", []) or []
                 
-                            # 중복 방지(같은 question_id)
+                            # 以묐났 諛⑹?(媛숈? question_id)
                             existing_ids = {q.get("question_id") for q in lens_questions if isinstance(q, dict)}
                             for q in new_lens_qs:
                                 if q.get("question_id") not in existing_ids:
@@ -1105,7 +1089,7 @@ with tab_session:
                             st.session_state["lens_questions"] = lens_questions
                             st.success(f"렌즈 질문 {len(new_lens_qs)}개 추가 생성 완료!")
                 
-                # (3) 최종 질문 리스트 = base 4문항 + 렌즈 질문(추가)
+                # (3) 理쒖쥌 吏덈Ц 由ъ뒪??= base 4臾명빆 + ?뚯쫰 吏덈Ц(異붽?)
                 qs = base_questions + lens_questions
                 total_pts = sum(int(q.get("points", 0)) for q in qs if isinstance(q, dict))
                 
@@ -1113,7 +1097,7 @@ with tab_session:
                 
                 show_intent = st.checkbox("intent(출제 의도) 보기", value=True)
                 
-                # Answers (⚠️ key가 question_id 기반이라 기존 답변 유지됨)
+                # Answers (?좑툘 key媛 question_id 湲곕컲?대씪 湲곗〈 ?듬? ?좎???
                 answers = []
                 for qobj in qs:
                     qid = qobj.get("question_id")
@@ -1130,7 +1114,7 @@ with tab_session:
                 
                 st.divider()
                 
-                # 저장/평가 버튼(기존 로직 유지)
+                # ????됯? 踰꾪듉(湲곗〈 濡쒖쭅 ?좎?)
                 left, right = st.columns([1, 1])
                 
                 with left:
@@ -1175,19 +1159,60 @@ with tab_session:
                             eval_pack=eval_pack,
                         )
                         st.session_state["last_saved_session_id"] = session.get("session_id")
+                        st.session_state["last_eval_pack"] = eval_pack
                         st.success("평가+저장 완료!")
-st.json(eval_pack)
 
-# ✅ RSS 연관 기사 추천: 평가+저장 후에만 표시 (재발 방지: 변수는 여기서만 사용)
-overlap_pick, opposite_pick = recommend_related_articles(
-    store=store,
-    cfg=cfg,
-    current_article=article,
-    current_tags=session_tags,
-    limit_each=5,
-)
-render_related_articles_section(overlap_pick, opposite_pick, session_tags)
+last_eval_pack = st.session_state.get("last_eval_pack")
+if last_eval_pack is not None:
+    st.json(last_eval_pack)
 
+#  RSS 연관 기사 추천 (평가+저장 후에만 표시)
+selected_for_reco = st.session_state.get("selected_article_id")
+summary_for_reco = st.session_state.get("planner_summary") or {}
+if selected_for_reco and summary_for_reco:
+    articles_db_reco = store.read_json(cfg["path_articles"], {"articles": []})
+    current_article_reco = next(
+        (a for a in articles_db_reco.get("articles", []) if a.get("id") == selected_for_reco),
+        None,
+    )
+    session_tags_reco = session_tags_from_summary(summary_for_reco)
+
+    if current_article_reco:
+        overlap_pick, opposite_pick = recommend_related_articles(
+            store=store,
+            cfg=cfg,
+            current_article=current_article_reco,
+            current_tags=session_tags_reco,
+            limit_each=5,
+        )
+
+        st.divider()
+        st.markdown("## 🔗 RSS '연관 기사' 추천")
+        st.caption("오늘 읽은 기사 tags[]가 겹치거나, 반대되는 성향의 기사를 추천합니다.")
+
+        cL, cR = st.columns(2)
+
+        with cL:
+            st.markdown("###  tags가 겹치는 기사")
+            if not overlap_pick:
+                st.write("(추천 없음)")
+            else:
+                for a in overlap_pick:
+                    sim = jaccard(session_tags_reco, a.get("tags", []))
+                    st.markdown(
+                        f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
+                    )
+
+        with cR:
+            st.markdown("### 🌓 반대 성향 기사")
+            if not opposite_pick:
+                st.write("(추천 없음)")
+            else:
+                for a in opposite_pick:
+                    sim = jaccard(session_tags_reco, a.get("tags", []))
+                    st.markdown(
+                        f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
+                    )
 # -------- 성장 --------
 with tab_growth:
     st.subheader("성장 대시보드 (Planner)")
@@ -1326,7 +1351,7 @@ with tab_growth:
                         if daily.get("weakness_fix"):
                             st.write(f"  - 약점 보완: {daily.get('weakness_fix')}")
                         if daily.get("recommended_next_topic"):
-                            st.write(f"  - 추천 과제: {daily.get('recommended_next_topic')}")
+                            st.write(f"  - 異붿쿇 怨쇱젣: {daily.get('recommended_next_topic')}")
                 # --- END: 평가 결과(핵심 요약) ---
 
                 if s.get("final_summary"):
@@ -1348,3 +1373,4 @@ with tab_settings:
             "sources_path": cfg["path_sources"],
         }
     )
+
