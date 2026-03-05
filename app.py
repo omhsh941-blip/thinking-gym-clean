@@ -1285,42 +1285,42 @@ with tab_growth:
                             st.caption(f"intent: {q.get('intent')}")
                         st.write(a.get("answer", ""))
                         st.write("---")
-                        # --- START: 평가 결과(핵심 요약) ---
-                        if ep:
-                            st.markdown("**평가 요약**")
-                        
-                            total = ep.get("total_score")
-                            radar = ep.get("radar") or {}
-                            daily = ep.get("daily_insight") or {}
-                            qres = ep.get("question_results") or []
-                        
-                            if total is not None:
-                                st.write(f"- 총점: **{total}**")
-                        
-                            if radar:
-                                st.write("- 레이다(5축):")
-                                st.write(
-                                    f"  - SystemicThinking: {radar.get('SystemicThinking')}, "
-                                    f"UserCentric: {radar.get('UserCentric')}, "
-                                    f"BusinessAcumen: {radar.get('BusinessAcumen')}, "
-                                    f"DetailLogic: {radar.get('DetailLogic')}, "
-                                    f"TrendInsight: {radar.get('TrendInsight')}"
-                                )
-                        
-                            if qres:
-                                st.write("- 질문별 점수(상위 3개):")
-                                for r in qres[:3]:
-                                    st.write(f"  - {r.get('question_id')}: {r.get('score')}/{r.get('max_score')}")
-                        
-                            if daily:
-                                st.write("- 데일리 인사이트:")
-                                if daily.get("growth_check"):
-                                    st.write(f"  - 성장 확인: {daily.get('growth_check')}")
-                                if daily.get("weakness_fix"):
-                                    st.write(f"  - 약점 보완: {daily.get('weakness_fix')}")
-                                if daily.get("recommended_next_topic"):
-                                    st.write(f"  - 추천 과제: {daily.get('recommended_next_topic')}")
-                        # --- END: 평가 결과(핵심 요약) ---
+                # --- START: 평가 결과(핵심 요약) ---
+                if ep:
+                    st.markdown("**평가 요약**")
+                
+                    total = ep.get("total_score")
+                    radar = ep.get("radar") or {}
+                    daily = ep.get("daily_insight") or {}
+                    qres = ep.get("question_results") or []
+                
+                    if total is not None:
+                        st.write(f"- 총점: **{total}**")
+                
+                    if radar:
+                        st.write("- 레이다(5축):")
+                        st.write(
+                            f"  - SystemicThinking: {radar.get('SystemicThinking')}, "
+                            f"UserCentric: {radar.get('UserCentric')}, "
+                            f"BusinessAcumen: {radar.get('BusinessAcumen')}, "
+                            f"DetailLogic: {radar.get('DetailLogic')}, "
+                            f"TrendInsight: {radar.get('TrendInsight')}"
+                        )
+                
+                    if qres:
+                        st.write("- 질문별 점수(상위 3개):")
+                        for r in qres[:3]:
+                            st.write(f"  - {r.get('question_id')}: {r.get('score')}/{r.get('max_score')}")
+                
+                    if daily:
+                        st.write("- 데일리 인사이트:")
+                        if daily.get("growth_check"):
+                            st.write(f"  - 성장 확인: {daily.get('growth_check')}")
+                        if daily.get("weakness_fix"):
+                            st.write(f"  - 약점 보완: {daily.get('weakness_fix')}")
+                        if daily.get("recommended_next_topic"):
+                            st.write(f"  - 추천 과제: {daily.get('recommended_next_topic')}")
+                # --- END: 평가 결과(핵심 요약) ---
 
                 if s.get("final_summary"):
                     st.markdown("**내 답변 요약**")
