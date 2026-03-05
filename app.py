@@ -1144,17 +1144,17 @@ with tab_session:
                         )
                         st.session_state["last_saved_session_id"] = session.get("session_id")
                         st.success("평가+저장 완료!")
-                        st.json(eval_pack)
-                        overlap_pick, opposite_pick = recommend_related_articles(
-                        store=store,
-                        cfg=cfg,
-                        current_article=article,
-                        current_tags=session_tags,
-                        limit_each=5
-                    )
-                    
-                    st.divider()
+st.success("평가+저장 완료!")
+st.json(eval_pack)
 
+# ✅ RSS 연관 기사 추천 (평가+저장 후에만 표시)
+overlap_pick, opposite_pick = recommend_related_articles(
+    store=store,
+    cfg=cfg,
+    current_article=article,
+    current_tags=session_tags,
+    limit_each=5
+)
 
 st.divider()
 st.markdown("## 🔗 RSS '연관 기사' 추천")
@@ -1168,6 +1168,17 @@ with cL:
         st.write("(추천 없음)")
     else:
         for a in overlap_pick:
+            sim = jaccard(session_tags, a.get("tags", []))
+            st.markdown(
+                f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
+            )
+
+with cR:
+    st.markdown("### 🌓 반대 성향 기사")
+    if not opposite_pick:
+        st.write("(추천 없음)")
+    else:
+        for a in opposite_pick:
             sim = jaccard(session_tags, a.get("tags", []))
             st.markdown(
                 f"- **{a.get('title','')}**  \n  {a.get('url','')}  \n  _overlap={sim:.2f}, category={a.get('category','')}_"
