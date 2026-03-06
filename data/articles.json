@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "819eb20801edc3557734d6c72df5f4997aacc41e",
+      "title": "TerraPower Wins U.S. Approval for First Advanced SMR Plant Backed by SK Innovation and KHNP",
+      "url": "https://www.koreaittimes.com/news/articleView.html?idxno=151543",
+      "category": "AI/Tech",
+      "published": "2026-03-06 11:39:24",
+      "collected_at": "2026-03-06T13:17:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "terrapower",
+        "wins",
+        "approval",
+        "first",
+        "advanced",
+        "smr",
+        "plant"
+      ]
+    },
+    {
+      "id": "a46e35066e39f19cb1f41ccf14f72f3e8d2dbf54",
+      "title": "LG Energy Solution Opens NextStar Energy Battery Plant in Canada",
+      "url": "https://www.koreaittimes.com/news/articleView.html?idxno=151542",
+      "category": "AI/Tech",
+      "published": "2026-03-06 11:34:30",
+      "collected_at": "2026-03-06T13:17:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "energy",
+        "lg",
+        "solution",
+        "opens",
+        "nextstar",
+        "battery",
+        "plant"
+      ]
+    },
+    {
+      "id": "91f49fc10bf68039cbb2466d5f45cab09fb3d996",
+      "title": "Samlip Wins Two iF Design Awards 2026 for Jammy’s and Golden Moments Branding",
+      "url": "https://www.koreaittimes.com/news/articleView.html?idxno=151541",
+      "category": "AI/Tech",
+      "published": "2026-03-06 11:27:47",
+      "collected_at": "2026-03-06T13:17:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "samlip",
+        "wins",
+        "two",
+        "if",
+        "design",
+        "awards",
+        "jammy"
+      ]
+    },
+    {
+      "id": "89a6c4ebbb0ce37a1543d7df5dc3a90c1680fa27",
+      "title": "SK telecom Showcases Full-Stack AI Strategy at MWC 2026 in Barcelona",
+      "url": "https://www.koreaittimes.com/news/articleView.html?idxno=151540",
+      "category": "AI/Tech",
+      "published": "2026-03-06 11:23:20",
+      "collected_at": "2026-03-06T13:17:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "sk",
+        "telecom",
+        "showcases",
+        "full-stack",
+        "ai",
+        "strategy",
+        "mwc"
+      ]
+    },
+    {
+      "id": "39147e39a21af79a6e177d34993da5deec4cf116",
+      "title": "LG Uplus Attracts 70,000 Visitors with Human-Centered AI Showcase at MWC 2026",
+      "url": "https://www.koreaittimes.com/news/articleView.html?idxno=151539",
+      "category": "AI/Tech",
+      "published": "2026-03-06 11:16:48",
+      "collected_at": "2026-03-06T13:17:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "lg",
+        "uplus",
+        "attracts",
+        "visitors",
+        "human-centered",
+        "ai",
+        "showcase"
+      ]
+    },
+    {
       "id": "1f2ff97b54d5a57a3015f3953f60cc50db5a9be3",
       "title": "AppsFlyer halts $1.9bn sale talks after private equity bidders seek revised terms",
       "url": "https://www.pocketgamer.biz/appsflyer-halts-19bn-sale-talks-after-private-equity-bidders-seek-revised-terms/",
