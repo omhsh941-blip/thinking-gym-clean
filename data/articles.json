@@ -1,6 +1,100 @@
 {
   "articles": [
     {
+      "id": "6a0f7357ab79ba9d99fbe1088193818ab092437e",
+      "title": "Anthropic to challenge DOD’s supply-chain label in court",
+      "url": "https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/",
+      "category": "AI/Tech",
+      "published": "Fri, 06 Mar 2026 01:28:54 +0000",
+      "collected_at": "2026-03-06T13:17:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "anthropic",
+        "challenge",
+        "dod",
+        "supply-chain",
+        "label",
+        "court"
+      ]
+    },
+    {
+      "id": "eab2ca0fffda4e192df57c8bb9d48e620dd06487",
+      "title": "DiligenceSquared uses AI, voice agents to make M&A research affordable",
+      "url": "https://techcrunch.com/2026/03/05/diligencesquared-uses-ai-voice-agents-to-make-ma-research-affordable/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 23:14:04 +0000",
+      "collected_at": "2026-03-06T13:17:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "diligencesquared",
+        "uses",
+        "ai",
+        "voice",
+        "agents",
+        "make",
+        "research"
+      ]
+    },
+    {
+      "id": "3a6967e55340c56d77efb5dcd3f546947ce9432b",
+      "title": "Cluely CEO Roy Lee admits to publicly lying about revenue numbers last year",
+      "url": "https://techcrunch.com/2026/03/05/cluely-ceo-roy-lee-admits-to-publicly-lying-about-revenue-numbers-last-year/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 22:38:26 +0000",
+      "collected_at": "2026-03-06T13:17:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "cluely",
+        "ceo",
+        "roy",
+        "lee",
+        "admits",
+        "publicly",
+        "lying"
+      ]
+    },
+    {
+      "id": "5ad468eb9de6583a9b7d2e67adabd7be41f74656",
+      "title": "AWS launches a new AI agent platform specifically for healthcare",
+      "url": "https://techcrunch.com/2026/03/05/aws-amazon-connect-health-ai-agent-platform-health-care-providers/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 21:54:37 +0000",
+      "collected_at": "2026-03-06T13:17:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "aws",
+        "launches",
+        "new",
+        "ai",
+        "agent",
+        "platform",
+        "specifically"
+      ]
+    },
+    {
+      "id": "65490743cfd73e43f05558a53c9a72f8a34f5f76",
+      "title": "FBI investigating hack on its wiretap and surveillance systems: Report",
+      "url": "https://techcrunch.com/2026/03/05/fbi-investigating-hack-on-its-wiretap-and-surveillance-systems-report/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 21:33:24 +0000",
+      "collected_at": "2026-03-06T13:17:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "fbi",
+        "investigating",
+        "hack",
+        "wiretap",
+        "and",
+        "surveillance",
+        "systems"
+      ]
+    },
+    {
       "id": "819eb20801edc3557734d6c72df5f4997aacc41e",
       "title": "TerraPower Wins U.S. Approval for First Advanced SMR Plant Backed by SK Innovation and KHNP",
       "url": "https://www.koreaittimes.com/news/articleView.html?idxno=151543",
