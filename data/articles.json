@@ -1,6 +1,44 @@
 {
   "articles": [
     {
+      "id": "e7cc2596c784366efca776f2909554eca111c856",
+      "title": "US reportedly considering sweeping new chip export controls",
+      "url": "https://techcrunch.com/2026/03/05/us-reportedly-considering-sweeping-new-chip-export-controls/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 21:24:50 +0000",
+      "collected_at": "2026-03-06T13:17:52+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "us",
+        "reportedly",
+        "considering",
+        "sweeping",
+        "new",
+        "chip",
+        "export"
+      ]
+    },
+    {
+      "id": "a9621a0abadddf01cf5f1b33ed44060604e79d40",
+      "title": "It’s official: The Pentagon has labeled Anthropic a supply-chain risk",
+      "url": "https://techcrunch.com/2026/03/05/its-official-the-pentagon-has-labeled-anthropic-a-supply-chain-risk/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 20:24:25 +0000",
+      "collected_at": "2026-03-06T13:17:52+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "official",
+        "pentagon",
+        "has",
+        "labeled",
+        "anthropic",
+        "supply-chain",
+        "risk"
+      ]
+    },
+    {
       "id": "6a0f7357ab79ba9d99fbe1088193818ab092437e",
       "title": "Anthropic to challenge DOD’s supply-chain label in court",
       "url": "https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/",
