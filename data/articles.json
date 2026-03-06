@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "b03e0d203589a27a48d3260e7476a980cb2ece91",
+      "title": "OpenAI launches GPT-5.4 Thinking and Pro combining coding, reasoning, and computer use in one model",
+      "url": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 19:15:40 +0000",
+      "collected_at": "2026-03-06T13:17:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "and",
+        "openai",
+        "launches",
+        "gpt-5",
+        "thinking",
+        "pro",
+        "combining"
+      ]
+    },
+    {
+      "id": "27d8e9f41b7fffe6ff5f7b168202d87b72ea4235",
+      "title": "ChatGPT users research products but won't buy there, forcing OpenAI to rethink its commerce strategy",
+      "url": "https://the-decoder.com/chatgpt-users-research-products-but-wont-buy-there-forcing-openai-to-rethink-its-commerce-strategy/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 17:32:30 +0000",
+      "collected_at": "2026-03-06T13:17:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "chatgpt",
+        "users",
+        "research",
+        "products",
+        "but",
+        "won",
+        "buy"
+      ]
+    },
+    {
+      "id": "aa608856fd2e1aa86ef69a52daaae983e86de873",
+      "title": "Google Search quietly becomes an AI assistant as Canvas feature launches for US users",
+      "url": "https://the-decoder.com/google-search-quietly-becomes-an-ai-assistant-as-canvas-feature-launches-for-us-users/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 16:32:05 +0000",
+      "collected_at": "2026-03-06T13:17:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "google",
+        "search",
+        "quietly",
+        "becomes",
+        "ai",
+        "assistant",
+        "canvas"
+      ]
+    },
+    {
+      "id": "4f4c1a10b9c0e691d68aeb7447f2ecf06e9d7c16",
+      "title": "Tech giants make non-binding White House pledge to cover AI data center energy costs",
+      "url": "https://the-decoder.com/tech-giants-make-non-binding-white-house-pledge-to-cover-ai-data-center-energy-costs/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 14:53:18 +0000",
+      "collected_at": "2026-03-06T13:17:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tech",
+        "giants",
+        "make",
+        "non-binding",
+        "white",
+        "house",
+        "pledge"
+      ]
+    },
+    {
+      "id": "56877e41138135ed49a89f7db8513bb3e7a5a31c",
+      "title": "Yann LeCun wants to replace the AGI concept with \"Superhuman Adaptable Intelligence\"",
+      "url": "https://the-decoder.com/yann-lecun-wants-to-replace-the-agi-concept-with-superhuman-adaptable-intelligence/",
+      "category": "AI/Tech",
+      "published": "Thu, 05 Mar 2026 14:31:14 +0000",
+      "collected_at": "2026-03-06T13:17:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "yann",
+        "lecun",
+        "replace",
+        "agi",
+        "concept",
+        "superhuman",
+        "adaptable"
+      ]
+    },
+    {
       "id": "153f3066406ba9744459a1729314dcb3b5a9853e",
       "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
       "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
