@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "153f3066406ba9744459a1729314dcb3b5a9853e",
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "category": "AI/Tech",
+      "published": "Thu, 22 Jan 2026 14:00:00 GMT",
+      "collected_at": "2026-03-06T13:17:54+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "railway",
+        "secures",
+        "million",
+        "challenge",
+        "aws",
+        "ai-native",
+        "cloud"
+      ]
+    },
+    {
+      "id": "7f96b809b58cabb1d0f262b44c540a5ebc08b8e1",
+      "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+      "category": "AI/Tech",
+      "published": "Mon, 19 Jan 2026 14:00:00 GMT",
+      "collected_at": "2026-03-06T13:17:54+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "claude",
+        "code",
+        "costs",
+        "up",
+        "month",
+        "goose",
+        "does"
+      ]
+    },
+    {
+      "id": "26adfe014170817184fdc9fce748e4902ac28d0c",
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "category": "AI/Tech",
+      "published": "Fri, 16 Jan 2026 14:01:00 GMT",
+      "collected_at": "2026-03-06T13:17:54+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "listen",
+        "labs",
+        "raises",
+        "69m",
+        "after",
+        "viral",
+        "billboard"
+      ]
+    },
+    {
+      "id": "4143ec6f5c162b6a4570faef51a23ef330b0d060",
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "category": "AI/Tech",
+      "published": "Tue, 13 Jan 2026 13:00:00 GMT",
+      "collected_at": "2026-03-06T13:17:54+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ai",
+        "salesforce",
+        "rolls",
+        "out",
+        "new",
+        "slackbot",
+        "agent"
+      ]
+    },
+    {
+      "id": "8aadbbf9804d611324a0afd125071fe41899ec8e",
+      "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required",
+      "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+      "category": "AI/Tech",
+      "published": "Mon, 12 Jan 2026 11:30:00 GMT",
+      "collected_at": "2026-03-06T13:17:54+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "anthropic",
+        "launches",
+        "cowork",
+        "claude",
+        "desktop",
+        "agent",
+        "works"
+      ]
+    },
+    {
       "id": "e7cc2596c784366efca776f2909554eca111c856",
       "title": "US reportedly considering sweeping new chip export controls",
       "url": "https://techcrunch.com/2026/03/05/us-reportedly-considering-sweeping-new-chip-export-controls/",
