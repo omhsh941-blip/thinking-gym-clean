@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "7fc6e9a5eaec6aecaebf6512cb497715373c420e",
+      "title": "Which Agent Causes Task Failures and When?Researchers from PSU and Duke explores automated failure attribution of LLM Multi-Agent Systems",
+      "url": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "category": "AI/Tech",
+      "published": "Thu, 14 Aug 2025 06:31:20 +0000",
+      "collected_at": "2026-03-06T13:17:59+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "and",
+        "which",
+        "agent",
+        "causes",
+        "task",
+        "failures",
+        "when"
+      ]
+    },
+    {
+      "id": "5172ff1d3ca2d815071f22de726fa7822aad0b6f",
+      "title": "ByteDance Introduces Astra: A Dual-Model Architecture for Autonomous Robot Navigation",
+      "url": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "category": "AI/Tech",
+      "published": "Tue, 24 Jun 2025 09:17:01 +0000",
+      "collected_at": "2026-03-06T13:17:59+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "bytedance",
+        "introduces",
+        "astra",
+        "dual-model",
+        "architecture",
+        "autonomous",
+        "robot"
+      ]
+    },
+    {
+      "id": "0c5f9f9b885dc0a7646dced4081581c79d0340b2",
+      "title": "MIT Researchers Unveil “SEAL”: A New Step Towards Self-Improving AI",
+      "url": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "category": "AI/Tech",
+      "published": "Mon, 16 Jun 2025 12:58:37 +0000",
+      "collected_at": "2026-03-06T13:17:59+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mit",
+        "researchers",
+        "unveil",
+        "seal",
+        "new",
+        "step",
+        "towards"
+      ]
+    },
+    {
+      "id": "f178d6a4baf01f1bc0ad2ce55f6a37f25cef5d1b",
+      "title": "Researchers from PSU and Duke introduce “Multi-Agent Systems Automated Failure Attribution",
+      "url": "https://syncedreview.com/2025/06/16/researchers-from-psu-and-duke-introduce-multi-agent-systems-automated-failure-attribution/",
+      "category": "AI/Tech",
+      "published": "Mon, 16 Jun 2025 07:39:46 +0000",
+      "collected_at": "2026-03-06T13:17:59+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "researchers",
+        "psu",
+        "and",
+        "duke",
+        "introduce",
+        "multi-agent",
+        "systems"
+      ]
+    },
+    {
+      "id": "173a2e1f78e0a419456d1e917bb0dd77a89c60ca",
+      "title": "Adobe Research Unlocking Long-Term Memory in Video World Models with State-Space Models",
+      "url": "https://syncedreview.com/2025/05/28/adobe-research-unlocking-long-term-memory-in-video-world-models-with-state-space-models/",
+      "category": "AI/Tech",
+      "published": "Wed, 28 May 2025 09:31:27 +0000",
+      "collected_at": "2026-03-06T13:17:59+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "models",
+        "adobe",
+        "research",
+        "unlocking",
+        "long-term",
+        "memory",
+        "video"
+      ]
+    },
+    {
       "id": "b03e0d203589a27a48d3260e7476a980cb2ece91",
       "title": "OpenAI launches GPT-5.4 Thinking and Pro combining coding, reasoning, and computer use in one model",
       "url": "https://the-decoder.com/openai-launches-gpt-5-4-thinking-and-pro-combining-coding-reasoning-and-computer-use-in-one-model/",
