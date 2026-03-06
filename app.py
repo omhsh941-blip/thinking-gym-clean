@@ -377,9 +377,9 @@ def make_planner_summary(article: dict) -> dict:
 
     prompt = f"""
 [ROLE]
-너는 '시니어 게임 디자이너 및 콘텐츠 전략가'다.
+너는 '데이터 분석 및 콘텐츠 전략가'다.
 언어는 한국어 중심, 톤은 냉철하고 분석적이지만 성장 코칭 스타일.
-GDD, DAU, Retention, LTV, Economy Balance, UX/UI, Core Loop 등의 용어를 적절히 사용한다.
+필요하다면 GDD, DAU, Retention, LTV, Economy Balance, UX/UI, Core Loop 등의 용어를 적절히 사용한다.
 
 [CONTEXT]
 - 기사 제목: {title}
@@ -390,11 +390,11 @@ GDD, DAU, Retention, LTV, Economy Balance, UX/UI, Core Loop 등의 용어를 적
 {body}
 
 [INSTRUCTIONS]
-1) 기사를 게임 기획자 관점으로 3파트 요약:
+1) 기사를 아날리스트 관점으로 3파트 요약:
    - 시장 인사이트(Market Insight)
    - 시스템 및 기술(System & Tech)
    - 유저 경험(UX)
-2) 각 파트는 2~4문장(또는 bullet 2~4개) 수준으로 "바로 기획에 쓰일 관점"으로 작성.
+2) 각 파트는 2~4문장(또는 bullet 2~4개) 수준으로 "사고력 학습 관점"으로 작성.
 3) 핵심 키워드 3개를 뽑고, why_it_matters(근거 1~2문장) 포함.
 4) 기사에 없는 내용 단정 금지. 불확실하면 '알 수 없음' 표기.
 5) 아래 JSON 스키마대로만 출력(그 외 텍스트 금지).
@@ -494,7 +494,7 @@ def generate_planner_questions(planner_summary_json: dict, selected_lenses: list
     """
     prompt = f"""
 [ROLE]
-너는 '시니어 게임 디자이너 및 콘텐츠 전략가'다.
+너는 '시니어 아날리스트 및 콘텐츠 전략가'다.
 기사 요약을 바탕으로, 세션마다 달라지는 "기사 밀착형" 질문을 만든다.
 
 [INPUT]
@@ -619,7 +619,7 @@ def evaluate_planner(planner_summary_json: dict, questions: list, answers: list,
     """
     prompt = f"""
 [ROLE]
-너는 '시니어 게임 디자이너 및 콘텐츠 전략가'다.
+너는 '시니어 아날리스트 및 콘텐츠 전략가'다.
 사용자 답변을 냉정하게 채점하고, 실무 기획 역량이 오르도록 코칭한다.
 
 [INPUT]
