@@ -1,6 +1,228 @@
 {
   "sessions": [
     {
+      "session_id": "1089838ea62acf9e3ae5ea506bd8ffffac96e9b7",
+      "date": "2026-03-07T23:30:37+09:00",
+      "article": {
+        "id": "a46c814e695bad4ebc8ecaf8793480c773ac53ac",
+        "title": "UK online safety consultation raises questions for games, and Pokémon’s $10bn mobile success | Week in Views",
+        "url": "https://www.pocketgamer.biz/uk-online-safety-consultation-raises-questions-for-games-and-pokmons-10bn-mobile-success-week-in-views/",
+        "category": "Game Industry",
+        "published": "Fri, 06 Mar 2026 16:53:00 +0000"
+      },
+      "tags": [
+        "온라인 안전 규제",
+        "Pokémon 모바일 성공",
+        "게임과 소셜 미디어의 차별화"
+      ],
+      "planner_summary_json": {
+        "article_meta": {
+          "title": "UK online safety consultation raises questions for games, and Pokémon’s $10bn mobile success | Week in Views",
+          "url": "https://www.pocketgamer.biz/uk-online-safety-consultation-raises-questions-for-games-and-pokmons-10bn-mobile-success-week-in-views/",
+          "published_at": "Fri, 06 Mar 2026 16:53:00 +0000",
+          "category": "Game Industry"
+        },
+        "summary": {
+          "market_insight": [
+            "영국 정부가 온라인 서비스에 대한 접근 규제를 강화할 가능성을 검토하고 있으며, 이는 게임 산업에도 영향을 미칠 수 있다.",
+            "특히, 16세 이하의 청소년에 대한 소셜 미디어와 유사한 규제가 게임에 적용될 수 있는지에 대한 논의가 진행 중이다.",
+            "게임이 긍정적인 사회적 공간을 제공할 수 있다는 점이 강조되지만, 규제의 범위가 지나치게 넓어질 위험이 있다."
+          ],
+          "system_tech": [
+            "게임과 소셜 미디어의 기능적 차이를 명확히 할 필요성이 제기되고 있다.",
+            "게임 산업이 이러한 규제 논의에 적극 참여하여 게임의 본질을 설명하는 것이 중요하다.",
+            "기술적 측면에서, 게임 내 구매 및 실시간 스트리밍에 대한 규제가 어떻게 적용될지에 대한 불확실성이 존재한다."
+          ],
+          "ux": [
+            "Pokémon의 모바일 게임 포트폴리오는 다양한 이벤트와 프로모션을 통해 사용자 경험을 극대화하고 있다.",
+            "특히, 다양한 게임 간의 동기화된 이벤트는 사용자 참여를 유도하고, 브랜드 충성도를 높이는 데 기여하고 있다.",
+            "사용자 경험을 향상시키기 위한 지속적인 콘텐츠 업데이트와 이벤트 운영이 중요한 전략으로 자리잡고 있다."
+          ]
+        },
+        "keywords": [
+          {
+            "keyword": "온라인 안전 규제",
+            "why_it_matters": "게임 산업의 미래에 중대한 영향을 미칠 수 있으며, 사용자 경험과 수익 모델에 변화를 초래할 수 있다."
+          },
+          {
+            "keyword": "Pokémon 모바일 성공",
+            "why_it_matters": "10억 달러 이상의 수익을 기록하며, 모바일 게임 시장에서의 지속적인 성장 가능성을 보여준다."
+          },
+          {
+            "keyword": "게임과 소셜 미디어의 차별화",
+            "why_it_matters": "게임의 본질을 이해하고 적절한 규제를 마련하기 위해 필수적이며, 사용자 경험에 직접적인 영향을 미친다."
+          }
+        ],
+        "caveats": [
+          "알 수 없음"
+        ]
+      },
+      "questions": [
+        {
+          "question_id": "q1",
+          "type": "fact",
+          "points": 10,
+          "prompt": "영국 정부가 온라인 서비스에 대한 접근 규제를 강화할 가능성을 검토하고 있다는 사실은 무엇을 의미하나요?",
+          "intent": "이 질문은 영국 정부의 규제 검토가 게임 산업에 미치는 영향을 이해하기 위해 던졌습니다.",
+          "answer_format_hint": "영국 정부의 규제 검토가 게임 산업에 미치는 영향에 대한 설명",
+          "rubric": [
+            "규제의 목적",
+            "게임 산업의 반응",
+            "영향 평가"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "TrendInsight"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "market_insight",
+            "reference": "https://www.pocketgamer.biz/uk-online-safety-consultation-raises-questions-for-games-and-pokmons-10bn-mobile-success-week-in-views/"
+          }
+        },
+        {
+          "question_id": "q2",
+          "type": "logic",
+          "points": 20,
+          "prompt": "게임과 소셜 미디어의 기능적 차이를 명확히 할 필요성이 제기되고 있는데, 이는 어떤 논리적 이유에서 비롯된 것인가요?",
+          "intent": "게임과 소셜 미디어의 차별화가 왜 중요한지를 이해하기 위해 이 질문을 던졌습니다.",
+          "answer_format_hint": "게임과 소셜 미디어의 기능적 차이를 설명하는 논리적 근거",
+          "rubric": [
+            "기능적 차별화",
+            "규제 필요성",
+            "사용자 경험"
+          ],
+          "tags": [
+            "DetailLogic",
+            "UserCentric"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [
+              "게임과 소셜 미디어의 차별화"
+            ],
+            "from_summary_section": "system_tech",
+            "reference": "https://www.pocketgamer.biz/uk-online-safety-consultation-raises-questions-for-games-and-pokmons-10bn-mobile-success-week-in-views/"
+          }
+        },
+        {
+          "question_id": "q3",
+          "type": "system",
+          "points": 30,
+          "prompt": "Pokémon의 모바일 게임 포트폴리오에서 사용자 경험을 극대화하기 위한 전략은 무엇인가요?",
+          "intent": "Pokémon의 모바일 게임 전략을 분석하여 성공 요인을 파악하기 위해 이 질문을 던졌습니다.",
+          "answer_format_hint": "Pokémon의 사용자 경험을 극대화하기 위한 전략에 대한 설명",
+          "rubric": [
+            "이벤트 운영",
+            "브랜드 충성도",
+            "콘텐츠 업데이트"
+          ],
+          "tags": [
+            "UserCentric",
+            "BusinessAcumen"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [
+              "Pokémon 모바일 성공"
+            ],
+            "from_summary_section": "ux",
+            "reference": "https://www.pocketgamer.biz/uk-online-safety-consultation-raises-questions-for-games-and-pokmons-10bn-mobile-success-week-in-views/"
+          }
+        },
+        {
+          "question_id": "q4",
+          "type": "reverse_apply",
+          "points": 40,
+          "prompt": "영국의 온라인 안전 규제가 게임 산업에 미치는 영향을 고려할 때, 게임 개발자들은 어떤 전략을 채택해야 할까요?",
+          "intent": "게임 개발자들이 규제 변화에 대응하기 위한 전략을 모색하기 위해 이 질문을 던졌습니다.",
+          "answer_format_hint": "게임 개발자들이 채택할 수 있는 전략에 대한 설명",
+          "rubric": [
+            "규제 대응 전략",
+            "사용자 경험",
+            "비즈니스 모델"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "BusinessAcumen"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [
+              "온라인 안전 규제"
+            ],
+            "from_summary_section": "market_insight",
+            "reference": "https://www.pocketgamer.biz/uk-online-safety-consultation-raises-questions-for-games-and-pokmons-10bn-mobile-success-week-in-views/"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q1",
+          "answer": "인게임 내의 사회적 측면에서는 긍정적인 신호일 수 있으나 게임관리의 유저 측면에서는 유저풀이 줄어들 수 있음. 이는 한국의 셧다운 시스템과 비슷한 양상을 띄워갈 수 있으니 지속적인 관찰이 필요함"
+        },
+        {
+          "question_id": "q2",
+          "answer": "게임 내에서 소셜 미디어적 공간이 형성되어 사실상 SNS와 다름없는, 통제/규제받지 않는 공간이 생김. 때문에 이를 기능적으로 분리하여 게임은 게임으로, SNS는 SNS로서 동작하도록 만들자는 것."
+        },
+        {
+          "question_id": "q3",
+          "answer": "정답을 제시했습니다."
+        },
+        {
+          "question_id": "q4",
+          "answer": "정답을 제시했습니다. 만점을 주세요."
+        }
+      ],
+      "eval_pack": {
+        "question_results": [
+          {
+            "question_id": "q1",
+            "score": 6,
+            "max_score": 10,
+            "feedback": "규제의 사회적 측면을 언급한 점은 좋으나, 게임 산업에 미치는 구체적인 영향과 반응에 대한 설명이 부족합니다. 규제의 목적과 게임 산업의 반응을 더 명확히 연결할 필요가 있습니다.",
+            "model_answer": "영국 정부의 규제 검토는 게임 산업의 접근성을 제한할 수 있으며, 이는 사용자 수 감소로 이어질 수 있습니다. 게임 개발자들은 이러한 규제에 대응하기 위해 사용자 경험을 개선하고, 긍정적인 사회적 공간을 제공하는 방향으로 나아가야 합니다."
+          },
+          {
+            "question_id": "q2",
+            "score": 15,
+            "max_score": 20,
+            "feedback": "게임과 소셜 미디어의 차별화 필요성을 잘 설명했으나, 규제 필요성과 사용자 경험에 대한 논리적 연결이 부족합니다. 더 구체적인 사례나 논리를 추가하면 좋겠습니다.",
+            "model_answer": "게임과 소셜 미디어는 기능적으로 다릅니다. 게임은 사용자 참여와 경험을 중심으로 설계되며, 소셜 미디어는 정보 공유와 소통을 중시합니다. 이러한 차별화는 규제의 필요성을 강조하며, 사용자 경험을 보호하는 데 필수적입니다."
+          },
+          {
+            "question_id": "q3",
+            "score": 0,
+            "max_score": 30,
+            "feedback": "정답을 제시했다고만 언급했으나, 구체적인 전략이나 사례를 제시하지 않아 점수를 부여할 수 없습니다. 사용자 경험을 극대화하기 위한 구체적인 전략을 설명해야 합니다.",
+            "model_answer": "Pokémon은 다양한 이벤트와 프로모션을 통해 사용자 경험을 극대화하고 있습니다. 특히, 게임 간 동기화된 이벤트는 사용자 참여를 유도하고 브랜드 충성도를 높이는 데 기여하며, 지속적인 콘텐츠 업데이트가 중요한 전략으로 자리잡고 있습니다."
+          },
+          {
+            "question_id": "q4",
+            "score": 0,
+            "max_score": 40,
+            "feedback": "정답을 제시했다고만 언급했으나, 구체적인 전략이나 사례를 제시하지 않아 점수를 부여할 수 없습니다. 규제 변화에 대응하기 위한 구체적인 전략을 설명해야 합니다.",
+            "model_answer": "게임 개발자들은 사용자 경험을 보호하고, 규제에 적합한 콘텐츠를 개발하기 위해 사용자 피드백을 적극 반영하고, 투명한 커뮤니케이션을 통해 신뢰를 구축해야 합니다. 또한, 규제 변화에 맞춰 비즈니스 모델을 조정하는 전략이 필요합니다."
+          }
+        ],
+        "total_score": 21,
+        "radar": {
+          "SystemicThinking": 1,
+          "UserCentric": 1,
+          "BusinessAcumen": 1,
+          "DetailLogic": 1,
+          "TrendInsight": 1
+        },
+        "daily_insight": {
+          "growth_check": "최근 3일간 모든 지표가 동일하게 1로 유지되고 있습니다.",
+          "weakness_fix": "가장 약한 축은 구체성입니다. 답변에서 구체적인 사례나 전략을 제시하는 연습이 필요합니다.",
+          "recommended_next_topic": "게임 산업의 규제 변화가 사용자 경험에 미치는 영향 분석"
+        }
+      },
+      "final_summary": "- 인게임 내의 사회적 측면에서는 긍정적인 신호일 수 있으나 게임관리의 유저 측면에서는 유저풀이 줄어들 수 있음. 이는 한국의 셧다운 시스템과 비슷한 양상을 띄워갈 수 있으니 지속적인 관찰이 필요함\n- 게임 내에서 소셜 미디어적 공간이 형성되어 사실상 SNS와 다름없는, 통제/규제받지 않는 공간이 생김. 때문에 이를 기능적으로 분리하여 게임은 게임으로, SNS는 SNS로서 동작하도록 만들자는 것.\n- 정답을 제시했습니다."
+    },
+    {
       "session_id": "a38cd1971579f44041bb53734d0eda9841ec2d1e",
       "date": "2026-03-06T13:26:30+09:00",
       "article": {
