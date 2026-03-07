@@ -1,6 +1,99 @@
 {
   "articles": [
     {
+      "id": "7110c4f0d94ab142e85b769ba6b0715cc7481fe0",
+      "title": "Game Republic New Horizons establishes new advisory board",
+      "url": "https://www.gamesindustry.biz/game-republic-new-horizons-establishes-new-advisory-board",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 15:53:54 +0000",
+      "collected_at": "2026-03-07T23:23:01+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "new",
+        "republic",
+        "horizons",
+        "establishes",
+        "advisory",
+        "board"
+      ]
+    },
+    {
+      "id": "dec263de43a3df709a933f40b46ef0237487da37",
+      "title": "The logic of platform exclusivity remains undefeated | Opinion",
+      "url": "https://www.gamesindustry.biz/the-logic-of-platform-exclusivity-remains-undefeated-opinion",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 15:25:26 +0000",
+      "collected_at": "2026-03-07T23:23:01+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "logic",
+        "platform",
+        "exclusivity",
+        "remains",
+        "undefeated",
+        "opinion"
+      ]
+    },
+    {
+      "id": "ab9285966a4c0b64e177968f00ab49338c3c3f31",
+      "title": "Sales data indicates Sony's PS5 ports are increasingly losing audience share on PC, but only because of release timing",
+      "url": "https://www.gamesindustry.biz/sales-data-indicates-sonys-ps5-ports-are-increasingly-losing-audience-share-on-pc-but-only-because-of-release-timing",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 12:38:26 +0000",
+      "collected_at": "2026-03-07T23:23:01+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "sales",
+        "data",
+        "indicates",
+        "sony",
+        "ps5",
+        "ports",
+        "increasingly"
+      ]
+    },
+    {
+      "id": "b7c8ec3d1143b41f85725bec7b751d2087f1e116",
+      "title": "GDC Awards 2026 to recognise Don Daglow and Rebecca Heineman",
+      "url": "https://www.gamesindustry.biz/gdc-awards-2026-to-recognise-don-daglow-and-rebecca-heineman",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 12:05:30 +0000",
+      "collected_at": "2026-03-07T23:23:01+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "gdc",
+        "awards",
+        "recognise",
+        "don",
+        "daglow",
+        "and",
+        "rebecca"
+      ]
+    },
+    {
+      "id": "df565f22fa962b41e69b436ca1faeeadd653fcec",
+      "title": "How Steam changes and a China strategy helped TinyBuild's The King is Watching hit 500k sales",
+      "url": "https://www.gamesindustry.biz/how-steam-changes-and-a-china-strategy-helped-tinybuilds-the-king-is-watching-hit-500k-sales",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 11:54:51 +0000",
+      "collected_at": "2026-03-07T23:23:01+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "how",
+        "steam",
+        "changes",
+        "and",
+        "china",
+        "strategy",
+        "helped"
+      ]
+    },
+    {
       "id": "8a22584013840246c39580506de30d5bd9fa70ff",
       "title": "[취재] 신규 지역 '천해천' 공개한 박종민 디렉터 \"새로운 소통 자리 마련할 것\"",
       "url": "https://game.donga.com/121790/",
