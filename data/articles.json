@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "a46c814e695bad4ebc8ecaf8793480c773ac53ac",
+      "title": "UK online safety consultation raises questions for games, and Pokémon’s $10bn mobile success | Week in Views",
+      "url": "https://www.pocketgamer.biz/uk-online-safety-consultation-raises-questions-for-games-and-pokmons-10bn-mobile-success-week-in-views/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 16:53:00 +0000",
+      "collected_at": "2026-03-07T23:23:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "uk",
+        "online",
+        "safety",
+        "consultation",
+        "raises",
+        "questions",
+        "and"
+      ]
+    },
+    {
+      "id": "22609507ec67ba472b5981c74aad8ee05bfbe425",
+      "title": "New release roundup: Stoneage Idle Adventure, Hatch Dragons, Angry Birds Friends, and more",
+      "url": "https://www.pocketgamer.biz/new-release-roundup-stoneage-idle-adventure-hatch-dragons-angry-birds-friends-and-more/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 15:50:00 +0000",
+      "collected_at": "2026-03-07T23:23:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "new",
+        "release",
+        "roundup",
+        "stoneage",
+        "idle",
+        "adventure",
+        "hatch"
+      ]
+    },
+    {
+      "id": "776e47f4100af92c17470a2da8ce8ce4ebf13a22",
+      "title": "Meet Tencent, Scopely, Jam City, Discord and more at PGC Summit San Francisco",
+      "url": "https://www.pocketgamer.biz/meet-tencent-scopely-jam-city-discord-and-more-at-pgc-summit-san-francisco/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 15:45:00 +0000",
+      "collected_at": "2026-03-07T23:23:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "meet",
+        "tencent",
+        "scopely",
+        "jam",
+        "city",
+        "discord",
+        "and"
+      ]
+    },
+    {
+      "id": "1a74b07a3bddc82060ac2f68f69fcdfa43b7e839",
+      "title": "Cheer Games raises $4.5m pre-seed to build puzzle franchises",
+      "url": "https://www.pocketgamer.biz/cheer-games-raises-45m-pre-seed-to-build-puzzle-franchises/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 15:40:00 +0000",
+      "collected_at": "2026-03-07T23:23:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "cheer",
+        "raises",
+        "5m",
+        "pre-seed",
+        "build",
+        "puzzle",
+        "franchises"
+      ]
+    },
+    {
+      "id": "3a7110b1f409d29a7eb7e82c9c6aac3dffebc14e",
+      "title": "Tickets now live for Pocket Gamer Connects Summit Shanghai, July 29th",
+      "url": "https://www.pocketgamer.biz/tickets-now-live-for-pocket-gamer-connects-summit-shanghai-july-29th/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 15:12:00 +0000",
+      "collected_at": "2026-03-07T23:23:03+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tickets",
+        "live",
+        "pocket",
+        "connects",
+        "summit",
+        "shanghai",
+        "july"
+      ]
+    },
+    {
       "id": "7110c4f0d94ab142e85b769ba6b0715cc7481fe0",
       "title": "Game Republic New Horizons establishes new advisory board",
       "url": "https://www.gamesindustry.biz/game-republic-new-horizons-establishes-new-advisory-board",
