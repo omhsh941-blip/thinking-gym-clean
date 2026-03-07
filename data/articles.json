@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "8a22584013840246c39580506de30d5bd9fa70ff",
+      "title": "[취재] 신규 지역 '천해천' 공개한 박종민 디렉터 \"새로운 소통 자리 마련할 것\"",
+      "url": "https://game.donga.com/121790/",
+      "category": "Game Industry",
+      "published": "Sat, 07 Mar 2026 20:55:25 +0900",
+      "collected_at": "2026-03-07T23:22:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "취재",
+        "신규",
+        "지역",
+        "천해천",
+        "공개한",
+        "박종민",
+        "디렉터"
+      ]
+    },
+    {
+      "id": "c7d5a133e6ce8224aefc8ae97f40f3a6d3f3f89e",
+      "title": "넷마블 엠엔비, ‘쿵야 레스토랑즈’ 광기 직장인 콘셉트 이모티콘 출시",
+      "url": "https://game.donga.com/121789/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 17:50:37 +0900",
+      "collected_at": "2026-03-07T23:22:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "엠엔비",
+        "쿵야",
+        "레스토랑즈",
+        "광기",
+        "직장인",
+        "콘셉트"
+      ]
+    },
+    {
+      "id": "d9c65827d3383ab6c1d36f4ae958759f9fc04585",
+      "title": "넷마블, 오는 13일 '일곱 개의 대죄: Origin' 론칭 앞두고 특별 방송",
+      "url": "https://game.donga.com/121788/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 17:30:17 +0900",
+      "collected_at": "2026-03-07T23:22:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "오는",
+        "13일",
+        "일곱",
+        "개의",
+        "대죄",
+        "origin"
+      ]
+    },
+    {
+      "id": "e4808032492aeef71ba1bd2de0b026caaa5ebc07",
+      "title": "[리뷰] 거대한 규모 그리고 협력과 경쟁으로 무장한 넷마블 '스톤에이지 키우기'",
+      "url": "https://game.donga.com/121787/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 16:40:01 +0900",
+      "collected_at": "2026-03-07T23:22:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "리뷰",
+        "거대한",
+        "규모",
+        "협력",
+        "경쟁",
+        "무장한",
+        "넷마블"
+      ]
+    },
+    {
+      "id": "0e7b7a59444bf5acef3b7837f696c3598afdd69d",
+      "title": "[한주의게임소식] 스팀 글로벌 판매 10위권에 진입한 '붉은 사막’",
+      "url": "https://game.donga.com/121786/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 16:13:48 +0900",
+      "collected_at": "2026-03-07T23:22:57+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "한주의게임소식",
+        "스팀",
+        "글로벌",
+        "판매",
+        "10위권",
+        "진입한",
+        "붉은"
+      ]
+    },
+    {
       "id": "7fc6e9a5eaec6aecaebf6512cb497715373c420e",
       "title": "Which Agent Causes Task Failures and When?Researchers from PSU and Duke explores automated failure attribution of LLM Multi-Agent Systems",
       "url": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
