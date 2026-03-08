@@ -1,6 +1,115 @@
 {
   "articles": [
     {
+      "id": "6ee2a5da90f70e1f5f47197c16c1a465f1519b78",
+      "title": "[취재] ‘던파 모바일’ 4주년 기념 쇼케이스 개최 “‘침식의 시로코’ 공개”",
+      "url": "https://game.donga.com/121791/",
+      "category": "Game Industry",
+      "published": "Sun, 08 Mar 2026 20:19:50 +0900",
+      "collected_at": "2026-03-09T00:44:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "취재",
+        "던파",
+        "모바일",
+        "4주년",
+        "기념",
+        "쇼케이스",
+        "개최"
+      ]
+    },
+    {
+      "id": "243b426079793d8866ac1303cdcfe865d0d22ec1",
+      "title": "'월드 오브 탱크', ‘걸즈 앤 판처’ 하마팀 콜라보",
+      "url": "https://game.donga.com/121785/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 15:03:56 +0900",
+      "collected_at": "2026-03-09T00:44:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "월드",
+        "오브",
+        "탱크",
+        "걸즈",
+        "판처",
+        "하마팀",
+        "콜라보"
+      ]
+    },
+    {
+      "id": "bedc507e19a259b8719dbbaf70a757bcd69d08a7",
+      "title": "넥슨재단, 한국비버정보교육연합-대전교육정보원과 업무협약 체결",
+      "url": "https://game.donga.com/121784/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 14:57:39 +0900",
+      "collected_at": "2026-03-09T00:44:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넥슨재단",
+        "한국비버정보교육연합-대전교육정보원",
+        "업무협약",
+        "체결"
+      ]
+    },
+    {
+      "id": "ea371694215215083fe4eb55bab5aa6f72e53834",
+      "title": "‘프리스타일 풋볼 2’, PC 플랫폼 CBT 진행한다",
+      "url": "https://game.donga.com/121783/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 14:55:33 +0900",
+      "collected_at": "2026-03-09T00:44:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "프리스타일",
+        "풋볼",
+        "pc",
+        "플랫폼",
+        "cbt",
+        "진행한다"
+      ]
+    },
+    {
+      "id": "dd20be570dd85c6a142db7b15278fb7cf8f78981",
+      "title": "LOL, 2026 세계 게임 명예의 전당 후보작 선정",
+      "url": "https://game.donga.com/121782/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 13:40:38 +0900",
+      "collected_at": "2026-03-09T00:44:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "lol",
+        "세계",
+        "명예",
+        "전당",
+        "후보작",
+        "선정"
+      ]
+    },
+    {
+      "id": "32aad8fd59fe842c3a5c7f247d1a37bada972795",
+      "title": "또 등장한 ‘괴물 인디’? 슬레이 더 스파이어2 스팀 동접 20만 돌파",
+      "url": "https://game.donga.com/121778/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 10:52:13 +0900",
+      "collected_at": "2026-03-09T00:44:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "등장한",
+        "괴물",
+        "인디",
+        "슬레",
+        "스파이어2",
+        "스팀",
+        "동접"
+      ]
+    },
+    {
       "id": "a46c814e695bad4ebc8ecaf8793480c773ac53ac",
       "title": "UK online safety consultation raises questions for games, and Pokémon’s $10bn mobile success | Week in Views",
       "url": "https://www.pocketgamer.biz/uk-online-safety-consultation-raises-questions-for-games-and-pokmons-10bn-mobile-success-week-in-views/",
