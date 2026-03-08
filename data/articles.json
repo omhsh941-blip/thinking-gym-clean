@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "453bd4ffa7f0cfd2469fb900d6425f13ceb38df6",
+      "title": "Tebex's Liam Wiltshire: \"New regulations quietly change who owns the player relationship\"",
+      "url": "https://www.pocketgamer.biz/speaker-spotlight-tebexs-liam-wiltshire/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 15:00:00 +0000",
+      "collected_at": "2026-03-09T00:44:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tebex",
+        "liam",
+        "wiltshire",
+        "new",
+        "regulations",
+        "quietly",
+        "change"
+      ]
+    },
+    {
+      "id": "4dec80ba1d299c63fb6f717cf439123932afccd1",
+      "title": "Avakin Life surpasses 500 million downloads, cementing 12-year legacy as a global powerhouse",
+      "url": "https://www.pocketgamer.biz/avakin-life-surpasses-500-million-downloads-cementing-12-year-legacy-as-a-global-powerhouse/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 14:00:00 +0000",
+      "collected_at": "2026-03-09T00:44:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "avakin",
+        "life",
+        "surpasses",
+        "million",
+        "downloads",
+        "cementing",
+        "12-year"
+      ]
+    },
+    {
+      "id": "b07329a638d17f9a74aece202bb150f0c6d9c851",
+      "title": "Roblox launches AI-powered chat system that automatically rephrases inappropriate messages",
+      "url": "https://www.pocketgamer.biz/roblox-launches-ai-powered-chat-system-that-automatically-rephrases-inappropriate-messages/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 10:53:00 +0000",
+      "collected_at": "2026-03-09T00:44:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "roblox",
+        "launches",
+        "ai-powered",
+        "chat",
+        "system",
+        "automatically",
+        "rephrases"
+      ]
+    },
+    {
+      "id": "48d0fc724bb82eeccdca632c4fc2d9cb1f4885db",
+      "title": "Pitchify launches Pitch Direct to make pitching to publishers more transparent",
+      "url": "https://www.pocketgamer.biz/pitchify-launches-pitch-direct-to-make-pitching-to-publishers-more-transparent/",
+      "category": "Game Industry",
+      "published": "Fri, 06 Mar 2026 10:39:00 +0000",
+      "collected_at": "2026-03-09T00:44:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pitchify",
+        "launches",
+        "pitch",
+        "direct",
+        "make",
+        "pitching",
+        "publishers"
+      ]
+    },
+    {
+      "id": "28818cc117f4650675d73bfff56320874c00db10",
+      "title": "Mistplay launches Playtime Events to deepen engagement in rewarded ads",
+      "url": "https://www.pocketgamer.biz/mistplay-launches-playtime-events-to-deepen-engagement-in-rewarded-ads/",
+      "category": "Game Industry",
+      "published": "Thu, 05 Mar 2026 17:00:00 +0000",
+      "collected_at": "2026-03-09T00:44:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mistplay",
+        "launches",
+        "playtime",
+        "events",
+        "deepen",
+        "engagement",
+        "rewarded"
+      ]
+    },
+    {
       "id": "c055d83f387e0b854a9fa6ef35814bd09f0d0752",
       "title": "Next-gen Xbox console, codenamed Project Helix, will play PC games",
       "url": "https://www.gamesindustry.biz/next-gen-xbox-console-codenamed-project-helix-will-play-pc-games",
