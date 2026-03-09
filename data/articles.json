@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "80c3c5876d830b59ed3c90819ecca096725e3b8f",
+      "title": "Leading with impact: Ada Mockute Jaime on growth, inclusion and global games strategy",
+      "url": "https://www.pocketgamer.biz/leading-with-impact-ada-mockute-jaime-on-growth-inclusion-and-global-games-strategy/",
+      "category": "Game Industry",
+      "published": "Sun, 08 Mar 2026 09:00:00 +0000",
+      "collected_at": "2026-03-09T09:51:32+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "leading",
+        "impact",
+        "ada",
+        "mockute",
+        "jaime",
+        "growth",
+        "inclusion"
+      ]
+    },
+    {
       "id": "453bd4ffa7f0cfd2469fb900d6425f13ceb38df6",
       "title": "Tebex's Liam Wiltshire: \"New regulations quietly change who owns the player relationship\"",
       "url": "https://www.pocketgamer.biz/speaker-spotlight-tebexs-liam-wiltshire/",
