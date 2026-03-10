@@ -1,6 +1,224 @@
 {
   "sessions": [
     {
+      "session_id": "2c9c52220acf57b973b8330405363eb89319e61c",
+      "date": "2026-03-11T08:45:40+09:00",
+      "article": {
+        "id": "80c3c5876d830b59ed3c90819ecca096725e3b8f",
+        "title": "Leading with impact: Ada Mockute Jaime on growth, inclusion and global games strategy",
+        "url": "https://www.pocketgamer.biz/leading-with-impact-ada-mockute-jaime-on-growth-inclusion-and-global-games-strategy/",
+        "category": "Game Industry",
+        "published": "Sun, 08 Mar 2026 09:00:00 +0000"
+      },
+      "tags": [
+        "다양성",
+        "크리에이터 생태계",
+        "지속 가능한 성장"
+      ],
+      "planner_summary_json": {
+        "article_meta": {
+          "title": "Leading with impact: Ada Mockute Jaime on growth, inclusion and global games strategy",
+          "url": "https://www.pocketgamer.biz/leading-with-impact-ada-mockute-jaime-on-growth-inclusion-and-global-games-strategy/",
+          "published_at": "Sun, 08 Mar 2026 09:00:00 +0000",
+          "category": "Game Industry"
+        },
+        "summary": {
+          "market_insight": [
+            "게임 산업에서의 발견 방식이 광고 중심에서 크리에이터 주도의 생태계로 변화하고 있다.",
+            "다양한 팀 구성은 의사결정을 개선하고, 라이브 서비스 환경에서의 블라인드 스팟을 줄인다.",
+            "아시아 시장 진출 시, 지역별 생태계를 고려한 맞춤형 전략이 필요하다."
+          ],
+          "system_tech": [
+            "성공적인 제품은 명확한 메커니즘과 지속적인 재플레이 가능성을 결합해야 한다.",
+            "소셜 플랫폼을 브랜드 도구에서 측정 가능한 인수 채널로 재정의하는 것이 중요하다.",
+            "통합된 시스템에서 신뢰성과 규모가 서로를 강화하는 전략이 필요하다."
+          ],
+          "ux": [
+            "사용자 경험은 문화적 뉘앙스와 소비 습관을 반영해야 한다.",
+            "포괄적인 팀워크와 커뮤니티 참여가 사용자 경험을 향상시킨다.",
+            "안전한 실험 환경이 혁신을 촉진하고, 사용자와의 신뢰를 구축한다."
+          ]
+        },
+        "keywords": [
+          {
+            "keyword": "다양성",
+            "why_it_matters": "다양한 팀 구성은 의사결정을 개선하고, 빠르게 변화하는 사용자 감정에 적절히 대응할 수 있다."
+          },
+          {
+            "keyword": "크리에이터 생태계",
+            "why_it_matters": "크리에이터 중심의 발견 방식은 사용자 신뢰를 구축하고, 브랜드와 성과 마케팅의 경계를 허물어준다."
+          },
+          {
+            "keyword": "지속 가능한 성장",
+            "why_it_matters": "제품 품질이 우선시되어야 하며, 이는 장기적인 사용자 참여와 재구매율을 높이는 데 기여한다."
+          }
+        ],
+        "caveats": [
+          "알 수 없음"
+        ]
+      },
+      "questions": [
+        {
+          "question_id": "q1",
+          "type": "fact",
+          "points": 10,
+          "prompt": "게임 산업에서의 발견 방식이 광고 중심에서 어떤 방향으로 변화하고 있는가?",
+          "intent": "게임 산업의 현재 트렌드를 이해하기 위해 질문합니다.",
+          "answer_format_hint": "변화의 방향성을 설명하는 문장",
+          "rubric": [
+            "정확한 정보 제공",
+            "업계 동향 이해",
+            "변화의 원인 설명"
+          ],
+          "tags": [
+            "TrendInsight",
+            "BusinessAcumen"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "market_insight",
+            "reference": "https://www.pocketgamer.biz/leading-with-impact-ada-mockute-jaime-on-growth-inclusion-and-global-games-strategy/"
+          }
+        },
+        {
+          "question_id": "q2",
+          "type": "logic",
+          "points": 20,
+          "prompt": "다양한 팀 구성이 의사결정 개선에 어떻게 기여하는지 논리적으로 설명하시오.",
+          "intent": "다양성의 중요성을 이해하고 이를 논리적으로 설명하기 위해 질문합니다.",
+          "answer_format_hint": "다양성이 의사결정에 미치는 영향을 설명하는 문장",
+          "rubric": [
+            "논리적 사고",
+            "다양성의 장점 설명",
+            "팀워크의 중요성 강조"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "DetailLogic"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [
+              "다양성"
+            ],
+            "from_summary_section": "market_insight",
+            "reference": "https://www.pocketgamer.biz/leading-with-impact-ada-mockute-jaime-on-growth-inclusion-and-global-games-strategy/"
+          }
+        },
+        {
+          "question_id": "q3",
+          "type": "system",
+          "points": 30,
+          "prompt": "소셜 플랫폼을 브랜드 도구에서 측정 가능한 인수 채널로 재정의하는 전략의 필요성을 설명하시오.",
+          "intent": "소셜 플랫폼의 역할 변화에 대한 이해를 높이기 위해 질문합니다.",
+          "answer_format_hint": "소셜 플랫폼의 재정의 필요성을 설명하는 문장",
+          "rubric": [
+            "시스템적 사고",
+            "브랜드 전략 이해",
+            "마케팅 채널 분석"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "BusinessAcumen"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "system_tech",
+            "reference": "https://www.pocketgamer.biz/leading-with-impact-ada-mockute-jaime-on-growth-inclusion-and-global-games-strategy/"
+          }
+        },
+        {
+          "question_id": "q4",
+          "type": "reverse_apply",
+          "points": 40,
+          "prompt": "사용자 경험을 향상시키기 위해 포괄적인 팀워크와 커뮤니티 참여를 어떻게 적용할 수 있을지 제안하시오.",
+          "intent": "사용자 경험 개선을 위한 실질적인 방법을 모색하기 위해 질문합니다.",
+          "answer_format_hint": "팀워크와 커뮤니티 참여의 적용 방안을 설명하는 문장",
+          "rubric": [
+            "실용적인 제안",
+            "사용자 중심 접근",
+            "팀워크의 중요성 강조"
+          ],
+          "tags": [
+            "UserCentric",
+            "SystemicThinking"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "ux",
+            "reference": "https://www.pocketgamer.biz/leading-with-impact-ada-mockute-jaime-on-growth-inclusion-and-global-games-strategy/"
+          }
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q1",
+          "answer": "크리에이터 중심"
+        },
+        {
+          "question_id": "q2",
+          "answer": "라이브 서비스에서 블라인드 스팟을 줄임, 의사 결정 문제 개선"
+        },
+        {
+          "question_id": "q3",
+          "answer": "이제는 광고보다 크리에이터 등 다양한 사람들이 새로운 것을 먼저 발견함, 추가로 게임 앱 등보다 사용 인구도 많아 유저 데이터 쌓기도 좋을 듯 함"
+        },
+        {
+          "question_id": "q4",
+          "answer": "다양한 팀 분야의 피드백을 받아 특정 집군으로는 파악이 어려운 케이스들 파악을 파악하여 적용가능"
+        }
+      ],
+      "eval_pack": {
+        "question_results": [
+          {
+            "question_id": "q1",
+            "score": 5,
+            "max_score": 10,
+            "feedback": "답변이 너무 간단하고 구체성이 부족합니다. 변화의 방향성을 명확히 설명해야 합니다.",
+            "model_answer": "게임 산업에서의 발견 방식은 광고 중심에서 크리에이터 주도의 생태계로 변화하고 있습니다. 이는 사용자 신뢰를 구축하고 브랜드와 성과 마케팅의 경계를 허물어줍니다."
+          },
+          {
+            "question_id": "q2",
+            "score": 10,
+            "max_score": 20,
+            "feedback": "의사결정 개선의 논리적 연결이 부족합니다. 다양한 팀 구성의 구체적인 장점을 설명해야 합니다.",
+            "model_answer": "다양한 팀 구성은 다양한 관점을 제공하여 의사결정의 질을 높이고, 빠르게 변화하는 사용자 감정에 적절히 대응할 수 있게 합니다."
+          },
+          {
+            "question_id": "q3",
+            "score": 15,
+            "max_score": 30,
+            "feedback": "소셜 플랫폼의 재정의 필요성을 설명하는 데 있어 깊이가 부족합니다. 구체적인 예시나 효과를 추가해야 합니다.",
+            "model_answer": "소셜 플랫폼을 브랜드 도구에서 측정 가능한 인수 채널로 재정의하는 것은 사용자 데이터 수집과 분석을 통해 마케팅 전략을 강화하고, 브랜드 인지도를 높이는 데 필수적입니다."
+          },
+          {
+            "question_id": "q4",
+            "score": 20,
+            "max_score": 40,
+            "feedback": "팀워크와 커뮤니티 참여의 적용 방안이 구체적이지 않습니다. 실질적인 방법을 제시해야 합니다.",
+            "model_answer": "사용자 경험을 향상시키기 위해 다양한 팀 분야의 피드백을 수집하고, 커뮤니티 참여를 통해 사용자 요구를 파악하여 맞춤형 솔루션을 제공하는 것이 중요합니다."
+          }
+        ],
+        "total_score": 50,
+        "radar": {
+          "SystemicThinking": 3,
+          "UserCentric": 3,
+          "BusinessAcumen": 3,
+          "DetailLogic": 2,
+          "TrendInsight": 3
+        },
+        "daily_insight": {
+          "growth_check": "최근 3일간 Systemic Thinking과 User-Centric 점수가 상승했습니다.",
+          "weakness_fix": "Detail Logic이 가장 약한 축이며, 이는 답변의 구체성이 부족하기 때문입니다.",
+          "recommended_next_topic": "사용자 경험 개선을 위한 데이터 기반 접근법"
+        }
+      },
+      "final_summary": "- 크리에이터 중심\n- 라이브 서비스에서 블라인드 스팟을 줄임, 의사 결정 문제 개선\n- 이제는 광고보다 크리에이터 등 다양한 사람들이 새로운 것을 먼저 발견함, 추가로 게임 앱 등보다 사용 인구도 많아 유저 데이터 쌓기도 좋을 듯 함"
+    },
+    {
       "session_id": "1089838ea62acf9e3ae5ea506bd8ffffac96e9b7",
       "date": "2026-03-07T23:30:37+09:00",
       "article": {
