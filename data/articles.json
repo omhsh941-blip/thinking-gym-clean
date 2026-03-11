@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "4352af745ad96cd1e0b418a59d26d44d99b35757",
+      "title": "엔씨소프트, '리니지 클래식'과 '리니지M', '리니지2M' 순차적 업데이트",
+      "url": "https://game.donga.com/121835/",
+      "category": "Game Industry",
+      "published": "Thu, 12 Mar 2026 08:22:14 +0900",
+      "collected_at": "2026-03-12T08:59:22+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "엔씨소프트",
+        "리니지",
+        "클래식",
+        "리니지m",
+        "리니지2m",
+        "순차적",
+        "업데이트"
+      ]
+    },
+    {
+      "id": "573493ec0e7fc1bab767bf6b73f794f8f3eff049",
+      "title": "\"응답자 95%가 AI 활용\", 유니티 ‘2026 유니티 게임 개발 보고서’ 공개",
+      "url": "https://game.donga.com/121832/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 16:56:16 +0900",
+      "collected_at": "2026-03-12T08:59:22+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "유니티",
+        "응답자",
+        "ai",
+        "활용",
+        "개발",
+        "보고서",
+        "공개"
+      ]
+    },
+    {
+      "id": "49869cf8a741a677365805018c38d46620b5015d",
+      "title": "넷마블 ‘일곱 개의 대죄: 오리진’, 글로벌 10개국서 옥외 광고로 알리기 총력",
+      "url": "https://game.donga.com/121833/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 16:54:38 +0900",
+      "collected_at": "2026-03-12T08:59:22+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "일곱",
+        "개의",
+        "대죄",
+        "오리진",
+        "글로벌",
+        "10개국서"
+      ]
+    },
+    {
+      "id": "31bba15246a06b1c224b73e768f70222b2190952",
+      "title": "넥슨재단, 대학생 코딩 교육 봉사활동 '헬로메이트' 1기 마무리",
+      "url": "https://game.donga.com/121831/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 16:48:15 +0900",
+      "collected_at": "2026-03-12T08:59:22+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넥슨재단",
+        "대학생",
+        "코딩",
+        "교육",
+        "봉사활동",
+        "헬로메이트",
+        "1기"
+      ]
+    },
+    {
+      "id": "04e6438586500217cfd26874d4c19526852dad00",
+      "title": "닉네임도 디지털 자산으로 ‘메이플스토리 N’, NFT 1억 2,000만 네소에 거래",
+      "url": "https://game.donga.com/121830/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 16:45:18 +0900",
+      "collected_at": "2026-03-12T08:59:22+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "닉네임",
+        "디지털",
+        "자산",
+        "메이플스토리",
+        "nft",
+        "1억",
+        "네소"
+      ]
+    },
+    {
       "id": "80c3c5876d830b59ed3c90819ecca096725e3b8f",
       "title": "Leading with impact: Ada Mockute Jaime on growth, inclusion and global games strategy",
       "url": "https://www.pocketgamer.biz/leading-with-impact-ada-mockute-jaime-on-growth-inclusion-and-global-games-strategy/",
