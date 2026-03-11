@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "64c5e0d72653427ad749b19b5603006a98396e76",
+      "title": "Squid Game: Unleashed dev Boss Fight Entertainment relaunches as indie studio Bossfight",
+      "url": "https://www.pocketgamer.biz/squid-game-unleashed-dev-boss-fight-entertainment-relaunches-as-indie-studio-bossfight/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 15:35:00 +0000",
+      "collected_at": "2026-03-12T08:59:28+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "squid",
+        "unleashed",
+        "dev",
+        "boss",
+        "fight",
+        "entertainment",
+        "relaunches"
+      ]
+    },
+    {
+      "id": "04f01b00835bd2f79fcc9ecf538eb99baee908ba",
+      "title": "Epic Games cuts V-Bucks bundles as Fortnite pricing update rolls out",
+      "url": "https://www.pocketgamer.biz/epic-games-cuts-v-bucks-bundles-as-fortnite-pricing-update-rolls-out/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 15:34:00 +0000",
+      "collected_at": "2026-03-12T08:59:28+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "epic",
+        "cuts",
+        "v-bucks",
+        "bundles",
+        "fortnite",
+        "pricing",
+        "update"
+      ]
+    },
+    {
+      "id": "5d869d166ea820d8c0668b9550f2d4ec149cf53f",
+      "title": "“Finally, real evolution in the app store”: The Mobile Mavens weigh in on Google Play changes",
+      "url": "https://www.pocketgamer.biz/finally-real-evolution-in-the-app-store-the-mobile-mavens-weigh-in-on-google-play-changes/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 15:33:00 +0000",
+      "collected_at": "2026-03-12T08:59:28+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "finally",
+        "real",
+        "evolution",
+        "app",
+        "store",
+        "mobile",
+        "mavens"
+      ]
+    },
+    {
+      "id": "b115c172afc20706b023f88fff0821745e76af5e",
+      "title": "Rovio’s Beacon tech \"indispensable\" to its own games but less compatible with Sega’s",
+      "url": "https://www.pocketgamer.biz/rovios-beacon-tech-indispensable-to-its-own-games-but-less-compatible-with-segas/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 15:32:00 +0000",
+      "collected_at": "2026-03-12T08:59:28+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "rovio",
+        "beacon",
+        "tech",
+        "indispensable",
+        "own",
+        "but",
+        "less"
+      ]
+    },
+    {
+      "id": "811a36a971a5d65196d151fa93af284310678272",
+      "title": "How Azur Games increased retention and doubled revenue with Hidden Objects 2",
+      "url": "https://www.pocketgamer.biz/how-azur-games-increased-retention-and-doubled-revenue-with-hidden-objects-2/",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 15:30:00 +0000",
+      "collected_at": "2026-03-12T08:59:28+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "how",
+        "azur",
+        "increased",
+        "retention",
+        "and",
+        "doubled",
+        "revenue"
+      ]
+    },
+    {
       "id": "d00159c2454635343acef2233abd1157f310337e",
       "title": "Xbox unveils first tech details of its next generation console, codenamed Project Helix",
       "url": "https://www.gamesindustry.biz/xbox-unveils-first-tech-details-of-its-next-generation-console-codenamed-project-helix",
