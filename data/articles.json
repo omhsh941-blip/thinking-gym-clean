@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "d00159c2454635343acef2233abd1157f310337e",
+      "title": "Xbox unveils first tech details of its next generation console, codenamed Project Helix",
+      "url": "https://www.gamesindustry.biz/xbox-unveils-first-tech-details-of-its-next-generation-console-codenamed-project-helix",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 21:14:46 +0000",
+      "collected_at": "2026-03-12T08:59:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "xbox",
+        "unveils",
+        "first",
+        "tech",
+        "details",
+        "next",
+        "generation"
+      ]
+    },
+    {
+      "id": "b11d9582eb36776f99381d17888d7d6d9413fffc",
+      "title": "Developer sues publisher after leaving Kickstarter backers waiting over two years for promised physical editions",
+      "url": "https://www.gamesindustry.biz/developer-sues-publisher-after-leaving-kickstarter-backers-waiting-over-two-years-for-promised-physical-editions",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 20:14:40 +0000",
+      "collected_at": "2026-03-12T08:59:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "developer",
+        "sues",
+        "publisher",
+        "after",
+        "leaving",
+        "kickstarter",
+        "backers"
+      ]
+    },
+    {
+      "id": "66d301473b3088baa2d3878ad06d652880eb9c9e",
+      "title": "Valve responds to NY Attorney General lawsuit: \"We have serious concerns with the alterations the NYAG claims are necessary to make to our games\"",
+      "url": "https://www.gamesindustry.biz/valve-responds-to-ny-attorney-general-lawsuit-we-have-serious-concerns-with-the-alterations-the-nyag-claims-are-necessary-to-make-to-our-games",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 19:49:24 +0000",
+      "collected_at": "2026-03-12T08:59:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "valve",
+        "responds",
+        "ny",
+        "attorney",
+        "general",
+        "lawsuit",
+        "have"
+      ]
+    },
+    {
+      "id": "3fa6249e7a22c3da004f7f17a577a065fdcaf978",
+      "title": "SAG-AFTRA issues a Do Not Work Order against Capcom for \"failing to initiate the signatory process\"",
+      "url": "https://www.gamesindustry.biz/sag-aftra-issues-a-do-not-work-order-against-capcom-for-failing-to-initiate-the-signatory-process",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 19:00:13 +0000",
+      "collected_at": "2026-03-12T08:59:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "sag-aftra",
+        "issues",
+        "do",
+        "not",
+        "work",
+        "order",
+        "against"
+      ]
+    },
+    {
+      "id": "47f981bd6ccae4a5eebdeaf0163c579a807ca369",
+      "title": "\"I think people undervalue their own work\" – ID@Xbox head Chris Charla on the tricky problem of indie game pricing",
+      "url": "https://www.gamesindustry.biz/i-think-people-undervalue-their-own-work-idxbox-head-chris-charla-on-the-tricky-problem-of-indie-game-pricing",
+      "category": "Game Industry",
+      "published": "Wed, 11 Mar 2026 13:54:54 +0000",
+      "collected_at": "2026-03-12T08:59:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "think",
+        "people",
+        "undervalue",
+        "own",
+        "work",
+        "id",
+        "xbox"
+      ]
+    },
+    {
       "id": "4352af745ad96cd1e0b418a59d26d44d99b35757",
       "title": "엔씨소프트, '리니지 클래식'과 '리니지M', '리니지2M' 순차적 업데이트",
       "url": "https://game.donga.com/121835/",
