@@ -1,6 +1,195 @@
 {
   "articles": [
     {
+      "id": "7cfd7a7b6cbe8c6803fd8ea816b64ac4726c163a",
+      "title": "넷마블 ‘일곱 개의 대죄: 오리진’  美 LA서 ‘엘리자베스 이벤트’로 눈길",
+      "url": "https://game.donga.com/121881/",
+      "category": "Game Industry",
+      "published": "Mon, 16 Mar 2026 13:44:38 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "일곱",
+        "개의",
+        "대죄",
+        "오리진",
+        "la서",
+        "엘리자베스"
+      ]
+    },
+    {
+      "id": "3969ef735a9a5ef46d174fb08ed63a247222bdfe",
+      "title": "SOOP, 구글플레이와 ASL 2026 연간 스폰서십 체결…올해도 야외 결승",
+      "url": "https://game.donga.com/121880/",
+      "category": "Game Industry",
+      "published": "Mon, 16 Mar 2026 13:24:25 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "soop",
+        "구글플레이",
+        "asl",
+        "연간",
+        "스폰서십",
+        "체결",
+        "올해"
+      ]
+    },
+    {
+      "id": "fb3454e754cad9c51abfcd0ee3a4a91c44dae7ed",
+      "title": "컴투스 '서머너즈 워' 한일전, 팀 코리아 3년 연속 우승 쾌거",
+      "url": "https://game.donga.com/121879/",
+      "category": "Game Industry",
+      "published": "Mon, 16 Mar 2026 11:37:27 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "컴투스",
+        "서머너즈",
+        "한일전",
+        "코리아",
+        "3년",
+        "연속",
+        "우승"
+      ]
+    },
+    {
+      "id": "2033208872a2aaccca59dd60b4f152d9c8d5cdf8",
+      "title": "넷마블 '일곱 개의 대죄: Origin', 특별 방송 통해 게임 정보 대공개",
+      "url": "https://game.donga.com/121878/",
+      "category": "Game Industry",
+      "published": "Sat, 14 Mar 2026 17:36:37 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "일곱",
+        "개의",
+        "대죄",
+        "origin",
+        "특별",
+        "방송"
+      ]
+    },
+    {
+      "id": "63d0790945ba789c25e7a3149b6ccc16038b183e",
+      "title": "[취재] 코믹월드를 장식힌 '아주르 프로밀리아' 현장 분위기 “후끈”",
+      "url": "https://game.donga.com/121877/",
+      "category": "Game Industry",
+      "published": "Sat, 14 Mar 2026 15:51:49 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "취재",
+        "코믹월드",
+        "장식힌",
+        "아주르",
+        "프로밀리아",
+        "현장",
+        "분위기"
+      ]
+    },
+    {
+      "id": "eb034776b714e9c0dcf317f136b13c93773c7d3f",
+      "title": "드림에이지 ‘알케론’, 매주 금요일에 글로벌 FNF 테스트 진행",
+      "url": "https://game.donga.com/121875/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 17:25:54 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "드림에이지",
+        "알케론",
+        "매주",
+        "금요일",
+        "글로벌",
+        "fnf",
+        "테스트"
+      ]
+    },
+    {
+      "id": "77d9b7bf454a13d93bd08f1f3e43ed60b7c946bb",
+      "title": "[동아 게임백과사전]\"이런 걸 왜 만들고 누가 사지?\" 기괴 그 자체의 게임들",
+      "url": "https://game.donga.com/121876/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 17:22:43 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "동아",
+        "게임백과사전",
+        "이런",
+        "만들고",
+        "누가",
+        "사지",
+        "기괴"
+      ]
+    },
+    {
+      "id": "3b0fc103ca8468c8bdfe6c8af754705a296f1798",
+      "title": "[게임 인더스트리]게임 가격이 국가 경쟁력과 연계된 이유는?",
+      "url": "https://game.donga.com/121874/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 17:20:18 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "인더스트리",
+        "가격",
+        "국가",
+        "경쟁력",
+        "연계된",
+        "이유"
+      ]
+    },
+    {
+      "id": "2fde9b9608a27cc335b94b1a1b569dcfa865095f",
+      "title": "‘퍼스트 디센던트’, 계승자 밸런스 조정 및 신규 콘텐츠 업데이트",
+      "url": "https://game.donga.com/121872/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 17:19:15 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "퍼스트",
+        "디센던트",
+        "계승자",
+        "밸런스",
+        "조정",
+        "신규",
+        "콘텐츠"
+      ]
+    },
+    {
+      "id": "3d3cbad00214324c7ebda42575ddbee32974f84e",
+      "title": "‘FC 온라인’, ‘2026 FSL 스프링’ 결승전 3월 22일 개최",
+      "url": "https://game.donga.com/121871/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 17:18:37 +0900",
+      "collected_at": "2026-03-16T13:53:00+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "fc",
+        "온라인",
+        "fsl",
+        "스프링",
+        "결승전",
+        "3월",
+        "22일"
+      ]
+    },
+    {
       "id": "64c5e0d72653427ad749b19b5603006a98396e76",
       "title": "Squid Game: Unleashed dev Boss Fight Entertainment relaunches as indie studio Bossfight",
       "url": "https://www.pocketgamer.biz/squid-game-unleashed-dev-boss-fight-entertainment-relaunches-as-indie-studio-bossfight/",
