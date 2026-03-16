@@ -1,6 +1,196 @@
 {
   "articles": [
     {
+      "id": "1f711baef1d5ae327bf1b8db4ffa39458f904765",
+      "title": "Embark Studios head Patrick Söderlund explains how Arc Raiders was made on \"a quarter of the budget\" of a AAA title",
+      "url": "https://www.gamesindustry.biz/embark-studios-head-patrick-soderlund-explains-how-arc-raiders-was-made-on-a-quarter-of-the-budget-of-a-aaa-title",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 16:06:01 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "embark",
+        "studios",
+        "head",
+        "patrick",
+        "derlund",
+        "explains",
+        "how"
+      ]
+    },
+    {
+      "id": "2ef939721a496c96ef1d42f418ef92a92dcc8c91",
+      "title": "Will there actually be any such thing as a Project Helix \"native\" game? | Opinion",
+      "url": "https://www.gamesindustry.biz/will-there-actually-be-any-such-thing-as-a-project-helix-native-game-opinion",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 15:17:40 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "will",
+        "there",
+        "actually",
+        "any",
+        "such",
+        "thing",
+        "project"
+      ]
+    },
+    {
+      "id": "d5236aa332493044fcb8808e1c53b78916fb6795",
+      "title": "Larry Hryb joins Commodore International Corporation as community development consultant",
+      "url": "https://www.gamesindustry.biz/larry-hryb-joins-commodore-international-corporation-as-community-development-consultant",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 14:48:34 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "larry",
+        "hryb",
+        "joins",
+        "commodore",
+        "international",
+        "corporation",
+        "community"
+      ]
+    },
+    {
+      "id": "0a85effb7abdb0c1b721e312243d184a3d1fd3ce",
+      "title": "Roblox and Minecraft players are less likely to play traditional AAA video games",
+      "url": "https://www.gamesindustry.biz/roblox-and-minecraft-players-are-less-likely-to-play-traditional-aaa-video-games",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 14:36:24 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "roblox",
+        "and",
+        "minecraft",
+        "players",
+        "less",
+        "likely",
+        "play"
+      ]
+    },
+    {
+      "id": "eeb5ca40881b2b09fd79da0259094042c259f483",
+      "title": "BAFTA Game Awards 2026 nominations revealed, Clair Obscur: Expedition 33 leads in 12 categories",
+      "url": "https://www.gamesindustry.biz/clair-obscur-expedition-33-receives-nine-nominations-at-bafta-game-awards-2026",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 11:44:02 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "bafta",
+        "awards",
+        "nominations",
+        "revealed",
+        "clair",
+        "obscur",
+        "expedition"
+      ]
+    },
+    {
+      "id": "f3ad69742044268b3bb899113510b85afe251599",
+      "title": "Clair Obscur: Expedition 33 wins Game of the Year at Game Developers Choice Awards 2026",
+      "url": "https://www.gamesindustry.biz/clair-obscur-expedition-33-wins-game-of-the-year-at-game-developers-choice-awards-2026",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 09:15:09 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "clair",
+        "obscur",
+        "expedition",
+        "wins",
+        "year",
+        "developers",
+        "choice"
+      ]
+    },
+    {
+      "id": "09fc835628d7890e823c6b0a22ead3b4623f04cb",
+      "title": "PEGI's loot box rule changes are welcome, but they should be retrospective | Opinion",
+      "url": "https://www.gamesindustry.biz/pegis-loot-box-rule-changes-are-welcome-but-they-should-be-retrospective-opinion",
+      "category": "Game Industry",
+      "published": "Thu, 12 Mar 2026 17:09:18 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pegi",
+        "loot",
+        "box",
+        "rule",
+        "changes",
+        "welcome",
+        "but"
+      ]
+    },
+    {
+      "id": "5fa175fd826e637c4f05d669c69cbe9af2580bf5",
+      "title": "New research shows over 90% of gamers find playing with AI-powered NPCs to be \"enjoyable and rewarding\"",
+      "url": "https://www.gamesindustry.biz/new-research-shows-over-90-of-gamers-find-playing-with-ai-powered-npcs-to-be-enjoyable-and-rewarding",
+      "category": "Game Industry",
+      "published": "Thu, 12 Mar 2026 16:13:26 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "new",
+        "research",
+        "shows",
+        "over",
+        "find",
+        "playing",
+        "ai-powered"
+      ]
+    },
+    {
+      "id": "998ddbc24ab044b07629e2d816980d723e95f1f6",
+      "title": "PC will overtake console revenue by 2028, says Newzoo",
+      "url": "https://www.gamesindustry.biz/pc-will-overtake-console-revenue-by-2028-says-newzoo",
+      "category": "Game Industry",
+      "published": "Thu, 12 Mar 2026 16:00:00 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pc",
+        "will",
+        "overtake",
+        "console",
+        "revenue",
+        "says",
+        "newzoo"
+      ]
+    },
+    {
+      "id": "701a76b11a54e6db7fa98165d897db4d1fd6ae66",
+      "title": "Epic Games increases Fortnite V-Bucks \"to help pay the bills\"",
+      "url": "https://www.gamesindustry.biz/epic-games-increases-fortnite-v-bucks-to-help-pay-the-bills",
+      "category": "Game Industry",
+      "published": "Thu, 12 Mar 2026 14:49:33 +0000",
+      "collected_at": "2026-03-16T13:53:06+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "epic",
+        "increases",
+        "fortnite",
+        "v-bucks",
+        "help",
+        "pay",
+        "bills"
+      ]
+    },
+    {
       "id": "122977404f82d4e7b522d6cdcac6596b1d4a201b",
       "title": "Raising Genesis Hits Korea’s Top 10 Days After Launch",
       "url": "https://koreagamedesk.com/raising-genesis-hits-koreas-top-10-days-after-launch/?utm_source=rss&utm_medium=rss&utm_campaign=raising-genesis-hits-koreas-top-10-days-after-launch",
