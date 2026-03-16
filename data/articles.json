@@ -1,6 +1,196 @@
 {
   "articles": [
     {
+      "id": "0ae5343a4cec058a516362eab31891b51cb04d8c",
+      "title": "PEGI revises ratings with loot boxes among key changes, and Angry Birds marketing strategies | Week in Views",
+      "url": "https://www.pocketgamer.biz/pegi-revises-ratings-with-loot-boxes-among-key-changes-and-angry-birds-marketing-strategies-week-in-views/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 16:07:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pegi",
+        "revises",
+        "ratings",
+        "loot",
+        "boxes",
+        "among",
+        "key"
+      ]
+    },
+    {
+      "id": "0183bafaa179c6e4a1fab1941c6a5dc034aced21",
+      "title": "Google Play rolls out Game Trials so players can try full paid games before purchasing",
+      "url": "https://www.pocketgamer.biz/google-play-rolls-out-game-trials-so-players-can-try-full-paid-games-before-purchasing/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 15:34:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "google",
+        "play",
+        "rolls",
+        "out",
+        "trials",
+        "so",
+        "players"
+      ]
+    },
+    {
+      "id": "ab2968eb554acda67321dd7a700af3a663f516c5",
+      "title": "Mobvista reports $2.05bn revenue for 2025 as Mintegral drives growth",
+      "url": "https://www.pocketgamer.biz/mobvista-reports-205bn-revenue-for-2025-as-mintegral-drives-growth/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 15:33:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mobvista",
+        "reports",
+        "05bn",
+        "revenue",
+        "mintegral",
+        "drives",
+        "growth"
+      ]
+    },
+    {
+      "id": "1d497de452a82035730350a89042cb152ec21259",
+      "title": "Study shows 77% of mobile gamers spend $100 or more per month on online purchases",
+      "url": "https://www.pocketgamer.biz/study-shows-77-of-mobile-gamers-spend-100-or-more-per-month-on-online-purchases/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 15:32:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "study",
+        "shows",
+        "mobile",
+        "spend",
+        "or",
+        "more",
+        "per"
+      ]
+    },
+    {
+      "id": "b702b4ba61c8a0d61100c831a55179a52764ee52",
+      "title": "Razer reveals AI tools to speed up game development pipelines",
+      "url": "https://www.pocketgamer.biz/razer-reveals-ai-tools-to-speed-up-game-development-pipelines/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 15:31:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "razer",
+        "reveals",
+        "ai",
+        "tools",
+        "speed",
+        "up",
+        "development"
+      ]
+    },
+    {
+      "id": "60992f9b7e093dfa37c54d8f03a8686c6162fc3a",
+      "title": "Stillfront announces change to Nomination Committee ahead of AGM",
+      "url": "https://www.pocketgamer.biz/stillfront-announces-change-to-nomination-committee-ahead-of-agm/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 15:31:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "stillfront",
+        "announces",
+        "change",
+        "nomination",
+        "committee",
+        "ahead",
+        "agm"
+      ]
+    },
+    {
+      "id": "b25ed2d2e78d1520a62d4e12500062c99cf28746",
+      "title": "Sega Sammy plans to expand transmedia strategy as mobile and live service titles take centre stage",
+      "url": "https://www.pocketgamer.biz/sega-sammy-plans-to-expand-transmedia-strategy-as-mobile-and-live-service-titles-take-centre-stage/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 15:30:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "sega",
+        "sammy",
+        "plans",
+        "expand",
+        "transmedia",
+        "strategy",
+        "mobile"
+      ]
+    },
+    {
+      "id": "c2803e741f74bb18771785dfdfc5316568210352",
+      "title": "New release roundup: Nova Drift, Subnautica: Below Zero, Overcooked! All You Can Eat, and more",
+      "url": "https://www.pocketgamer.biz/new-release-roundup-nova-drift-subnautica-below-zero-overcooked-all-you-can-eat-and-more/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 15:29:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "new",
+        "release",
+        "roundup",
+        "nova",
+        "drift",
+        "subnautica",
+        "below"
+      ]
+    },
+    {
+      "id": "a2688357220f7801fde5a52c870d200ccf485dba",
+      "title": "From large language models to learning languages - Seven more fabulous fireside chats from PGC London 2026",
+      "url": "https://www.pocketgamer.biz/from-large-language-models-to-learning-languages-seven-more-fabulous-fireside-chats-from-pgc-london-2026/",
+      "category": "Game Industry",
+      "published": "Fri, 13 Mar 2026 14:00:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "large",
+        "language",
+        "models",
+        "learning",
+        "languages",
+        "seven",
+        "more"
+      ]
+    },
+    {
+      "id": "db800f89ff020395b425e525ec169b61b7984808",
+      "title": "Google Cloud unveils autonomous AI agents as next phase of game development",
+      "url": "https://www.pocketgamer.biz/google-cloud-unveils-autonomous-ai-agents-as-next-phase-of-game-development/",
+      "category": "Game Industry",
+      "published": "Thu, 12 Mar 2026 15:48:00 +0000",
+      "collected_at": "2026-03-16T13:53:07+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "google",
+        "cloud",
+        "unveils",
+        "autonomous",
+        "ai",
+        "agents",
+        "next"
+      ]
+    },
+    {
       "id": "1f711baef1d5ae327bf1b8db4ffa39458f904765",
       "title": "Embark Studios head Patrick Söderlund explains how Arc Raiders was made on \"a quarter of the budget\" of a AAA title",
       "url": "https://www.gamesindustry.biz/embark-studios-head-patrick-soderlund-explains-how-arc-raiders-was-made-on-a-quarter-of-the-budget-of-a-aaa-title",
