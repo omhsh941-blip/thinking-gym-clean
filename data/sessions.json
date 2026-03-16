@@ -1,6 +1,224 @@
 {
   "sessions": [
     {
+      "session_id": "9ff3d555cf4ebe13941a76b4f5b25fa18bab9a49",
+      "date": "2026-03-16T13:59:27+09:00",
+      "article": {
+        "id": "0ae5343a4cec058a516362eab31891b51cb04d8c",
+        "title": "PEGI revises ratings with loot boxes among key changes, and Angry Birds marketing strategies | Week in Views",
+        "url": "https://www.pocketgamer.biz/pegi-revises-ratings-with-loot-boxes-among-key-changes-and-angry-birds-marketing-strategies-week-in-views/",
+        "category": "Game Industry",
+        "published": "Fri, 13 Mar 2026 16:07:00 +0000"
+      },
+      "tags": [
+        "PEGI",
+        "Loot Boxes",
+        "Marketing Strategies"
+      ],
+      "planner_summary_json": {
+        "article_meta": {
+          "title": "PEGI revises ratings with loot boxes among key changes, and Angry Birds marketing strategies | Week in Views",
+          "url": "https://www.pocketgamer.biz/pegi-revises-ratings-with-loot-boxes-among-key-changes-and-angry-birds-marketing-strategies-week-in-views/",
+          "published_at": "Fri, 13 Mar 2026 16:07:00 +0000",
+          "category": "Game Industry"
+        },
+        "summary": {
+          "market_insight": [
+            "PEGI의 새로운 등급 시스템은 게임의 콘텐츠뿐만 아니라 인게임 메커니즘과 수익화 요소까지 포함하여 평가의 범위를 확장하고 있다.",
+            "이러한 변화는 부모들이 자녀의 게임 선택에 대해 더욱 신중하게 고려하게 만들며, 게임 개발자들은 등급을 유지하기 위해 디자인을 조정해야 할 필요성이 커질 수 있다.",
+            "특히, 랜덤 아이템 구매가 포함된 게임은 PEGI 16 등급으로 자동 분류될 가능성이 높아져, 젊은 층을 겨냥한 게임의 시장 접근 방식에 영향을 미칠 것이다."
+          ],
+          "system_tech": [
+            "PEGI의 새로운 규정은 게임의 수익화 메커니즘을 평가하는 데 중점을 두고 있으며, 이는 게임 디자인에 중요한 변화를 요구할 수 있다.",
+            "게임 내 보상 시스템과 같은 요소들이 등급에 영향을 미치므로, 개발자들은 이러한 요소들을 전략적으로 설계해야 한다.",
+            "기존의 게임들이 새로운 등급 기준에 맞추기 위해 조정할 가능성이 있으며, 이는 게임의 경제적 균형에도 영향을 미칠 수 있다."
+          ],
+          "ux": [
+            "게임의 등급 변화는 사용자 경험에 직접적인 영향을 미치며, 특히 젊은 사용자층의 접근성을 제한할 수 있다.",
+            "일일 보상 및 비활동에 대한 패널티와 같은 메커니즘은 사용자 참여를 유도하지만, 높은 등급으로 인해 사용자 이탈을 초래할 수 있다.",
+            "게임의 UX/UI 디자인은 이러한 새로운 규정을 반영하여 사용자에게 긍정적인 경험을 제공해야 할 필요성이 있다."
+          ]
+        },
+        "keywords": [
+          {
+            "keyword": "PEGI",
+            "why_it_matters": "PEGI의 새로운 등급 시스템은 게임의 수익화 메커니즘을 포함하여 부모와 사용자에게 더 많은 정보를 제공함으로써, 게임 선택에 대한 신뢰성을 높인다."
+          },
+          {
+            "keyword": "Loot Boxes",
+            "why_it_matters": "랜덤 아이템 구매가 포함된 게임은 높은 등급으로 분류되어, 젊은 층의 접근성을 제한할 수 있으며, 이는 게임의 DAU와 Retention에 영향을 미칠 수 있다."
+          },
+          {
+            "keyword": "Marketing Strategies",
+            "why_it_matters": "게임의 마케팅 전략은 타겟 오디언스에 맞춰 조정되어야 하며, 이는 게임의 성공적인 런칭과 지속적인 사용자 참여에 중요한 요소가 된다."
+          }
+        ],
+        "caveats": [
+          "알 수 없음"
+        ]
+      },
+      "questions": [
+        {
+          "question_id": "q1",
+          "type": "fact",
+          "points": 10,
+          "prompt": "PEGI의 새로운 등급 시스템은 어떤 요소들을 포함하여 게임을 평가하고 있나요?",
+          "intent": "PEGI의 새로운 등급 시스템의 평가 기준을 이해하기 위해 질문했습니다.",
+          "answer_format_hint": "게임의 콘텐츠, 인게임 메커니즘, 수익화 요소 등",
+          "rubric": [
+            "PEGI 등급",
+            "게임 평가",
+            "수익화 메커니즘"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "TrendInsight"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "market_insight",
+            "reference": "PEGI의 새로운 등급 시스템은 게임의 콘텐츠뿐만 아니라 인게임 메커니즘과 수익화 요소까지 포함하여 평가의 범위를 확장하고 있다."
+          }
+        },
+        {
+          "question_id": "q2",
+          "type": "logic",
+          "points": 20,
+          "prompt": "PEGI의 새로운 규정이 게임 개발자들에게 어떤 디자인 조정을 요구할 가능성이 있나요?",
+          "intent": "PEGI의 새로운 규정이 게임 디자인에 미치는 영향을 분석하기 위해 질문했습니다.",
+          "answer_format_hint": "디자인 조정의 예시와 그 이유",
+          "rubric": [
+            "게임 디자인",
+            "PEGI 규정",
+            "개발자 대응"
+          ],
+          "tags": [
+            "DetailLogic",
+            "BusinessAcumen"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "system_tech",
+            "reference": "게임 내 보상 시스템과 같은 요소들이 등급에 영향을 미치므로, 개발자들은 이러한 요소들을 전략적으로 설계해야 한다."
+          }
+        },
+        {
+          "question_id": "q3",
+          "type": "system",
+          "points": 30,
+          "prompt": "PEGI의 새로운 등급 변화가 사용자 경험에 미치는 영향을 어떻게 분석할 수 있을까요?",
+          "intent": "사용자 경험에 대한 PEGI의 변화의 영향을 체계적으로 분석하기 위해 질문했습니다.",
+          "answer_format_hint": "사용자 경험의 긍정적/부정적 요소",
+          "rubric": [
+            "사용자 경험",
+            "PEGI 변화",
+            "UX/UI 디자인"
+          ],
+          "tags": [
+            "UserCentric",
+            "SystemicThinking"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "ux",
+            "reference": "게임의 등급 변화는 사용자 경험에 직접적인 영향을 미치며, 특히 젊은 사용자층의 접근성을 제한할 수 있다."
+          }
+        },
+        {
+          "question_id": "q4",
+          "type": "reverse_apply",
+          "points": 40,
+          "prompt": "PEGI의 새로운 등급 시스템을 반영하여 게임의 마케팅 전략을 어떻게 조정할 수 있을까요?",
+          "intent": "PEGI의 변화에 맞춰 마케팅 전략을 적용하는 방법을 탐구하기 위해 질문했습니다.",
+          "answer_format_hint": "타겟 오디언스에 맞춘 마케팅 전략의 예시",
+          "rubric": [
+            "마케팅 전략",
+            "PEGI 변화",
+            "타겟 오디언스"
+          ],
+          "tags": [
+            "BusinessAcumen",
+            "TrendInsight"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [
+              "Marketing Strategies"
+            ],
+            "from_summary_section": null,
+            "reference": "게임의 마케팅 전략은 타겟 오디언스에 맞춰 조정되어야 하며, 이는 게임의 성공적인 런칭과 지속적인 사용자 참여에 중요한 요소가 된다."
+          }
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q1",
+          "answer": "유료 랜덤 가챠 시스템, 일일 출석, 미접속 시 콘텐츠 손실 등 불이익을 주는지, 차단이나 신고 기능이 없는 무제한 통신 기능"
+        },
+        {
+          "question_id": "q2",
+          "answer": "게임 타겟군 연령에 맞춰 게임 시스템, 콘텐츠, BM 모델 재설계"
+        },
+        {
+          "question_id": "q3",
+          "answer": "유료 가챠, 일일 미션 등 시스템에 따라 연령 등급이 높아짐, 그로 인해 사용자는 해당 콘텐츠가 건전하지 않다는 인식을 할 수 있음."
+        },
+        {
+          "question_id": "q4",
+          "answer": "타겟 연령층에 맞게 인 게임 콘텐츠 ,BM 모델 재설계"
+        }
+      ],
+      "eval_pack": {
+        "question_results": [
+          {
+            "question_id": "q1",
+            "score": 3,
+            "max_score": 10,
+            "feedback": "답변이 PEGI의 새로운 등급 시스템의 요소를 명확하게 설명하지 못했습니다. 유료 랜덤 가챠 시스템과 같은 구체적인 예시가 필요합니다.",
+            "model_answer": "PEGI의 새로운 등급 시스템은 게임의 콘텐츠, 인게임 메커니즘, 수익화 요소를 포함하여 평가의 범위를 확장하고 있습니다."
+          },
+          {
+            "question_id": "q2",
+            "score": 10,
+            "max_score": 20,
+            "feedback": "디자인 조정의 예시를 잘 제시했습니다. 그러나 구체적인 이유와 함께 설명하면 더 좋을 것입니다.",
+            "model_answer": "PEGI의 새로운 규정에 따라 게임 개발자는 타겟 연령에 맞춰 게임 시스템, 콘텐츠, 비즈니스 모델(BM)을 재설계해야 할 필요가 있습니다."
+          },
+          {
+            "question_id": "q3",
+            "score": 15,
+            "max_score": 30,
+            "feedback": "사용자 경험에 대한 긍정적/부정적 요소를 언급했지만, 더 구체적인 사례나 데이터가 필요합니다.",
+            "model_answer": "PEGI의 새로운 등급 변화는 사용자 경험에 긍정적인 요소(신뢰성 증가)와 부정적인 요소(접근성 제한)를 모두 미칠 수 있습니다."
+          },
+          {
+            "question_id": "q4",
+            "score": 5,
+            "max_score": 40,
+            "feedback": "타겟 연령층에 맞춘 마케팅 전략의 구체적인 예시가 부족합니다. 더 많은 세부사항이 필요합니다.",
+            "model_answer": "PEGI의 새로운 등급 시스템을 반영하여, 마케팅 전략은 타겟 연령층에 맞춰 인게임 콘텐츠와 비즈니스 모델을 재설계해야 합니다."
+          }
+        ],
+        "total_score": 33,
+        "radar": {
+          "SystemicThinking": 3,
+          "UserCentric": 3,
+          "BusinessAcumen": 3,
+          "DetailLogic": 2,
+          "TrendInsight": 3
+        },
+        "daily_insight": {
+          "growth_check": "최근 3일간 Systemic Thinking, User-Centric, Business Acumen이 상승했습니다.",
+          "weakness_fix": "Detail & Logic이 가장 약한 축이며, 구체적인 사례나 데이터 제시가 부족합니다.",
+          "recommended_next_topic": "게임 산업의 최신 트렌드와 PEGI 등급 변화의 장기적 영향"
+        }
+      },
+      "final_summary": "- 유료 랜덤 가챠 시스템, 일일 출석, 미접속 시 콘텐츠 손실 등 불이익을 주는지, 차단이나 신고 기능이 없는 무제한 통신 기능\n- 게임 타겟군 연령에 맞춰 게임 시스템, 콘텐츠, BM 모델 재설계\n- 유료 가챠, 일일 미션 등 시스템에 따라 연령 등급이 높아짐, 그로 인해 사용자는 해당 콘텐츠가 건전하지 않다는 인식을 할 수 있음."
+    },
+    {
       "session_id": "48d2b9ccd56eabb346cd60e3b03acaf750874e01",
       "date": "2026-03-12T09:18:38+09:00",
       "article": {
