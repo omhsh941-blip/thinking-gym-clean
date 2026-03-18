@@ -1,6 +1,100 @@
 {
   "articles": [
     {
+      "id": "3a8d4ecafc93f9bbd3df7f3379cc52340d96376a",
+      "title": "1990년대 최고의 PC 게임 '페르시아의 왕자'와 '가라데카' 개발일지 출간",
+      "url": "https://game.donga.com/121901/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 07:39:30 +0900",
+      "collected_at": "2026-03-18T09:02:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "1990년대",
+        "최고",
+        "pc",
+        "페르시아",
+        "왕자",
+        "가라데카",
+        "개발일지"
+      ]
+    },
+    {
+      "id": "6ffbcd930311db3d18171ad844e72b7cb7abb52d",
+      "title": "NHN 신작 '어비스디아', SSR 근거리 탱커 ‘라라티나’ 업데이트",
+      "url": "https://game.donga.com/121900/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 07:30:01 +0900",
+      "collected_at": "2026-03-18T09:02:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "nhn",
+        "신작",
+        "어비스디아",
+        "ssr",
+        "근거리",
+        "탱커",
+        "라라티"
+      ]
+    },
+    {
+      "id": "afd9afa2e942d061c98b860a16c26b1d3214c188",
+      "title": "엔비디아, AI로 게임 그래픽 혁신하는 ‘DLSS 5’ 공개",
+      "url": "https://game.donga.com/121898/",
+      "category": "Game Industry",
+      "published": "Tue, 17 Mar 2026 16:42:52 +0900",
+      "collected_at": "2026-03-18T09:02:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "엔비디아",
+        "ai",
+        "그래픽",
+        "혁신하",
+        "dlss",
+        "공개"
+      ]
+    },
+    {
+      "id": "7923a80fb66ccb0c1bbe558dd15e2a833fe20ebb",
+      "title": "우주의 기운이 모이고 있다. 펄어비스 ‘붉은사막’ 진짜 GOTY 노릴 수 있는 상황인가?",
+      "url": "https://game.donga.com/121897/",
+      "category": "Game Industry",
+      "published": "Tue, 17 Mar 2026 16:25:20 +0900",
+      "collected_at": "2026-03-18T09:02:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "우주",
+        "기운",
+        "모이고",
+        "펄어비스",
+        "붉은사막",
+        "진짜",
+        "goty"
+      ]
+    },
+    {
+      "id": "258748fb24b9746ba1527b9df6eeb317e0ef4143",
+      "title": "스마일게이트, 사전 등록 150만 모은 해적 생존 게임 ‘윈드로즈’ 출시 예고",
+      "url": "https://game.donga.com/121896/",
+      "category": "Game Industry",
+      "published": "Tue, 17 Mar 2026 16:01:34 +0900",
+      "collected_at": "2026-03-18T09:02:47+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "스마일게이트",
+        "사전",
+        "등록",
+        "모은",
+        "해적",
+        "생존",
+        "윈드로즈"
+      ]
+    },
+    {
       "id": "0ae5343a4cec058a516362eab31891b51cb04d8c",
       "title": "PEGI revises ratings with loot boxes among key changes, and Angry Birds marketing strategies | Week in Views",
       "url": "https://www.pocketgamer.biz/pegi-revises-ratings-with-loot-boxes-among-key-changes-and-angry-birds-marketing-strategies-week-in-views/",
