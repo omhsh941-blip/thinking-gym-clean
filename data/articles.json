@@ -1,6 +1,98 @@
 {
   "articles": [
     {
+      "id": "8e8ea2d34a4423c680301f70c69b63c3f378064e",
+      "title": "Ubisoft names general managers of Creative Houses 3 and 5, Creative Network",
+      "url": "https://www.gamesindustry.biz/ubisoft-names-general-managers-of-creative-houses-3-and-5-creative-network",
+      "category": "Game Industry",
+      "published": "Tue, 17 Mar 2026 16:46:36 +0000",
+      "collected_at": "2026-03-18T09:02:55+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "creative",
+        "ubisoft",
+        "names",
+        "general",
+        "managers",
+        "houses",
+        "and"
+      ]
+    },
+    {
+      "id": "80b8cd360ba2dee41016d5a63768b6a93d649004",
+      "title": "\"Our engineers are quite for it… Artists are much more emotive.\" When it comes to AI, HR is on the front line between management and employees",
+      "url": "https://www.gamesindustry.biz/our-engineers-are-quite-for-it-artists-are-much-more-emotive-when-it-comes-to-ai-hr-is-on-the-front-line-between-management-and-employees",
+      "category": "Game Industry",
+      "published": "Tue, 17 Mar 2026 15:00:00 +0000",
+      "collected_at": "2026-03-18T09:02:55+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "engineers",
+        "quite",
+        "artists",
+        "much",
+        "more",
+        "emotive",
+        "when"
+      ]
+    },
+    {
+      "id": "42474860e0d2a35ab314e8c8cb58c0b5ab56c979",
+      "title": "Embark \"mutually parts ways\" with co-founder Rob Runesson following sexual misconduct allegations",
+      "url": "https://www.gamesindustry.biz/embark-mutually-parts-ways-with-co-founder-rob-runesson-following-sexual-misconduct-allegations",
+      "category": "Game Industry",
+      "published": "Tue, 17 Mar 2026 14:59:34 +0000",
+      "collected_at": "2026-03-18T09:02:55+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "embark",
+        "mutually",
+        "parts",
+        "ways",
+        "co-founder",
+        "rob",
+        "runesson"
+      ]
+    },
+    {
+      "id": "c48e7143e6f70ab45858c23cc4c3fa24c9241d39",
+      "title": "How useful is AI for coding?",
+      "url": "https://www.gamesindustry.biz/how-useful-is-ai-for-coding",
+      "category": "Game Industry",
+      "published": "Tue, 17 Mar 2026 13:00:00 +0000",
+      "collected_at": "2026-03-18T09:02:55+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "how",
+        "useful",
+        "ai",
+        "coding"
+      ]
+    },
+    {
+      "id": "f77d134df1a33b30fe4d6566c77f66c8dcdd9c30",
+      "title": "\"Can we meaningfully predict how things go?\" How AI could shape how publishers invest",
+      "url": "https://www.gamesindustry.biz/can-we-meaningfully-predict-how-things-go-how-ai-could-shape-how-publishers-invest",
+      "category": "Game Industry",
+      "published": "Tue, 17 Mar 2026 11:00:00 +0000",
+      "collected_at": "2026-03-18T09:02:55+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "how",
+        "can",
+        "meaningfully",
+        "predict",
+        "things",
+        "go",
+        "ai"
+      ]
+    },
+    {
       "id": "3a8d4ecafc93f9bbd3df7f3379cc52340d96376a",
       "title": "1990년대 최고의 PC 게임 '페르시아의 왕자'와 '가라데카' 개발일지 출간",
       "url": "https://game.donga.com/121901/",
