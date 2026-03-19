@@ -1,6 +1,176 @@
 {
   "articles": [
     {
+      "id": "df09fe74a573dd0a0fb4212564c93fcce39c8d5d",
+      "title": "스마일게이트 '카제나', 은하계 재해 시즌2 최종 스토리 업데이트",
+      "url": "https://game.donga.com/121923/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 12:02:11 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "스마일게이트",
+        "카제",
+        "은하계",
+        "재해",
+        "시즌2",
+        "최종",
+        "스토리"
+      ]
+    },
+    {
+      "id": "d980539897078b52a51f5f46c504f5bd59ddcef4",
+      "title": "넷마블, 신작 'SOL: 인챈트' 라이브 방송 ‘신권회담’ 19일 오후 8시 실시",
+      "url": "https://game.donga.com/121922/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 11:22:02 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "신작",
+        "sol",
+        "인챈트",
+        "라이브",
+        "방송",
+        "신권회담"
+      ]
+    },
+    {
+      "id": "6c77710e9c5b74c1f6ddfe65605b6db152a72e9f",
+      "title": "‘붉은사막’ 메타크리틱 점수. 극단적으로 호불호 갈렸다",
+      "url": "https://game.donga.com/121921/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 11:14:48 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "붉은사막",
+        "메타크리틱",
+        "점수",
+        "극단적",
+        "호불호",
+        "갈렸다"
+      ]
+    },
+    {
+      "id": "eb11c99e3582abac0bd5b9b561f1df766a50ec31",
+      "title": "\"우리 전기차 제조 기업입니다\" 샤오미, 그란투리스모서 콘셉트 하이퍼카 공개",
+      "url": "https://game.donga.com/121920/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 10:57:55 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "우리",
+        "전기차",
+        "제조",
+        "기업입니다",
+        "샤오미",
+        "그란투리스모서",
+        "콘셉트"
+      ]
+    },
+    {
+      "id": "111583ce46063724bb46775a9831ccc01b54a621",
+      "title": "스마일게이트 퓨처랩, 인디게임 공모전 '인디고' 참가자 모집",
+      "url": "https://game.donga.com/121919/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 10:17:55 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "스마일게이트",
+        "퓨처랩",
+        "인디게임",
+        "공모전",
+        "인디고",
+        "참가자",
+        "모집"
+      ]
+    },
+    {
+      "id": "d6be0a35260da4ae69122e03c90e2587bd86c9e9",
+      "title": "‘FC 모바일’, 오프라인 쇼케이스 ‘NEXT FOOTBALL' 21일 개최",
+      "url": "https://game.donga.com/121917/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 16:34:08 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "fc",
+        "모바일",
+        "오프라인",
+        "쇼케이스",
+        "next",
+        "football",
+        "21일"
+      ]
+    },
+    {
+      "id": "16cc1b67d60dd9187200370b057c9f76d4b43a19",
+      "title": "라이엇 게임즈, 경복궁 관람 개선 위해 '무인 발권기' 기증",
+      "url": "https://game.donga.com/121916/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 16:31:47 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "라이엇",
+        "게임즈",
+        "경복궁",
+        "관람",
+        "개선",
+        "위해",
+        "무인"
+      ]
+    },
+    {
+      "id": "ed448f8a5be8aff73137feedb9e5937483dcf419",
+      "title": "'월드 오브 워쉽', 스웨덴 헤비메탈 밴드 ‘사바톤’과 콜라보 진행",
+      "url": "https://game.donga.com/121915/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 16:30:11 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "월드",
+        "오브",
+        "워쉽",
+        "스웨덴",
+        "헤비메탈",
+        "밴드",
+        "사바톤"
+      ]
+    },
+    {
+      "id": "9965362cfc4b5e43d289756c8bd91f14356d2bfa",
+      "title": "위메이드, '미르의 전설2' 서비스 25주년 기념 이벤트 마련",
+      "url": "https://game.donga.com/121913/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 16:23:44 +0900",
+      "collected_at": "2026-03-19T12:36:21+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "위메이드",
+        "미르",
+        "전설2",
+        "서비스",
+        "25주년",
+        "기념",
+        "이벤트"
+      ]
+    },
+    {
       "id": "4d4f5a442eba46ff0d0e45d78eb0f1401e19ac57",
       "title": "Ubisoft names Julien Bares as GM of mobile and casual-focused Creative House 5",
       "url": "https://www.pocketgamer.biz/ubisoft-names-julien-bares-as-gm-of-mobile-and-casual-focused-creative-house-5/",
