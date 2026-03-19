@@ -1,6 +1,158 @@
 {
   "articles": [
     {
+      "id": "f7aa54ae70f8024b570ab940919bf725b49f454b",
+      "title": "How a Candy Crush video series triggered an \"incredibly valuable\" feedback loop",
+      "url": "https://www.pocketgamer.biz/how-a-candy-crush-video-series-triggered-an-incredibly-valuable-feedback-loop/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 15:40:00 +0000",
+      "collected_at": "2026-03-19T12:36:30+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "how",
+        "candy",
+        "crush",
+        "video",
+        "series",
+        "triggered",
+        "incredibly"
+      ]
+    },
+    {
+      "id": "6f5d7cb9d771e34af4dd6fb999111cb0093c31d9",
+      "title": "The link between product and marketing teams in a competitive market",
+      "url": "https://www.pocketgamer.biz/the-link-between-product-and-marketing-teams-in-a-competitive-market/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 15:38:00 +0000",
+      "collected_at": "2026-03-19T12:36:30+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "link",
+        "between",
+        "product",
+        "and",
+        "marketing",
+        "teams",
+        "competitive"
+      ]
+    },
+    {
+      "id": "02a50c68a8104a7de99b4f89de9128314dcb21b9",
+      "title": "Nazara to acquire a 50% controlling stake in Bluetile and BestPlay in $100m deal",
+      "url": "https://www.pocketgamer.biz/nazara-to-acquire-a-50-controlling-stake-in-bluetile-and-bestplay-in-100m-deal/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 15:30:00 +0000",
+      "collected_at": "2026-03-19T12:36:30+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "nazara",
+        "acquire",
+        "controlling",
+        "stake",
+        "bluetile",
+        "and",
+        "bestplay"
+      ]
+    },
+    {
+      "id": "866d5720f0539e4b7570f176884421e87929fcdf",
+      "title": "Deluxe Creation’s Stickman Fight: Magic Brawl surpasses 300,000 downloads",
+      "url": "https://www.pocketgamer.biz/deluxe-creations-stickman-fight-magic-brawl-surpasses-300000-downloads/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 13:07:00 +0000",
+      "collected_at": "2026-03-19T12:36:30+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "deluxe",
+        "creation",
+        "stickman",
+        "fight",
+        "magic",
+        "brawl",
+        "surpasses"
+      ]
+    },
+    {
+      "id": "c83a93b1609c4778292ef628e6de02b4faafcb0f",
+      "title": "Krafton signs strategic alliance with Hanwha Aerospace to develop real-world AI systems",
+      "url": "https://www.pocketgamer.biz/krafton-signs-strategic-alliance-with-hanwha-aerospace-to-develop-real-world-ai-systems/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 12:51:00 +0000",
+      "collected_at": "2026-03-19T12:36:30+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "krafton",
+        "signs",
+        "strategic",
+        "alliance",
+        "hanwha",
+        "aerospace",
+        "develop"
+      ]
+    },
+    {
+      "id": "f98f1c89ee3b3515e022d4c227596221bab34235",
+      "title": "Malmö boosts games industry with new funding push for startups",
+      "url": "https://www.pocketgamer.biz/malm-boosts-games-industry-with-new-funding-push-for-startups/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 12:13:00 +0000",
+      "collected_at": "2026-03-19T12:36:30+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "malm",
+        "boosts",
+        "industry",
+        "new",
+        "funding",
+        "push",
+        "startups"
+      ]
+    },
+    {
+      "id": "d62da247e76e3280597a36f16aa979efdce076a1",
+      "title": "Meta pulls Horizon Worlds from VR as platform shifts to mobile",
+      "url": "https://www.pocketgamer.biz/meta-pulls-horizon-worlds-from-vr-as-platform-shifts-to-mobile/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 12:00:00 +0000",
+      "collected_at": "2026-03-19T12:36:30+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "meta",
+        "pulls",
+        "horizon",
+        "worlds",
+        "vr",
+        "platform",
+        "shifts"
+      ]
+    },
+    {
+      "id": "f37931c6294892eb7ff0b94bd4712bdac3590aff",
+      "title": "Save up to €290 on PGC Barcelona before Super Early Bird offer ends",
+      "url": "https://www.pocketgamer.biz/save-up-to-290-on-pgc-barcelona-before-super-early-bird-offer-ends/",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 10:00:00 +0000",
+      "collected_at": "2026-03-19T12:36:30+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "save",
+        "up",
+        "pgc",
+        "barcelona",
+        "before",
+        "super",
+        "early"
+      ]
+    },
+    {
       "id": "e9298f59339ed6bfb3ed39eedd452233c4d6a1c4",
       "title": "New Cyberpunk TCG becomes the most-funded TCG game in Kickstarter history | News-in-brief",
       "url": "https://www.gamesindustry.biz/new-cyberpunk-tcg-becomes-the-most-funded-tcg-game-in-kickstarter-history-news-in-brief",
