@@ -1,6 +1,158 @@
 {
   "articles": [
     {
+      "id": "e9298f59339ed6bfb3ed39eedd452233c4d6a1c4",
+      "title": "New Cyberpunk TCG becomes the most-funded TCG game in Kickstarter history | News-in-brief",
+      "url": "https://www.gamesindustry.biz/new-cyberpunk-tcg-becomes-the-most-funded-tcg-game-in-kickstarter-history-news-in-brief",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 21:00:36 +0000",
+      "collected_at": "2026-03-19T12:36:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tcg",
+        "new",
+        "cyberpunk",
+        "becomes",
+        "most-funded",
+        "kickstarter",
+        "history"
+      ]
+    },
+    {
+      "id": "fffc71797f3782424174d60c57337e874119ff8e",
+      "title": "Sony appears to be auto-refunding Highguard players their microtransaction payments",
+      "url": "https://www.gamesindustry.biz/sony-appears-to-be-auto-refunding-highguard-players-their-microtransaction-payments",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 20:45:34 +0000",
+      "collected_at": "2026-03-19T12:36:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "sony",
+        "appears",
+        "auto-refunding",
+        "highguard",
+        "players",
+        "microtransaction",
+        "payments"
+      ]
+    },
+    {
+      "id": "4601aae652823f6840ba89873eb9586fd984aad8",
+      "title": "Sony's first PS3 software update in a year brings \"additional features, improved usability, and enhanced security\" | News-in-brief",
+      "url": "https://www.gamesindustry.biz/sonys-first-ps3-software-update-in-a-year-brings-additional-features-improved-usability-and-enhanced-security-news-in-brief",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 16:42:16 +0000",
+      "collected_at": "2026-03-19T12:36:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "sony",
+        "first",
+        "ps3",
+        "software",
+        "update",
+        "year",
+        "brings"
+      ]
+    },
+    {
+      "id": "d08e0375690db75e35e81d138767e1d550d7ddf0",
+      "title": "\"The player base never disappeared; they just didn't have anything to play\" – Echo Foundry on reviving the rhythm game genre",
+      "url": "https://www.gamesindustry.biz/the-player-base-never-disappeared-they-just-didnt-have-anything-to-play-echo-foundry-on-reviving-the-rhythm-game-genre",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 13:39:06 +0000",
+      "collected_at": "2026-03-19T12:36:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "player",
+        "base",
+        "never",
+        "disappeared",
+        "just",
+        "didn",
+        "have"
+      ]
+    },
+    {
+      "id": "e50d940f8328153128c2e9ebeff30a0bbc850cc8",
+      "title": "\"You cannot think of game development without thinking about AI\" – Ex-NCSoft president Songyee Yoon on investing in the AI future",
+      "url": "https://www.gamesindustry.biz/you-cannot-think-of-game-development-without-thinking-about-ai-ex-ncsoft-president-songyee-yoon-on-investing-in-the-ai-future",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 13:00:00 +0000",
+      "collected_at": "2026-03-19T12:36:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ai",
+        "cannot",
+        "think",
+        "development",
+        "without",
+        "thinking",
+        "about"
+      ]
+    },
+    {
+      "id": "d96103ed75748e711ab631a610af8a78c45fd4ee",
+      "title": "Nvidia CEO says critics are \"completely wrong\" about DLSS 5 technology",
+      "url": "https://www.gamesindustry.biz/nvidia-ceo-says-critics-are-completely-wrong-about-dlss-5-technology",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 10:35:04 +0000",
+      "collected_at": "2026-03-19T12:36:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "nvidia",
+        "ceo",
+        "says",
+        "critics",
+        "completely",
+        "wrong",
+        "about"
+      ]
+    },
+    {
+      "id": "c9d5400a035f0183eca722fe1e08dcf3830b6fd6",
+      "title": "Generative AI in game development: Navigating IP, regulation, and reputation",
+      "url": "https://www.gamesindustry.biz/generative-ai-in-game-development-navigating-ip-regulation-and-reputation",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 09:54:14 +0000",
+      "collected_at": "2026-03-19T12:36:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "generative",
+        "ai",
+        "development",
+        "navigating",
+        "ip",
+        "regulation",
+        "and"
+      ]
+    },
+    {
+      "id": "432f68e5b016d3aaeb5075139554cdbaa79a161a",
+      "title": "IO Interactive ends MindsEye publishing agreement with Build a Rocket Boy",
+      "url": "https://www.gamesindustry.biz/io-interactive-ends-mindseye-publishing-agreement-with-build-a-rocket-boy",
+      "category": "Game Industry",
+      "published": "Wed, 18 Mar 2026 08:54:50 +0000",
+      "collected_at": "2026-03-19T12:36:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "io",
+        "interactive",
+        "ends",
+        "mindseye",
+        "publishing",
+        "agreement",
+        "build"
+      ]
+    },
+    {
       "id": "df09fe74a573dd0a0fb4212564c93fcce39c8d5d",
       "title": "스마일게이트 '카제나', 은하계 재해 시즌2 최종 스토리 업데이트",
       "url": "https://game.donga.com/121923/",
