@@ -1,6 +1,137 @@
 {
   "articles": [
     {
+      "id": "62ca6f7a8220577155e92acf9870d3ad8e07914e",
+      "title": "“A tale of two halves”: The Mobile Mavens weigh in on GDC 2026",
+      "url": "https://www.pocketgamer.biz/a-tale-of-two-halves-the-mobile-mavens-weigh-in-on-gdc-2026/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 14:40:00 +0000",
+      "collected_at": "2026-03-20T12:49:23+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tale",
+        "two",
+        "halves",
+        "mobile",
+        "mavens",
+        "weigh",
+        "gdc"
+      ]
+    },
+    {
+      "id": "badfd102ac5c31ca8538259a82afbb545b52425a",
+      "title": "Fortnite is back on the Google Play Store today",
+      "url": "https://www.pocketgamer.biz/fortnite-is-back-on-the-google-play-store-today/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 13:23:00 +0000",
+      "collected_at": "2026-03-20T12:49:23+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "fortnite",
+        "google",
+        "play",
+        "store",
+        "today"
+      ]
+    },
+    {
+      "id": "5484ced58571f24d58bbab9cf1ee4d1616250a44",
+      "title": "Values Value and InGame Job launch 10th annual survey tracking global games industry employment",
+      "url": "https://www.pocketgamer.biz/values-value-and-ingame-job-launch-10th-annual-survey-tracking-global-games-industry-employment/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 12:30:00 +0000",
+      "collected_at": "2026-03-20T12:49:23+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "values",
+        "value",
+        "and",
+        "ingame",
+        "job",
+        "launch",
+        "10th"
+      ]
+    },
+    {
+      "id": "407477b00059a8c3dcaa8466f7db17396ac55179",
+      "title": "King’s Farm Heroes Saga officially hits $2 billion",
+      "url": "https://www.pocketgamer.biz/kings-farm-heroes-saga-officially-hits-2-billion/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 12:05:00 +0000",
+      "collected_at": "2026-03-20T12:49:23+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "king",
+        "farm",
+        "heroes",
+        "saga",
+        "officially",
+        "hits",
+        "billion"
+      ]
+    },
+    {
+      "id": "e814fa3572fff245fb1c6d13f6fad1d9a1a5a470",
+      "title": "Afrime Studios enters seed round after raising $400,000 to build afrofuturistic RPG Unyverse",
+      "url": "https://www.pocketgamer.biz/afrime-studios-enters-seed-round-after-raising-400000-to-build-afrofuturistic-rpg-unyverse/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 11:52:00 +0000",
+      "collected_at": "2026-03-20T12:49:23+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "afrime",
+        "studios",
+        "enters",
+        "seed",
+        "round",
+        "after",
+        "raising"
+      ]
+    },
+    {
+      "id": "73da3039bdb7345acc84764fad2ce089395d91ff",
+      "title": "Playstack profit jumps 59% as Balatro and Abiotic Factor drive record sales",
+      "url": "https://www.pocketgamer.biz/playstack-profit-jumps-59-as-balatro-and-abiotic-factor-drive-record-sales/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 11:24:00 +0000",
+      "collected_at": "2026-03-20T12:49:23+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "playstack",
+        "profit",
+        "jumps",
+        "balatro",
+        "and",
+        "abiotic",
+        "factor"
+      ]
+    },
+    {
+      "id": "71ac5faafdd21118406f35b0637c931a457a34f1",
+      "title": "Sustainable Games Alliance rolls out energy-saving tools across major engines",
+      "url": "https://www.pocketgamer.biz/sustainable-games-alliance-rolls-out-energy-saving-tools-across-major-engines/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 10:00:00 +0000",
+      "collected_at": "2026-03-20T12:49:23+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "sustainable",
+        "alliance",
+        "rolls",
+        "out",
+        "energy-saving",
+        "tools",
+        "across"
+      ]
+    },
+    {
       "id": "d9219dfcad2c9535bc34878e261302f850824dcb",
       "title": "Nearly nine in ten games industry workers believe GenAI use should be disclosed on storefronts",
       "url": "https://www.gamesindustry.biz/nearly-nine-in-ten-games-industry-workers-believe-genai-use-should-be-disclosed-on-storefronts",
