@@ -1,6 +1,194 @@
 {
   "articles": [
     {
+      "id": "d9219dfcad2c9535bc34878e261302f850824dcb",
+      "title": "Nearly nine in ten games industry workers believe GenAI use should be disclosed on storefronts",
+      "url": "https://www.gamesindustry.biz/nearly-nine-in-ten-games-industry-workers-believe-genai-use-should-be-disclosed-on-storefronts",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 16:02:30 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "nearly",
+        "nine",
+        "ten",
+        "industry",
+        "workers",
+        "believe",
+        "genai"
+      ]
+    },
+    {
+      "id": "d8506a6eabfd35a767878125c6b0031ff398c011",
+      "title": "Hades 2 and Date Everything lead Gayming Awards 2026 nominations",
+      "url": "https://www.gamesindustry.biz/hades-2-and-date-everything-lead-gayming-awards-2026-nominations",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 16:00:00 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "hades",
+        "and",
+        "date",
+        "everything",
+        "lead",
+        "gayming",
+        "awards"
+      ]
+    },
+    {
+      "id": "1858925d2c00f7fee11e449f3a7c14d8b27af64d",
+      "title": "Ubisoft announces layoffs and the cease of game development at Red Storm Entertainment",
+      "url": "https://www.gamesindustry.biz/ubisoft-announces-layoffs-and-the-cease-of-game-development-at-red-storm-entertainment",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 14:19:32 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ubisoft",
+        "announces",
+        "layoffs",
+        "and",
+        "cease",
+        "development",
+        "red"
+      ]
+    },
+    {
+      "id": "bce0857931c56c91ab841712e103d2c15ae23c2c",
+      "title": "Balatro publisher Playstack boasts \"hit ratio\" of over 85%",
+      "url": "https://www.gamesindustry.biz/balatro-publisher-playstack-boasts-hit-ratio-of-over-85",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 12:21:41 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "balatro",
+        "publisher",
+        "playstack",
+        "boasts",
+        "hit",
+        "ratio",
+        "over"
+      ]
+    },
+    {
+      "id": "d5a2d3bbae1bff24ca47fc886ce39bdf375f9b48",
+      "title": "Remedy rolls out last FBC: Firebreak content update, affirms the game will be online \"for years to come\"",
+      "url": "https://www.gamesindustry.biz/remedy-rolls-out-last-fbc-firebreak-content-update-affirms-the-game-will-be-online-for-years-to-come",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 11:28:49 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "remedy",
+        "rolls",
+        "out",
+        "last",
+        "fbc",
+        "firebreak",
+        "content"
+      ]
+    },
+    {
+      "id": "c9f070a5f9357774836ad35f235886f1af81ffb3",
+      "title": "Respawn, PlayStation Studios and EA Full Circle among first speakers for Develop:Brighton 2026",
+      "url": "https://www.gamesindustry.biz/respawn-playstation-studios-and-ea-full-circle-among-first-speakers-for-developbrighton-2026",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 10:46:48 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "respawn",
+        "playstation",
+        "studios",
+        "and",
+        "ea",
+        "full",
+        "circle"
+      ]
+    },
+    {
+      "id": "819c62e3e6441c2052cf194a802b8b2a18399424",
+      "title": "Brand discoverability in the AI age: AIs are no longer a curiosity, but a key way players learn about games",
+      "url": "https://www.gamesindustry.biz/brand-discoverability-in-the-ai-age-ais-are-no-longer-a-curiosity-but-a-key-way-players-learn-about-games",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 10:31:23 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "brand",
+        "discoverability",
+        "ai",
+        "age",
+        "ais",
+        "no",
+        "longer"
+      ]
+    },
+    {
+      "id": "03b91501daa49904842642d6a17e5bed12b56aec",
+      "title": "Take-Two boss Zelnick says it would be \"unfair\" to put ads in premium games",
+      "url": "https://www.gamesindustry.biz/take-two-boss-zelnick-says-it-would-be-unfair-to-put-ads-in-premium-games",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 09:52:13 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "take-two",
+        "boss",
+        "zelnick",
+        "says",
+        "would",
+        "unfair",
+        "put"
+      ]
+    },
+    {
+      "id": "53c5968c29eea3ec3ebd19a8407dc10d5ba27fb0",
+      "title": "Meta discontinues Horizon Worlds VR as it focuses on mobile",
+      "url": "https://www.gamesindustry.biz/meta-discontinues-horizon-worlds-vr-as-it-focuses-on-mobile",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 08:45:49 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "meta",
+        "discontinues",
+        "horizon",
+        "worlds",
+        "vr",
+        "focuses",
+        "mobile"
+      ]
+    },
+    {
+      "id": "f18ce1d788769828a9692e9bb2d45aa20a309927",
+      "title": "Crystal Dynamics reduces workforce by 20 roles",
+      "url": "https://www.gamesindustry.biz/crystal-dynamics-reduces-workforce-by-20-roles",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 07:56:00 +0000",
+      "collected_at": "2026-03-20T12:49:20+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "crystal",
+        "dynamics",
+        "reduces",
+        "workforce",
+        "roles"
+      ]
+    },
+    {
       "id": "c9354f04a82c74dfddc187f056505deb3ef5c928",
       "title": "넷마블 '킹 오브 파이터 AFK'에 의적단 두목 'B. 제니' 업데이트",
       "url": "https://game.donga.com/121938/",
