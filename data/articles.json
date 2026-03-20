@@ -1,6 +1,193 @@
 {
   "articles": [
     {
+      "id": "c9354f04a82c74dfddc187f056505deb3ef5c928",
+      "title": "넷마블 '킹 오브 파이터 AFK'에 의적단 두목 'B. 제니' 업데이트",
+      "url": "https://game.donga.com/121938/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 11:33:14 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "오브",
+        "파이터",
+        "afk",
+        "의적단",
+        "두목",
+        "제니"
+      ]
+    },
+    {
+      "id": "b2f46e56dab7ace679b80215d3fa69cb9599639a",
+      "title": "펄어비스 야심작 '붉은사막' 드디어 출격",
+      "url": "https://game.donga.com/121937/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 10:37:08 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "펄어비스",
+        "야심작",
+        "붉은사막",
+        "드디어",
+        "출격"
+      ]
+    },
+    {
+      "id": "9b375ef8662a83c683299ab68f63a164f971993c",
+      "title": "슈퍼센트, '포르자 호라이즌' 개발사 수모 디지털과 전략적 MOU 체결",
+      "url": "https://game.donga.com/121936/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 10:19:23 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "슈퍼센트",
+        "포르자",
+        "호라이즌",
+        "개발사",
+        "수모",
+        "디지털",
+        "전략적"
+      ]
+    },
+    {
+      "id": "dd69df89863efc3f94afc9d249be8c0887b01b70",
+      "title": "포트나이트, 구글플레이 복귀하고 '챕터 7 시즌2: 쇼다운' 공개",
+      "url": "https://game.donga.com/121935/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 17:49:19 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "포트나이트",
+        "구글플레",
+        "복귀하고",
+        "챕터",
+        "시즌2",
+        "쇼다운",
+        "공개"
+      ]
+    },
+    {
+      "id": "8cb519167edf0261ee02d34f5b57ac383792594e",
+      "title": "슈에이샤 게임즈, ‘도시전설 해체센터’ 모바일 국내 정식 출시",
+      "url": "https://game.donga.com/121934/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 17:19:21 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "슈에이샤",
+        "게임즈",
+        "도시전설",
+        "해체센터",
+        "모바일",
+        "국내",
+        "정식"
+      ]
+    },
+    {
+      "id": "e1d33b4b2a936bd225e909f457a694299652457b",
+      "title": "카카오게임즈, '우마무스메' 연극 의상 탑로드와 베가 추가",
+      "url": "https://game.donga.com/121933/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 17:17:01 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "카카오게임즈",
+        "우마무스메",
+        "연극",
+        "의상",
+        "탑로드",
+        "베가",
+        "추가"
+      ]
+    },
+    {
+      "id": "4fe9c34bd50cc0030f344dc9f564447d0b329061",
+      "title": "직관적으로 즐기는 로프 퍼즐 액션 ‘로프군 어드벤처’를 개발한 Kei26",
+      "url": "https://game.donga.com/121932/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 17:10:51 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "직관적",
+        "즐기",
+        "로프",
+        "퍼즐",
+        "액션",
+        "로프군",
+        "어드벤처"
+      ]
+    },
+    {
+      "id": "2907535f9af78b0b541b57ee69d6270f7d6ac854",
+      "title": "넥슨재단, ‘MSW 크리에이터 스쿨’ 사업 위한 경기도교육청 MOU 체결",
+      "url": "https://game.donga.com/121931/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 16:47:09 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넥슨재단",
+        "msw",
+        "크리에이터",
+        "스쿨",
+        "사업",
+        "위한",
+        "경기도교육청"
+      ]
+    },
+    {
+      "id": "70ff1d4207acdd593d337bd35debf039ca04df62",
+      "title": "\"30대가 된 바람\" 넥슨, ‘바람의나라’ 서비스 30주년 기념 일러스트 및 로고 공개",
+      "url": "https://game.donga.com/121930/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 16:46:31 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "30대",
+        "바람",
+        "넥슨",
+        "바람의나라",
+        "서비스",
+        "30주년",
+        "기념"
+      ]
+    },
+    {
+      "id": "09cd3d167b056c3f993d6e6897ecd2b76b877c21",
+      "title": "'메이플', 서비스 23주년 이벤트 ‘메이플 어택!’ 진행",
+      "url": "https://game.donga.com/121929/",
+      "category": "Game Industry",
+      "published": "Thu, 19 Mar 2026 16:45:25 +0900",
+      "collected_at": "2026-03-20T12:49:14+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "메이플",
+        "서비스",
+        "23주년",
+        "이벤트",
+        "어택",
+        "진행"
+      ]
+    },
+    {
       "id": "f7aa54ae70f8024b570ab940919bf725b49f454b",
       "title": "How a Candy Crush video series triggered an \"incredibly valuable\" feedback loop",
       "url": "https://www.pocketgamer.biz/how-a-candy-crush-video-series-triggered-an-incredibly-valuable-feedback-loop/",
