@@ -1,6 +1,195 @@
 {
   "articles": [
     {
+      "id": "7dfa1bf686fc9d637a85889e3a7992a08f1f83ea",
+      "title": "[현장 취재] “체험에 할인까지 더했다”... ‘서울 보드게임 페어’ 코리아보드게임즈 부스 눈길",
+      "url": "https://game.donga.com/121957/",
+      "category": "Game Industry",
+      "published": "Sat, 21 Mar 2026 11:32:57 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "현장",
+        "취재",
+        "체험",
+        "할인",
+        "더했다",
+        "서울",
+        "보드게임"
+      ]
+    },
+    {
+      "id": "cb2b7a42627b197ea60b08d96f5725f584e679eb",
+      "title": "[현장 취재] 가족부터 커플까지 총출동! 보드게임 축제 ‘서울 보드게임 페어’ 성황",
+      "url": "https://game.donga.com/121956/",
+      "category": "Game Industry",
+      "published": "Sat, 21 Mar 2026 10:55:09 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "보드게임",
+        "현장",
+        "취재",
+        "가족",
+        "커플",
+        "총출동",
+        "축제"
+      ]
+    },
+    {
+      "id": "09109fde90b339df72155408e1df145166cc6481",
+      "title": "스마일게이트 '에픽세븐', 신규 월광 영웅 ‘노토스’ 업데이트",
+      "url": "https://game.donga.com/121955/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 20:19:18 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "스마일게이트",
+        "에픽세븐",
+        "신규",
+        "월광",
+        "영웅",
+        "노토스",
+        "업데이트"
+      ]
+    },
+    {
+      "id": "d47d63512504a0f4f1b203d48eb561bffddd93cd",
+      "title": "그라비티, '라그나로크 OST' 213곡 글로벌 음원 플랫폼 서비스로 '확대'",
+      "url": "https://game.donga.com/121953/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 18:32:48 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "그라비티",
+        "라그나로크",
+        "ost",
+        "213곡",
+        "글로벌",
+        "음원",
+        "플랫폼"
+      ]
+    },
+    {
+      "id": "9d34b186a4ac226faf11490c977f5d57851b4d9f",
+      "title": "BIC 페스티벌 2026, 8월 14일부터 16일 부산 벡스코서 개최",
+      "url": "https://game.donga.com/121952/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 18:26:51 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "bic",
+        "페스티벌",
+        "8월",
+        "14일",
+        "16일",
+        "부산",
+        "벡스코서"
+      ]
+    },
+    {
+      "id": "8cf9ba95a81ccf3fb8fd186db48f58c118c7f586",
+      "title": "니케와 카카오프렌즈 콜라보 팝업스토어, 엉뚱함과 귀여움 조합 '엄지척'",
+      "url": "https://game.donga.com/121951/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 18:01:03 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "니케",
+        "카카오프렌즈",
+        "콜라보",
+        "팝업스토어",
+        "엉뚱함",
+        "귀여움",
+        "조합"
+      ]
+    },
+    {
+      "id": "3e4a6d92b9aa3bc862271393cbdccfac71e2dbae",
+      "title": "[한주의게임소식] \"부정적인데 많이 팔리긴 한다.\" 글로벌 스팀 1위 기록한 '붉은사막'",
+      "url": "https://game.donga.com/121947/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 17:29:01 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "한주의게임소식",
+        "부정적인데",
+        "많이",
+        "팔리긴",
+        "글로벌",
+        "스팀",
+        "1위"
+      ]
+    },
+    {
+      "id": "77426152743a87a22ddaa1e5a9f0217a8e4407e1",
+      "title": "‘메이플M’ 3월 신학기 맞이 성장 지원 이벤트 진행",
+      "url": "https://game.donga.com/121950/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 17:28:27 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "메이플m",
+        "3월",
+        "신학기",
+        "맞이",
+        "성장",
+        "지원",
+        "이벤트"
+      ]
+    },
+    {
+      "id": "d6d81524b34d25a3327ce06c847317d8ec66deb0",
+      "title": "2026 LCK 정규 시즌, 4월 1일 개막한다",
+      "url": "https://game.donga.com/121949/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 17:27:50 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "lck",
+        "정규",
+        "시즌",
+        "4월",
+        "1일",
+        "개막한다"
+      ]
+    },
+    {
+      "id": "a55e5a989134dbeba084408dbc9cce55032adcff",
+      "title": "‘FC 온라인’, ‘제55회 전국소년체육대회’ 지역 대표 선발전 진행",
+      "url": "https://game.donga.com/121948/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 17:12:13 +0900",
+      "collected_at": "2026-03-23T09:44:08+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "fc",
+        "온라인",
+        "제55회",
+        "전국소년체육대회",
+        "지역",
+        "대표",
+        "선발전"
+      ]
+    },
+    {
       "id": "62ca6f7a8220577155e92acf9870d3ad8e07914e",
       "title": "“A tale of two halves”: The Mobile Mavens weigh in on GDC 2026",
       "url": "https://www.pocketgamer.biz/a-tale-of-two-halves-the-mobile-mavens-weigh-in-on-gdc-2026/",
