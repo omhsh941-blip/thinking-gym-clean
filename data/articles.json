@@ -1,6 +1,154 @@
 {
   "articles": [
     {
+      "id": "78ed5b644fec2af677bdf8981b5cd7f82e591d6a",
+      "title": "The DLSS 5 backlash is not going away | Opinion",
+      "url": "https://www.gamesindustry.biz/the-dlss-5-backlash-is-not-going-away-opinion",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 18:14:41 +0000",
+      "collected_at": "2026-03-23T09:44:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "dlss",
+        "backlash",
+        "not",
+        "going",
+        "away",
+        "opinion"
+      ]
+    },
+    {
+      "id": "84f1fd022a385f9a58c7355ee4c4e90ea2be9a73",
+      "title": "This mobile game has been made using AI for a year now – and no one noticed",
+      "url": "https://www.gamesindustry.biz/this-mobile-game-has-been-made-using-ai-for-a-year-now-and-no-one-noticed",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 17:36:22 +0000",
+      "collected_at": "2026-03-23T09:44:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mobile",
+        "has",
+        "made",
+        "using",
+        "ai",
+        "year",
+        "and"
+      ]
+    },
+    {
+      "id": "945e1780ffe3d3786af5d1f018ff2c0399cbd05b",
+      "title": "Unknown Worlds co-founders' lawyers accuse Krafton of  \"intentionally leaking\" Subnautica 2 release date",
+      "url": "https://www.gamesindustry.biz/unknown-worlds-co-founders-lawyers-accuse-krafton-of-intentionally-leaking-subnautica-2-release-date",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 14:39:46 +0000",
+      "collected_at": "2026-03-23T09:44:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "unknown",
+        "worlds",
+        "co-founders",
+        "lawyers",
+        "accuse",
+        "krafton",
+        "intentionally"
+      ]
+    },
+    {
+      "id": "f575f9acc24908667a92dd304402df60936c4dfd",
+      "title": "ESRB will not adopt PEGI age-rating changes in the US as it \"could be confusing\"",
+      "url": "https://www.gamesindustry.biz/esrb-will-not-adopt-pegi-age-rating-changes-in-the-us-as-it-could-be-confusing",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 13:56:19 +0000",
+      "collected_at": "2026-03-23T09:44:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "esrb",
+        "will",
+        "not",
+        "adopt",
+        "pegi",
+        "age-rating",
+        "changes"
+      ]
+    },
+    {
+      "id": "c48889b8f59eb1f58e271f90c87c91abc688325a",
+      "title": "Crimson Desert | Critical Consensus",
+      "url": "https://www.gamesindustry.biz/crimson-desert-critical-consensus",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 11:15:02 +0000",
+      "collected_at": "2026-03-23T09:44:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "crimson",
+        "desert",
+        "critical",
+        "consensus"
+      ]
+    },
+    {
+      "id": "00bee23dc77c50ce126d30cff4a36c66944beba8",
+      "title": "\"We are looking to add companies that bring something new\" – Head of Raw Fury and Combined Effect explains his plans",
+      "url": "https://www.gamesindustry.biz/we-are-looking-to-add-companies-that-bring-something-new-head-of-raw-fury-and-combined-effect-explains-his-plans",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 10:30:18 +0000",
+      "collected_at": "2026-03-23T09:44:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "looking",
+        "add",
+        "companies",
+        "bring",
+        "something",
+        "new",
+        "head"
+      ]
+    },
+    {
+      "id": "7afe77a2141d6cd684c58d4a31670377f04c7dfb",
+      "title": "The Big Debate: What role should AI have in video game narrative?",
+      "url": "https://www.gamesindustry.biz/the-big-debate-what-role-should-ai-have-in-video-game-narrative",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 10:22:35 +0000",
+      "collected_at": "2026-03-23T09:44:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "big",
+        "debate",
+        "what",
+        "role",
+        "should",
+        "ai",
+        "have"
+      ]
+    },
+    {
+      "id": "580136aa5037d2ceb7c3b733832e222b2476ff10",
+      "title": "CD Projekt sales rise 9% in 2025, driven by Cyberpunk franchise",
+      "url": "https://www.gamesindustry.biz/cd-projekt-sales-rise-9-in-2025-driven-cyberpunk-franchise",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 09:50:32 +0000",
+      "collected_at": "2026-03-23T09:44:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "cd",
+        "projekt",
+        "sales",
+        "rise",
+        "driven",
+        "cyberpunk",
+        "franchise"
+      ]
+    },
+    {
       "id": "7dfa1bf686fc9d637a85889e3a7992a08f1f83ea",
       "title": "[현장 취재] “체험에 할인까지 더했다”... ‘서울 보드게임 페어’ 코리아보드게임즈 부스 눈길",
       "url": "https://game.donga.com/121957/",
