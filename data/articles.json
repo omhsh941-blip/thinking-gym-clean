@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "id": "ba7333248a3b6bc681fc23a74a15cb68d8a983b7",
+      "title": "ByteDance's Moonton acquisition, Fortnite's Google Play comeback and a $2bn milestone for Farm Heroes Saga | Week in Views",
+      "url": "https://www.pocketgamer.biz/bytedances-moonton-acquisition-fortnites-google-play-comeback-and-a-2bn-milestone-for-farm-heroes-saga-week-in-views/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 16:23:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "bytedance",
+        "moonton",
+        "acquisition",
+        "fortnite",
+        "google",
+        "play",
+        "comeback"
+      ]
+    },
+    {
+      "id": "77c87f72b2e51f23ac3b4af28cbcfa823392f0ce",
+      "title": "ByteDance to sell Moonton to Savvy Games Group in $6bn deal",
+      "url": "https://www.pocketgamer.biz/bytedance-to-sell-moonton-to-savvy-games-group-in-6bn-deal/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 15:05:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "bytedance",
+        "sell",
+        "moonton",
+        "savvy",
+        "6bn",
+        "deal"
+      ]
+    },
+    {
+      "id": "fadeb4bd04b0c611f41caeaf50d7553b152c42c1",
+      "title": "Matthew Ball interview: Can new stores and D2C turn the tide on high UA costs?",
+      "url": "https://www.pocketgamer.biz/matthew-ball-interview-can-new-stores-and-d2c-turn-the-tide-on-high-ua-costs/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 15:00:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "matthew",
+        "ball",
+        "interview",
+        "can",
+        "new",
+        "stores",
+        "and"
+      ]
+    },
+    {
+      "id": "1ac05a236ab5f1fe616abd8bdfd07d97d7370a7a",
+      "title": "Supercent and Sumo Digital sign strategic MOU to co-develop next-generation mobile titles",
+      "url": "https://www.pocketgamer.biz/supercent-and-sumo-digital-sign-strategic-mou-to-co-develop-next-generation-mobile-titles/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 14:00:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "supercent",
+        "and",
+        "sumo",
+        "digital",
+        "sign",
+        "strategic",
+        "mou"
+      ]
+    },
+    {
+      "id": "3645a5f51fd1ac9aef70e2f8a63ff4e5c55524cd",
+      "title": "How Pocket Gamer Connects Summit Shanghai is your gateway to the world’s largest games market",
+      "url": "https://www.pocketgamer.biz/how-pg-connects-summit-shanghai-is-your-gateway-to-the-worlds-largest-games-market/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 12:00:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "how",
+        "pocket",
+        "connects",
+        "summit",
+        "shanghai",
+        "gateway",
+        "world"
+      ]
+    },
+    {
+      "id": "66a13d22a5c8a6fa7a2c6689568cee3f49f34c50",
+      "title": "New release roundup: Fortnite, Taimanin Squad, Goritaire, and more",
+      "url": "https://www.pocketgamer.biz/new-release-roundup-fortnite-taimanin-squad-goritaire-and-more/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 10:20:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "new",
+        "release",
+        "roundup",
+        "fortnite",
+        "taimanin",
+        "squad",
+        "goritaire"
+      ]
+    },
+    {
+      "id": "14d596ebaf2574cd82100530880748c5f82c4350",
+      "title": "How MeetToMatch will maximise deal-making at Pocket Gamer Connects Summit Malmö",
+      "url": "https://www.pocketgamer.biz/how-meettomatch-will-maximise-deal-making-at-pocket-gamer-connects-summit-malm/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 09:30:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "how",
+        "meettomatch",
+        "will",
+        "maximise",
+        "deal-making",
+        "pocket",
+        "connects"
+      ]
+    },
+    {
+      "id": "0acec529b04656781f1ad066ddcd4d6c41abf9bc",
+      "title": "LinkedIn launches new logic puzzle game Patches",
+      "url": "https://www.pocketgamer.biz/linkedin-launches-new-logic-puzzle-game-patches/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 09:15:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "linkedin",
+        "launches",
+        "new",
+        "logic",
+        "puzzle",
+        "patches"
+      ]
+    },
+    {
+      "id": "f13ab38476f990358b334b5fde5bc7fe0e94ffec",
+      "title": "PlanetPlay rallies games industry for global “Battle for the Habitats” campaign",
+      "url": "https://www.pocketgamer.biz/planetplay-rallies-games-industry-for-global-battle-for-the-habitats-campaign/",
+      "category": "Game Industry",
+      "published": "Fri, 20 Mar 2026 09:00:00 +0000",
+      "collected_at": "2026-03-23T09:44:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "planetplay",
+        "rallies",
+        "industry",
+        "global",
+        "battle",
+        "habitats",
+        "campaign"
+      ]
+    },
+    {
       "id": "78ed5b644fec2af677bdf8981b5cd7f82e591d6a",
       "title": "The DLSS 5 backlash is not going away | Opinion",
       "url": "https://www.gamesindustry.biz/the-dlss-5-backlash-is-not-going-away-opinion",
