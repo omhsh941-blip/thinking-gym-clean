@@ -1,6 +1,228 @@
 {
   "sessions": [
     {
+      "session_id": "28686dfe5379ddbf3ec7b91cc5a14ce0aeaee54f",
+      "date": "2026-03-23T13:44:50+09:00",
+      "article": {
+        "id": "1ac05a236ab5f1fe616abd8bdfd07d97d7370a7a",
+        "title": "Supercent and Sumo Digital sign strategic MOU to co-develop next-generation mobile titles",
+        "url": "https://www.pocketgamer.biz/supercent-and-sumo-digital-sign-strategic-mou-to-co-develop-next-generation-mobile-titles/",
+        "category": "Game Industry",
+        "published": "Fri, 20 Mar 2026 14:00:00 +0000"
+      },
+      "tags": [
+        "모바일 게임",
+        "크로스 플랫폼",
+        "데이터 기반 퍼블리싱"
+      ],
+      "planner_summary_json": {
+        "article_meta": {
+          "title": "Supercent and Sumo Digital sign strategic MOU to co-develop next-generation mobile titles",
+          "url": "https://www.pocketgamer.biz/supercent-and-sumo-digital-sign-strategic-mou-to-co-develop-next-generation-mobile-titles/",
+          "published_at": "Fri, 20 Mar 2026 14:00:00 +0000",
+          "category": "Game Industry"
+        },
+        "summary": {
+          "market_insight": [
+            "모바일 게임 산업은 사용자 획득 비용 상승과 콘텐츠 포화 등의 구조적 변화에 직면하고 있다.",
+            "Supercent와 Sumo Digital의 파트너십은 이러한 시장 압박에 대응하기 위한 전략적 접근으로 볼 수 있다.",
+            "양사는 신속한 게임 개발과 테스트를 통해 새로운 게임 아이디어를 검증할 계획이다."
+          ],
+          "system_tech": [
+            "Supercent는 데이터 기반의 퍼블리싱 시스템을 통해 실시간 성과 데이터를 활용한 글로벌 스케일링을 지원한다.",
+            "Sumo Digital은 20년 이상의 경험을 바탕으로 프로토타입에서 게임 시스템 개발까지의 전 과정을 이끌 예정이다.",
+            "양사는 하이브리드 및 크로스 플랫폼 타이틀 개발을 통해 더 깊이 있는 게임 경험을 제공할 계획이다."
+          ],
+          "ux": [
+            "모바일 시장에서 품질과 깊이가 속도만큼 중요해지고 있다.",
+            "Supercent는 시장 검증과 운영 실행에서의 퍼블리싱 역량을 통해 유저 경험을 극대화할 예정이다.",
+            "Sumo Digital의 다양한 장르와 플랫폼에서의 경험은 사용자에게 높은 품질의 게임 경험을 제공할 것으로 기대된다."
+          ]
+        },
+        "keywords": [
+          {
+            "keyword": "모바일 게임",
+            "why_it_matters": "모바일 게임 시장은 지속적으로 성장하고 있으며, 새로운 전략적 파트너십이 이 시장의 경쟁력을 강화할 수 있다."
+          },
+          {
+            "keyword": "크로스 플랫폼",
+            "why_it_matters": "크로스 플랫폼 개발은 다양한 사용자층을 확보할 수 있는 기회를 제공하며, 게임의 수익성을 높일 수 있다."
+          },
+          {
+            "keyword": "데이터 기반 퍼블리싱",
+            "why_it_matters": "데이터 기반 접근 방식은 시장의 변화에 신속하게 대응할 수 있는 능력을 제공하며, 성공적인 게임 출시를 위한 필수 요소가 된다."
+          }
+        ],
+        "caveats": [
+          "기사에 없는 내용 단정 금지. 불확실하면 '알 수 없음' 표기."
+        ]
+      },
+      "questions": [
+        {
+          "question_id": "q1",
+          "type": "fact",
+          "points": 10,
+          "prompt": "Supercent와 Sumo Digital의 파트너십은 어떤 목적을 가지고 체결되었나요?",
+          "intent": "이 질문은 파트너십의 주요 목적을 확인하기 위해 던졌습니다.",
+          "answer_format_hint": "파트너십의 목적에 대한 간단한 설명",
+          "rubric": [
+            "정확한 정보 확인",
+            "기사 내용 이해",
+            "주요 포인트 파악"
+          ],
+          "tags": [
+            "BusinessAcumen",
+            "TrendInsight"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [],
+            "from_summary_section": "market_insight",
+            "reference": "Supercent와 Sumo Digital의 파트너십은 이러한 시장 압박에 대응하기 위한 전략적 접근으로 볼 수 있다."
+          }
+        },
+        {
+          "question_id": "q2",
+          "type": "logic",
+          "points": 20,
+          "prompt": "모바일 게임 산업의 사용자 획득 비용 상승이 Supercent와 Sumo Digital의 파트너십에 어떤 영향을 미칠까요?",
+          "intent": "이 질문은 시장 변화가 파트너십에 미치는 영향을 분석하기 위해 던졌습니다.",
+          "answer_format_hint": "사용자 획득 비용 상승이 파트너십에 미치는 영향에 대한 논리적 설명",
+          "rubric": [
+            "논리적 사고",
+            "시장 이해",
+            "상황 분석"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "DetailLogic"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [
+              "모바일 게임"
+            ],
+            "from_summary_section": "market_insight",
+            "reference": "모바일 게임 산업은 사용자 획득 비용 상승과 콘텐츠 포화 등의 구조적 변화에 직면하고 있다."
+          }
+        },
+        {
+          "question_id": "q3",
+          "type": "system",
+          "points": 30,
+          "prompt": "Supercent의 데이터 기반 퍼블리싱 시스템이 게임 개발에 미치는 영향은 무엇인가요?",
+          "intent": "이 질문은 시스템의 기능과 그 효과를 분석하기 위해 던졌습니다.",
+          "answer_format_hint": "데이터 기반 퍼블리싱 시스템의 효과에 대한 설명",
+          "rubric": [
+            "시스템 분석",
+            "기술 이해",
+            "효과 평가"
+          ],
+          "tags": [
+            "SystemicThinking",
+            "UserCentric"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [
+              "데이터 기반 퍼블리싱"
+            ],
+            "from_summary_section": "system_tech",
+            "reference": "Supercent는 데이터 기반의 퍼블리싱 시스템을 통해 실시간 성과 데이터를 활용한 글로벌 스케일링을 지원한다."
+          }
+        },
+        {
+          "question_id": "q4",
+          "type": "reverse_apply",
+          "points": 40,
+          "prompt": "Supercent와 Sumo Digital의 파트너십을 통해 개발될 크로스 플랫폼 타이틀이 사용자 경험에 미치는 긍정적 효과는 무엇인가요?",
+          "intent": "이 질문은 파트너십의 결과를 실제 상황에 적용해 보려는 의도로 던졌습니다.",
+          "answer_format_hint": "크로스 플랫폼 타이틀이 사용자 경험에 미치는 긍정적 효과에 대한 설명",
+          "rubric": [
+            "적용 능력",
+            "사용자 경험 분석",
+            "창의적 사고"
+          ],
+          "tags": [
+            "UserCentric",
+            "TrendInsight"
+          ],
+          "role_key": null,
+          "grounding": {
+            "from_keywords": [
+              "크로스 플랫폼"
+            ],
+            "from_summary_section": "system_tech",
+            "reference": "양사는 하이브리드 및 크로스 플랫폼 타이틀 개발을 통해 더 깊이 있는 게임 경험을 제공할 계획이다."
+          }
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q1",
+          "answer": "슈퍼센트의 개발 및 퍼블리싱 능력, 수모 디지탈에 크로스 플랫폼 기술력을 결합하여\n하이브리드, 크로스 플랫폼으로 사업 영역 확장"
+        },
+        {
+          "question_id": "q2",
+          "answer": "모바일 게임 산업의 사용자 획득 비용이 증가함에 따라 다양한 플랫폼에서의 유저 획득을 위해 Sumo Digital과의 파트너십 체결"
+        },
+        {
+          "question_id": "q3",
+          "answer": "ㅈㅈ"
+        },
+        {
+          "question_id": "q4",
+          "answer": "ㅈㅈ"
+        }
+      ],
+      "eval_pack": {
+        "question_results": [
+          {
+            "question_id": "q1",
+            "score": 5,
+            "max_score": 10,
+            "feedback": "파트너십의 목적을 언급했으나, 구체적인 내용이 부족합니다. 더 명확한 설명이 필요합니다.",
+            "model_answer": "Supercent와 Sumo Digital의 파트너십은 모바일 게임 산업의 시장 압박에 대응하기 위한 전략적 접근으로, 신속한 게임 개발과 테스트를 통해 새로운 게임 아이디어를 검증하는 것을 목표로 하고 있습니다."
+          },
+          {
+            "question_id": "q2",
+            "score": 10,
+            "max_score": 20,
+            "feedback": "사용자 획득 비용 상승이 파트너십에 미치는 영향을 잘 설명했습니다. 그러나 좀 더 구체적인 논리적 연결이 필요합니다.",
+            "model_answer": "사용자 획득 비용이 상승함에 따라 Supercent와 Sumo Digital은 다양한 플랫폼에서 유저를 확보하기 위해 협력하여 효율적인 마케팅 전략과 게임 개발을 통해 비용을 절감하고 경쟁력을 유지하려고 합니다."
+          },
+          {
+            "question_id": "q3",
+            "score": 0,
+            "max_score": 30,
+            "feedback": "답변이 의미가 없고, 질문에 대한 내용이 전혀 없습니다. 시스템의 기능과 효과를 분석하는 데 집중해야 합니다.",
+            "model_answer": "Supercent의 데이터 기반 퍼블리싱 시스템은 실시간 성과 데이터를 활용하여 게임 개발 과정에서의 의사결정을 지원하고, 글로벌 스케일링을 통해 시장 변화에 신속하게 대응할 수 있는 능력을 제공합니다."
+          },
+          {
+            "question_id": "q4",
+            "score": 0,
+            "max_score": 40,
+            "feedback": "답변이 의미가 없고, 질문의 의도를 전혀 반영하지 못했습니다. 크로스 플랫폼 타이틀의 사용자 경험에 대한 긍정적 효과를 구체적으로 설명해야 합니다.",
+            "model_answer": "Supercent와 Sumo Digital의 파트너십을 통해 개발될 크로스 플랫폼 타이틀은 다양한 플랫폼에서의 접근성을 높여 사용자 경험을 향상시키고, 유저들이 서로 다른 기기에서 원활하게 게임을 즐길 수 있도록 하여 더 깊이 있는 게임 경험을 제공합니다."
+          }
+        ],
+        "total_score": 25,
+        "radar": {
+          "SystemicThinking": 1,
+          "UserCentric": 1,
+          "BusinessAcumen": 3,
+          "DetailLogic": 1,
+          "TrendInsight": 3
+        },
+        "daily_insight": {
+          "growth_check": "Business Acumen이 최근 3일간 상승했습니다.",
+          "weakness_fix": "Systemic Thinking과 User-Centric이 가장 약한 축입니다. 이 두 영역에서의 이해도를 높이는 것이 필요합니다.",
+          "recommended_next_topic": "모바일 게임 산업의 사용자 획득 비용 상승에 대한 심층 분석"
+        }
+      },
+      "final_summary": "- 슈퍼센트의 개발 및 퍼블리싱 능력, 수모 디지탈에 크로스 플랫폼 기술력을 결합하여\n하이브리드, 크로스 플랫폼으로 사업 영역 확장\n- 모바일 게임 산업의 사용자 획득 비용이 증가함에 따라 다양한 플랫폼에서의 유저 획득을 위해 Sumo Digital과의 파트너십 체결\n- ㅈㅈ"
+    },
+    {
       "session_id": "dade7434d1e8dbb30c2e3d7d0b52b5c3ab15df49",
       "date": "2026-03-18T09:12:31+09:00",
       "article": {
