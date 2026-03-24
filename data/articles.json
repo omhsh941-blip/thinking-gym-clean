@@ -1,6 +1,176 @@
 {
   "articles": [
     {
+      "id": "6ff2c1b7d8be86ba48be3684a97764db47a83e42",
+      "title": "47 top mobile games in soft launch: Overwatch Rush, Trivia Crack Academy, Netflix Playground, and more",
+      "url": "https://www.pocketgamer.biz/the-latest-and-most-interesting-mobile-games-in-soft-launch-update/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 17:00:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "top",
+        "mobile",
+        "soft",
+        "launch",
+        "overwatch",
+        "rush",
+        "trivia"
+      ]
+    },
+    {
+      "id": "cd552929b64f9999f28e896159fd8bb01a322dbe",
+      "title": "Roblox to take cut of in-game brand deals from 2027 under new advertising rules",
+      "url": "https://www.pocketgamer.biz/roblox-to-take-cut-of-in-game-brand-deals-from-2027-under-new-advertising-rules/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 15:50:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "roblox",
+        "take",
+        "cut",
+        "in-game",
+        "brand",
+        "deals",
+        "under"
+      ]
+    },
+    {
+      "id": "61520d4a601c7fd11c2bd9cd48ecc91adab8e205",
+      "title": "The final word on GDC | Week in Mobile Games podcast",
+      "url": "https://www.pocketgamer.biz/the-final-word-on-gdc-week-in-mobile-games-podcast/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 15:45:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "final",
+        "word",
+        "gdc",
+        "week",
+        "mobile",
+        "podcast"
+      ]
+    },
+    {
+      "id": "f72e4b1a2b5026f69a98195727978083e90dc30a",
+      "title": "Devsisters outlines multi-game expansion for CookieRun as franchise surpasses $1 billion",
+      "url": "https://www.pocketgamer.biz/devsisters-outlines-multi-game-expansion-for-cookierun-as-franchise-targets-next-growth-phase/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 15:40:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "devsisters",
+        "outlines",
+        "multi-game",
+        "expansion",
+        "cookierun",
+        "franchise",
+        "surpasses"
+      ]
+    },
+    {
+      "id": "f05f3411e5d9497885ce8b9adb9decadab021d09",
+      "title": "Amazon plans smartphone comeback years after Fire Phone failure",
+      "url": "https://www.pocketgamer.biz/amazon-plans-smartphone-comeback-years-after-fire-phone-failure/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 12:37:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "amazon",
+        "plans",
+        "smartphone",
+        "comeback",
+        "years",
+        "after",
+        "fire"
+      ]
+    },
+    {
+      "id": "2875e03d3644131b98bdc957c29072face2d60c6",
+      "title": "Supercell partners with Taika Waititi to launch new character in Brawl Stars",
+      "url": "https://www.pocketgamer.biz/supercell-partners-with-taika-waititi-to-launch-new-character-in-brawl-stars/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 12:30:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "supercell",
+        "partners",
+        "taika",
+        "waititi",
+        "launch",
+        "new",
+        "character"
+      ]
+    },
+    {
+      "id": "3bacfcce953211a2b208213734379d8e4ef54822",
+      "title": "Speakers from Zynga, Rovio and Layer AI set for Pocket Gamer Connects Barcelona 2026",
+      "url": "https://www.pocketgamer.biz/speakers-from-zynga-rovio-and-layer-ai-set-for-pocket-gamer-connects-barcelona-2026/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 12:09:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "speakers",
+        "zynga",
+        "rovio",
+        "and",
+        "layer",
+        "ai",
+        "set"
+      ]
+    },
+    {
+      "id": "7e2b4f3d6f2851e73836684075c1e074e4ba84e6",
+      "title": "Epic Games opens Star Wars tools to creators as branded content push expands inside Fortnite",
+      "url": "https://www.pocketgamer.biz/epic-games-opens-star-wars-tools-to-creators-as-branded-content-push-expands-inside-fortnite/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 11:45:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "epic",
+        "opens",
+        "star",
+        "wars",
+        "tools",
+        "creators",
+        "branded"
+      ]
+    },
+    {
+      "id": "7356630b733e7e8c304d4d82c13f9a14186c3b1c",
+      "title": "Hot Five: GDC 2026, ByteDance to sell Moonton, and Candy Crush’s \"incredibly valuable\" feedback loop",
+      "url": "https://www.pocketgamer.biz/hot-five-gdc-2026-bytedance-to-sell-moonton-and-candy-crushs-incredibly-valuable-feedback-loop/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 10:46:00 +0000",
+      "collected_at": "2026-03-24T13:39:43+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "hot",
+        "five",
+        "gdc",
+        "bytedance",
+        "sell",
+        "moonton",
+        "and"
+      ]
+    },
+    {
       "id": "e5c07be9cd1780e04426e06dd4054690707c3b2f",
       "title": "Jest Games Fund wants to support studios building games \"for the RCS messaging ecosystem\"",
       "url": "https://www.gamesindustry.biz/jest-games-fund-wants-to-support-studios-building-games-for-the-rcs-messaging-ecosystem",
