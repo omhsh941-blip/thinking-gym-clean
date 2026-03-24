@@ -1,6 +1,196 @@
 {
   "articles": [
     {
+      "id": "799bbd6ce2fc7d0ab545cbd65f1a3d22b0ea1ca9",
+      "title": "삼성전자, 모니터 제조사 넘어 새로운 게임 생태계 '설계자'로",
+      "url": "https://game.donga.com/121982/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 11:38:09 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "삼성전자",
+        "모니터",
+        "제조사",
+        "넘어",
+        "새로운",
+        "생태계",
+        "설계자"
+      ]
+    },
+    {
+      "id": "e0df1ad1ff7e0b191bf034ce9ab7bfc8aeed44c0",
+      "title": "넷마블 '일곱 개의 대죄: 오리진', 모바일 출시와 함께 그랜드 론칭",
+      "url": "https://game.donga.com/121981/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 11:34:43 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "일곱",
+        "개의",
+        "대죄",
+        "오리진",
+        "모바일",
+        "출시"
+      ]
+    },
+    {
+      "id": "24eb6784ba63544036b825004ec1f6c1721732b2",
+      "title": "기술 진화를 따라가는 오픈소스 자동화 게임 ‘무어스텍’ 개발한 사카스튜디오",
+      "url": "https://game.donga.com/121980/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 11:32:03 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "기술",
+        "진화",
+        "따라가",
+        "오픈소스",
+        "자동화",
+        "무어스텍",
+        "개발한"
+      ]
+    },
+    {
+      "id": "8bf920f80fd9dadc4279801a97d400f25c3381b8",
+      "title": "네오위즈 '피망 쇼다운 홀덤', PC 버전 정식 출시.. '더 편안한 환경 마련'",
+      "url": "https://game.donga.com/121979/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 11:13:46 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "네오위즈",
+        "피망",
+        "쇼다운",
+        "홀덤",
+        "pc",
+        "버전",
+        "정식"
+      ]
+    },
+    {
+      "id": "e6ab30e483351148e1d3dac2416c8f20b1945db9",
+      "title": "9주년 맞이한 배틀그라운드. 2026년 개발 로드맵 발표",
+      "url": "https://game.donga.com/121978/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 10:22:02 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "9주년",
+        "맞이한",
+        "배틀그라운드",
+        "2026년",
+        "개발",
+        "로드맵",
+        "발표"
+      ]
+    },
+    {
+      "id": "3aecd8aab19213e221e9e3517e6e01925a54aa35",
+      "title": "닌텐도, 배터리 교체 가능한 ‘스위치 2’ 개정 모델 준비... “EU 규정 영향”",
+      "url": "https://game.donga.com/121977/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 10:18:09 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "닌텐",
+        "배터리",
+        "교체",
+        "가능한",
+        "스위치",
+        "개정",
+        "모델"
+      ]
+    },
+    {
+      "id": "0f3b016cf4eec7ea3894a6fbdd7404dab6661b08",
+      "title": "NHN과 스퀘어에닉스, 신작 'DISSIDIA DUELLUM FINAL FANTASY' 글로벌 정식 출시",
+      "url": "https://game.donga.com/121976/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 09:28:22 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "nhn",
+        "스퀘어에닉스",
+        "신작",
+        "dissidia",
+        "duellum",
+        "final",
+        "fantasy"
+      ]
+    },
+    {
+      "id": "cf5871f892cd01ff00805f90c8e82f91a9f83f87",
+      "title": "아크시스템웍스, PC 스팀 버전 'GUILTY GEAR 2 -OVERTURE-' 한글화 진행",
+      "url": "https://game.donga.com/121975/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 20:48:57 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "아크시스템웍스",
+        "pc",
+        "스팀",
+        "버전",
+        "guilty",
+        "gear",
+        "overture"
+      ]
+    },
+    {
+      "id": "c64594fa46e668c3d566a30b095cb9d73e7e75fc",
+      "title": "컴투스홀딩스, 서울경제진흥원과 함께 인디 게임 발굴 및 글로벌 진출 '맞손'",
+      "url": "https://game.donga.com/121974/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 20:38:42 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "컴투스홀딩스",
+        "서울경제진흥원",
+        "함께",
+        "인디",
+        "발굴",
+        "글로벌",
+        "진출"
+      ]
+    },
+    {
+      "id": "67a11f6e9a32a4b383c3ffb50151c605894c179b",
+      "title": "'아크 월드 투어 2025-2026 파이널' 성료.. 길티기어 최강자는 Jack",
+      "url": "https://game.donga.com/121973/",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 20:05:26 +0900",
+      "collected_at": "2026-03-24T13:39:35+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "아크",
+        "월드",
+        "투어",
+        "2025-2026",
+        "파이널",
+        "성료",
+        "길티기어"
+      ]
+    },
+    {
       "id": "ba7333248a3b6bc681fc23a74a15cb68d8a983b7",
       "title": "ByteDance's Moonton acquisition, Fortnite's Google Play comeback and a $2bn milestone for Farm Heroes Saga | Week in Views",
       "url": "https://www.pocketgamer.biz/bytedances-moonton-acquisition-fortnites-google-play-comeback-and-a-2bn-milestone-for-farm-heroes-saga-week-in-views/",
