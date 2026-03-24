@@ -1,6 +1,139 @@
 {
   "articles": [
     {
+      "id": "e5c07be9cd1780e04426e06dd4054690707c3b2f",
+      "title": "Jest Games Fund wants to support studios building games \"for the RCS messaging ecosystem\"",
+      "url": "https://www.gamesindustry.biz/jest-games-fund-wants-to-support-studios-building-games-for-the-rcs-messaging-ecosystem",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 21:16:25 +0000",
+      "collected_at": "2026-03-24T13:39:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "jest",
+        "fund",
+        "support",
+        "studios",
+        "building",
+        "rcs",
+        "messaging"
+      ]
+    },
+    {
+      "id": "e078a0cb777ba10e080d49c7f1fd64fe837d0361",
+      "title": "Mojang partners with Merlin Entertainments for the world's first Minecraft theme park, Minecraft World",
+      "url": "https://www.gamesindustry.biz/mojang-partners-with-merlin-entertainments-for-the-worlds-first-minecraft-theme-park-minecraft-world",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 20:32:03 +0000",
+      "collected_at": "2026-03-24T13:39:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "world",
+        "minecraft",
+        "mojang",
+        "partners",
+        "merlin",
+        "entertainments",
+        "first"
+      ]
+    },
+    {
+      "id": "3b6f09a86c2157f5cda4be3859320f6382ad7c21",
+      "title": "Savvy Games acquires Mobile Legends developer Moonton for $6 billion",
+      "url": "https://www.gamesindustry.biz/savvy-games-acquires-mobile-legends-developer-moonton-for-6-billion",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 20:12:02 +0000",
+      "collected_at": "2026-03-24T13:39:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "savvy",
+        "acquires",
+        "mobile",
+        "legends",
+        "developer",
+        "moonton",
+        "billion"
+      ]
+    },
+    {
+      "id": "908d843d02ee0fc88f312eae0a7de45daffe9c90",
+      "title": "Roblox insists plans to start charging creators for brand integrations \"is not about revenue at all\"",
+      "url": "https://www.gamesindustry.biz/roblox-insists-plans-to-start-charging-creators-for-brand-integrations-is-not-about-revenue-at-all",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 19:38:17 +0000",
+      "collected_at": "2026-03-24T13:39:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "roblox",
+        "insists",
+        "plans",
+        "start",
+        "charging",
+        "creators",
+        "brand"
+      ]
+    },
+    {
+      "id": "73597684c9bb713d584a21d0653ce8d7cf63c531",
+      "title": "Pearl Abyss to conduct \"comprehensive audit\" after AI-generated art found in Crimson Desert",
+      "url": "https://www.gamesindustry.biz/pearl-abyss-to-conduct-comprehensive-audit-after-ai-generated-art-found-in-crimson-desert",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 14:38:36 +0000",
+      "collected_at": "2026-03-24T13:39:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pearl",
+        "abyss",
+        "conduct",
+        "comprehensive",
+        "audit",
+        "after",
+        "ai-generated"
+      ]
+    },
+    {
+      "id": "d984b4719bc9ffc5285d9017c19fec1c0134f1b8",
+      "title": "Nintendo reportedly planning revised Switch 2 model with replaceable battery in EU",
+      "url": "https://www.gamesindustry.biz/nintendo-reportedly-planning-revised-switch-2-model-with-replaceable-battery-in-eu",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 09:51:02 +0000",
+      "collected_at": "2026-03-24T13:39:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "nintendo",
+        "reportedly",
+        "planning",
+        "revised",
+        "switch",
+        "model",
+        "replaceable"
+      ]
+    },
+    {
+      "id": "3b73bc1e961642d4f6f5d1433d1cc4b3f9f1947c",
+      "title": "Resident Evil Requiem tops US February charts, launch sales 60% higher than Village | US Monthly Charts",
+      "url": "https://www.gamesindustry.biz/resident-evil-requiem-tops-us-february-charts-launch-sales-60-higher-than-village-us-monthly-charts",
+      "category": "Game Industry",
+      "published": "Mon, 23 Mar 2026 08:29:58 +0000",
+      "collected_at": "2026-03-24T13:39:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "us",
+        "charts",
+        "resident",
+        "evil",
+        "requiem",
+        "tops",
+        "february"
+      ]
+    },
+    {
       "id": "7e984c13474c30da1136c9b2d2dd0cfef43e5df3",
       "title": "Crimson Desert Controls Get a Major Fix as Pearl Abyss Drops Patch 1.00.03",
       "url": "https://koreagamedesk.com/crimson-desert-controls-get-a-major-fix-as-pearl-abyss-drops-patch-1-00-03/?utm_source=rss&utm_medium=rss&utm_campaign=crimson-desert-controls-get-a-major-fix-as-pearl-abyss-drops-patch-1-00-03",
