@@ -1,6 +1,194 @@
 {
   "articles": [
     {
+      "id": "2f2e5e3795b43f516a75f2c2e5765ea9847fb5a9",
+      "title": "Epic Games to retire three Fortnite modes after failing to attract and retain players",
+      "url": "https://www.pocketgamer.biz/epic-games-to-retire-three-fortnite-modes-after-failing-to-attract-and-retain-players/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 15:48:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "epic",
+        "retire",
+        "three",
+        "fortnite",
+        "modes",
+        "after",
+        "failing"
+      ]
+    },
+    {
+      "id": "d48b663af3bf050d7065e540259d3ee1cc95a407",
+      "title": "Appcharge surpasses $1bn in D2C transactions",
+      "url": "https://www.pocketgamer.biz/appcharge-surpasses-1bn-in-d2c-transactions/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 15:12:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "appcharge",
+        "surpasses",
+        "1bn",
+        "d2c",
+        "transactions"
+      ]
+    },
+    {
+      "id": "0c0a0f45ba0cc7753114dfefaca5fca2d3b2a990",
+      "title": "Epic Games cuts 1,000 jobs as Fortnite slowdown forces major reset",
+      "url": "https://www.pocketgamer.biz/epic-games-cuts-1000-jobs-as-fortnite-slowdown-forces-major-reset/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 15:10:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "epic",
+        "cuts",
+        "jobs",
+        "fortnite",
+        "slowdown",
+        "forces",
+        "major"
+      ]
+    },
+    {
+      "id": "86bffe58d6160a57e0948f31ceb83044d017b039",
+      "title": "\"True innovation can only come from a group with different perspectives and experiences\"",
+      "url": "https://www.pocketgamer.biz/true-innovation-can-only-come-from-a-group-with-different-perspectives-and-experiences/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 15:00:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "true",
+        "innovation",
+        "can",
+        "only",
+        "come",
+        "different",
+        "perspectives"
+      ]
+    },
+    {
+      "id": "8929c91ce27e25291529aa424dc0607afdd9df77",
+      "title": "Duolingo experiments with tool to lock other apps until daily lessons are complete",
+      "url": "https://www.pocketgamer.biz/duolingo-experiments-with-tool-to-lock-other-apps-until-daily-lessons-are-complete/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 14:46:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "duolingo",
+        "experiments",
+        "tool",
+        "lock",
+        "other",
+        "apps",
+        "until"
+      ]
+    },
+    {
+      "id": "cdbe8cd7d93f1939be4535eebe2a83d0d0a6c3e6",
+      "title": "What our data reveals about ad quality and player churn in mobile games",
+      "url": "https://www.pocketgamer.biz/what-our-data-reveals-about-ad-quality-and-player-churn-in-mobile-games/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 14:00:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "what",
+        "data",
+        "reveals",
+        "about",
+        "ad",
+        "quality",
+        "and"
+      ]
+    },
+    {
+      "id": "f2deff1acec62cecdd3255b7f0b3079c7bb3e619",
+      "title": "Gain visibility and do games business in southern Sweden at PGC Summit Malmö on May 27th to 28th",
+      "url": "https://www.pocketgamer.biz/gain-visibility-and-do-games-business-in-southern-sweden-at-pgc-summit-malm-on-may-27th-to-28th/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 12:30:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "gain",
+        "visibility",
+        "and",
+        "do",
+        "business",
+        "southern",
+        "sweden"
+      ]
+    },
+    {
+      "id": "175b034c2119d7027732002acca01ff3b3ea3111",
+      "title": "TIGA clamours for government support as UK game dev jobs fall at record rate and startup activity collapses",
+      "url": "https://www.pocketgamer.biz/tiga-clamours-for-government-support-as-uk-game-dev-jobs-fall-at-record-rate-and-startup-activity-collapses/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 12:00:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tiga",
+        "clamours",
+        "government",
+        "support",
+        "uk",
+        "dev",
+        "jobs"
+      ]
+    },
+    {
+      "id": "e7552a78f7489b29ec31cf981af92fd16cb6c5a4",
+      "title": "Australia’s game development industry generated $425m in revenue during FY25",
+      "url": "https://www.pocketgamer.biz/australias-game-development-industry-generated-425m-in-revenue-during-fy25/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 11:43:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "australia",
+        "development",
+        "industry",
+        "generated",
+        "425m",
+        "revenue",
+        "during"
+      ]
+    },
+    {
+      "id": "f2994e74bf111b1a037309fa86dea258f6a4e6c8",
+      "title": "Minecraft World to open at Chessington theme park in 2027 with $67m investment",
+      "url": "https://www.pocketgamer.biz/minecraft-world-to-open-at-chessington-theme-park-in-2027-with-67m-investment/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 10:55:00 +0000",
+      "collected_at": "2026-03-25T13:29:17+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "minecraft",
+        "world",
+        "open",
+        "chessington",
+        "theme",
+        "park",
+        "67m"
+      ]
+    },
+    {
       "id": "4bf7d9ae77c3fe270292ed95cdf48fd4b4b6ac63",
       "title": "Starbreeze's Payday-focused future starts with a co-developed VR game",
       "url": "https://www.gamesindustry.biz/starbreezes-payday-focused-future-starts-with-a-co-developed-vr-game",
