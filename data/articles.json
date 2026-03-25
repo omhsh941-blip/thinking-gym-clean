@@ -1,6 +1,192 @@
 {
   "articles": [
     {
+      "id": "7b2da4759c9a1a01e94495aa52125bd551fd852c",
+      "title": "출시 4일만에 손익분기점 넘겼다고? 펄어비스 '붉은사막' 효과로 주가 폭등",
+      "url": "https://game.donga.com/121999/",
+      "category": "Game Industry",
+      "published": "Wed, 25 Mar 2026 10:56:09 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "출시",
+        "4일만",
+        "손익분기점",
+        "넘겼다고",
+        "펄어비스",
+        "붉은사막",
+        "효과"
+      ]
+    },
+    {
+      "id": "962aab305f9615545d20b35e368b9d723ab0e07a",
+      "title": "엔씨 '리니지2M'에 삼국지 캐릭터가? '더블 페이백 월드 신서버 데스나이트' 업데이트",
+      "url": "https://game.donga.com/121998/",
+      "category": "Game Industry",
+      "published": "Wed, 25 Mar 2026 10:47:22 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "엔씨",
+        "리니지2m",
+        "삼국지",
+        "캐릭터",
+        "더블",
+        "페이백",
+        "월드"
+      ]
+    },
+    {
+      "id": "bb904e5b73098833d612a226ccfc05322a68fdb6",
+      "title": "블리자드 전 CEO ‘마이크 이바라’, “붉은사막의 AI 사용 사과할 필요 없었다”",
+      "url": "https://game.donga.com/121997/",
+      "category": "Game Industry",
+      "published": "Wed, 25 Mar 2026 10:36:59 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "블리자드",
+        "ceo",
+        "마이크",
+        "이바라",
+        "붉은사막",
+        "ai",
+        "사용"
+      ]
+    },
+    {
+      "id": "062c259dd0b0d0719ba8e54864ede2c3eb9ced6b",
+      "title": "에픽게임즈, 1000여 명 감원... “전체 인력 20% 수준”",
+      "url": "https://game.donga.com/121996/",
+      "category": "Game Industry",
+      "published": "Wed, 25 Mar 2026 10:35:09 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "에픽게임즈",
+        "1000여",
+        "감원",
+        "전체",
+        "인력",
+        "수준"
+      ]
+    },
+    {
+      "id": "317ef0fc33a49d0ad567f53bd2b33fb088169c1b",
+      "title": "위메이드, ‘판타스틱 베이스볼’ 홍보 모델에 LA 다저스 사사키 로키 선정",
+      "url": "https://game.donga.com/121995/",
+      "category": "Game Industry",
+      "published": "Wed, 25 Mar 2026 10:11:56 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "위메이드",
+        "판타스틱",
+        "베이스볼",
+        "홍보",
+        "모델",
+        "la",
+        "다저스"
+      ]
+    },
+    {
+      "id": "512834d6af06b6f877c7298f65dbef6926ea726e",
+      "title": "카카오게임즈 최대 주주 라인야후로 바뀐다. 3000억 투자 유치",
+      "url": "https://game.donga.com/121994/",
+      "category": "Game Industry",
+      "published": "Wed, 25 Mar 2026 08:03:17 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "카카오게임즈",
+        "최대",
+        "주주",
+        "라인야후",
+        "바뀐다",
+        "3000억",
+        "투자"
+      ]
+    },
+    {
+      "id": "a4ec0cb86eaad0ccb1892bef6e6b8e3bc0d30bfc",
+      "title": "1주년이니까 47회 무료 뽑기! SD 건담 지 제네레이션 이터널 특집 생방송 진행",
+      "url": "https://game.donga.com/121992/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 22:03:38 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "1주년이니까",
+        "47회",
+        "무료",
+        "뽑기",
+        "sd",
+        "건담",
+        "제네레이션"
+      ]
+    },
+    {
+      "id": "773fa2cd54b48d3999a7c0be43ddcc44f7c90413",
+      "title": "뜨거운 관심이 판매 열기로... 펄어비스 '붉은사막' 출시 4일만에 300만장 돌파",
+      "url": "https://game.donga.com/121991/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 20:23:47 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "뜨거운",
+        "관심",
+        "판매",
+        "열기",
+        "펄어비스",
+        "붉은사막",
+        "출시"
+      ]
+    },
+    {
+      "id": "96d4d2884ca120a151b41aea7cf8385b7da541ff",
+      "title": "게임위·한국아케이드산업협회, 청소년게임제공업소 '안전 합동 캠페인' 개최",
+      "url": "https://game.donga.com/121990/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 17:33:02 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "게임위",
+        "한국아케이드산업협회",
+        "청소년게임제공업소",
+        "안전",
+        "합동",
+        "캠페인",
+        "개최"
+      ]
+    },
+    {
+      "id": "b94b72851becea946d1e3e979eb9df8185bd6058",
+      "title": "'MSI 2026', 6월 대전에서 펼쳐진다",
+      "url": "https://game.donga.com/121989/",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 16:52:40 +0900",
+      "collected_at": "2026-03-25T13:29:09+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "msi",
+        "6월",
+        "대전",
+        "펼쳐진다"
+      ]
+    },
+    {
       "id": "6ff2c1b7d8be86ba48be3684a97764db47a83e42",
       "title": "47 top mobile games in soft launch: Overwatch Rush, Trivia Crack Academy, Netflix Playground, and more",
       "url": "https://www.pocketgamer.biz/the-latest-and-most-interesting-mobile-games-in-soft-launch-update/",
