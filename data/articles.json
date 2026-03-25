@@ -1,6 +1,119 @@
 {
   "articles": [
     {
+      "id": "4bf7d9ae77c3fe270292ed95cdf48fd4b4b6ac63",
+      "title": "Starbreeze's Payday-focused future starts with a co-developed VR game",
+      "url": "https://www.gamesindustry.biz/starbreezes-payday-focused-future-starts-with-a-co-developed-vr-game",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 16:06:47 +0000",
+      "collected_at": "2026-03-25T13:29:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "starbreeze",
+        "payday-focused",
+        "future",
+        "starts",
+        "co-developed",
+        "vr"
+      ]
+    },
+    {
+      "id": "823d795ac2987367821ca7bb2befeb4db303e6bc",
+      "title": "Epic Games lays off over 1,000 employees following \"downturn in Fortnite engagement\"",
+      "url": "https://www.gamesindustry.biz/epic-games-lays-off-over-1000-employees-following-downturn-in-fortnite-engagement",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 15:03:01 +0000",
+      "collected_at": "2026-03-25T13:29:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "epic",
+        "lays",
+        "off",
+        "over",
+        "employees",
+        "following",
+        "downturn"
+      ]
+    },
+    {
+      "id": "869834472a337e1812eda481f3211300022bd546",
+      "title": "Dead by Daylight maker Behaviour has bought the studio behind 7 Days to Die to create \"a portfolio of horror IP\"",
+      "url": "https://www.gamesindustry.biz/dead-by-daylight-maker-behaviour-has-bought-the-studio-behind-7-days-to-die-to-create-a-portfolio-of-horror-ip",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 15:00:00 +0000",
+      "collected_at": "2026-03-25T13:29:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "dead",
+        "daylight",
+        "maker",
+        "behaviour",
+        "has",
+        "studio",
+        "behind"
+      ]
+    },
+    {
+      "id": "84121c46f15d48f14b717ab7e8fe096f5f8b36a4",
+      "title": "TIGA: UK games dev sector faces \"most severe downturn on record\"",
+      "url": "https://www.gamesindustry.biz/tiga-uk-games-dev-sector-faces-most-severe-downturn-on-record",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 11:46:51 +0000",
+      "collected_at": "2026-03-25T13:29:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tiga",
+        "uk",
+        "dev",
+        "sector",
+        "faces",
+        "most",
+        "severe"
+      ]
+    },
+    {
+      "id": "0d33e3272d6f09e995a1ced5da19732faf2c1848",
+      "title": "Capcom says it \"will not implement any generative AI assets\" into its games",
+      "url": "https://www.gamesindustry.biz/capcom-says-it-will-not-implement-any-generative-ai-assets-into-its-games",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 09:44:26 +0000",
+      "collected_at": "2026-03-25T13:29:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "capcom",
+        "says",
+        "will",
+        "not",
+        "implement",
+        "any",
+        "generative"
+      ]
+    },
+    {
+      "id": "1627f5e886b36ff70b9e224732f901246f8bffd2",
+      "title": "Nintendo reportedly adjusting Switch 2 production after weak holiday sales",
+      "url": "https://www.gamesindustry.biz/nintendo-reportedly-adjusting-switch-2-production-after-weak-holiday-sales",
+      "category": "Game Industry",
+      "published": "Tue, 24 Mar 2026 08:40:32 +0000",
+      "collected_at": "2026-03-25T13:29:15+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "nintendo",
+        "reportedly",
+        "adjusting",
+        "switch",
+        "production",
+        "after",
+        "weak"
+      ]
+    },
+    {
       "id": "9d381a65e82956c689b679b947d820b87ad5022a",
       "title": "Mobile Gamer Alleges Gacha Fraud by Billionairegames Over False Loot Box Rates in Legend of Avatar",
       "url": "https://koreagamedesk.com/mobile-gamer-alleges-gacha-fraud-by-billionairegames-over-false-loot-box-rates-in-legend-of-avatar/?utm_source=rss&utm_medium=rss&utm_campaign=mobile-gamer-alleges-gacha-fraud-by-billionairegames-over-false-loot-box-rates-in-legend-of-avatar",
