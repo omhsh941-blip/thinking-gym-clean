@@ -1,6 +1,196 @@
 {
   "articles": [
     {
+      "id": "d7c8c852b5b32fe1ffc402aa72f7f7d94c9d94fa",
+      "title": "ProbablyMonsters is betting on an Xbox 360-esque bonanza of single-player AA kookiness",
+      "url": "https://www.gamesindustry.biz/probablymonsters-is-betting-on-an-xbox-360-esque-bonanza-of-single-player-aa-kookiness",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 16:31:54 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "probablymonsters",
+        "betting",
+        "xbox",
+        "360-esque",
+        "bonanza",
+        "single-player",
+        "aa"
+      ]
+    },
+    {
+      "id": "d9f5e8e0db287f56bf980d39b33668333afd0cdd",
+      "title": "VR developer Polyarc Games facing layoffs, unspecified number of employees affected",
+      "url": "https://www.gamesindustry.biz/vr-developer-polyarc-games-facing-layoffs-unspecified-number-of-employees-affected",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 13:51:23 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "vr",
+        "developer",
+        "polyarc",
+        "facing",
+        "layoffs",
+        "unspecified",
+        "number"
+      ]
+    },
+    {
+      "id": "3bed0de6c725271d67f532d1d376e33b9f35dc7b",
+      "title": "Eidos-Montréal announces 124 job cuts; studio head David Anfossi departs after 19 years at developer",
+      "url": "https://www.gamesindustry.biz/eidos-montreal-announces-124-job-cuts-studio-head-david-anfossi-departs-after-19-years-at-developer",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 07:58:11 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "eidos-montr",
+        "al",
+        "announces",
+        "job",
+        "cuts",
+        "studio",
+        "head"
+      ]
+    },
+    {
+      "id": "5cf63cf1e599d5fb18f826d952b2f84029c70fd1",
+      "title": "Ken Kutaragi announced as first keynote speaker at Game Republic New Horizons 2026",
+      "url": "https://www.gamesindustry.biz/ken-kutaragi-announced-as-first-keynote-speaker-at-game-republic-new-horizons-2026",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 07:03:48 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ken",
+        "kutaragi",
+        "announced",
+        "first",
+        "keynote",
+        "speaker",
+        "republic"
+      ]
+    },
+    {
+      "id": "052b9a34b7e0025a24bfab7a20a36ae7ca6e26ed",
+      "title": "Choices developer Pixelberry Studios lays off staff",
+      "url": "https://www.gamesindustry.biz/choices-developer-pixelberry-studios-lays-off-staff",
+      "category": "Game Industry",
+      "published": "Mon, 30 Mar 2026 20:04:50 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "choices",
+        "developer",
+        "pixelberry",
+        "studios",
+        "lays",
+        "off",
+        "staff"
+      ]
+    },
+    {
+      "id": "f52796ab48f114ea3a5f9dc0cccb103959ddedb9",
+      "title": "Kingdom Come: Deliverance 2 studio allegedly fires \"obsolete\" translator to replace them with AI",
+      "url": "https://www.gamesindustry.biz/kingdom-come-deliverance-2-studio-allegedly-fires-obsolete-translator-to-replace-them-with-ai",
+      "category": "Game Industry",
+      "published": "Mon, 30 Mar 2026 19:34:00 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "kingdom",
+        "come",
+        "deliverance",
+        "studio",
+        "allegedly",
+        "fires",
+        "obsolete"
+      ]
+    },
+    {
+      "id": "064226a9349507f8dd979aa17f543547b8856c92",
+      "title": "Raiding like it's 1999: Why Daybreak thinks new players will try a 27-year-old MMO",
+      "url": "https://www.gamesindustry.biz/raiding-like-its-1999-why-daybreak-thinks-new-players-will-try-a-27-year-old-mmo",
+      "category": "Game Industry",
+      "published": "Mon, 30 Mar 2026 16:47:51 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "raiding",
+        "like",
+        "why",
+        "daybreak",
+        "thinks",
+        "new",
+        "players"
+      ]
+    },
+    {
+      "id": "70f9114c107f91e45c924795bb80ae75c937347a",
+      "title": "Death Stranding 2: On the Beach sales top 2 million | News-in-brief",
+      "url": "https://www.gamesindustry.biz/death-stranding-2-on-the-beach-sales-top-2-million-news-in-brief",
+      "category": "Game Industry",
+      "published": "Mon, 30 Mar 2026 16:00:50 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "death",
+        "stranding",
+        "beach",
+        "sales",
+        "top",
+        "million",
+        "news-in-brief"
+      ]
+    },
+    {
+      "id": "78237cf77473166d7343fadc59895b0d06bf5e04",
+      "title": "Krafton shutters free-to-play PUBG spin-off after two months, in line with policy of using Early Access to \"quickly validate a game’s potential\"",
+      "url": "https://www.gamesindustry.biz/krafton-shutters-free-to-play-pubg-spin-off-after-two-months-in-line-with-policy-of-using-early-access-to-quickly-validate-a-games-potential",
+      "category": "Game Industry",
+      "published": "Mon, 30 Mar 2026 11:00:08 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "krafton",
+        "shutters",
+        "free-to-play",
+        "pubg",
+        "spin-off",
+        "after",
+        "two"
+      ]
+    },
+    {
+      "id": "fa6eb06fb581d5105323977681b5501351b7c176",
+      "title": "The list of people hit by recent Epic layoffs has been turned into a dedicated portal for recruiters",
+      "url": "https://www.gamesindustry.biz/the-list-of-people-hit-by-recent-epic-layoffs-has-been-turned-into-a-dedicated-portal-for-recruiters",
+      "category": "Game Industry",
+      "published": "Mon, 30 Mar 2026 10:06:35 +0000",
+      "collected_at": "2026-04-01T13:01:13+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "list",
+        "people",
+        "hit",
+        "recent",
+        "epic",
+        "layoffs",
+        "has"
+      ]
+    },
+    {
       "id": "14da276fde6f542dfe1abe64ee897ba77c3e8c2d",
       "title": "Infinity Nikki Version 2.4 Launches the Forest Need Not Listen with a Darker Story and New Combat",
       "url": "https://koreagamedesk.com/infinity-nikki-version-2-4-launches-the-forest-need-not-listen-with-a-darker-story-and-new-combat/?utm_source=rss&utm_medium=rss&utm_campaign=infinity-nikki-version-2-4-launches-the-forest-need-not-listen-with-a-darker-story-and-new-combat",
