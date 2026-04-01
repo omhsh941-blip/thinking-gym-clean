@@ -1,6 +1,191 @@
 {
   "articles": [
     {
+      "id": "95d01e3455bc6f52a63ef075e07f87fd5940d8dc",
+      "title": "웹젠, 자사 PC 게임 3종에 2차 봄맞이 이벤트 마련",
+      "url": "https://game.donga.com/122071/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 12:20:39 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "웹젠",
+        "자사",
+        "pc",
+        "3종",
+        "2차",
+        "봄맞",
+        "이벤트"
+      ]
+    },
+    {
+      "id": "c1bcac18cc4aa9303c021ac6fcdde438e3db9d69",
+      "title": "게임사 만우절 맞아 접속 불가에 무료화까지…장난 맞지?",
+      "url": "https://game.donga.com/122070/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 11:18:14 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "게임사",
+        "만우절",
+        "맞아",
+        "접속",
+        "불가",
+        "무료화",
+        "장난"
+      ]
+    },
+    {
+      "id": "8736b120e182aff64c87e13ad47c33512d130f7d",
+      "title": "FTC, 카드사에 경고장 날렸다... 스팀 성인 게임 ‘결제 검열’ 멈추나?",
+      "url": "https://game.donga.com/122069/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 11:14:16 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ftc",
+        "카드사",
+        "경고장",
+        "날렸다",
+        "스팀",
+        "성인",
+        "결제"
+      ]
+    },
+    {
+      "id": "9942273c29c9f011aecf6aa0fca56d4bba771983",
+      "title": "크루세이더 퀘스트가 데스크톱 방치형RPG로 변신했다",
+      "url": "https://game.donga.com/122068/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 11:01:34 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "크루세이더",
+        "퀘스트",
+        "데스크톱",
+        "방치형rpg",
+        "변신했다"
+      ]
+    },
+    {
+      "id": "860154ac0aef512bf4ea973f993613aba7b64ef0",
+      "title": "“곧 다이애나 어부바해줄 수 있다!” 프래그마타 골드행",
+      "url": "https://game.donga.com/122067/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 10:35:08 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "다이애",
+        "어부바해줄",
+        "프래그마타",
+        "골드행"
+      ]
+    },
+    {
+      "id": "6b4aac0f540d452772450802892f60480e17ab1c",
+      "title": "400만장 넘긴 붉은사막, 이용자 평점도 8.8점까지 상승",
+      "url": "https://game.donga.com/122066/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 10:33:41 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "400만장",
+        "넘긴",
+        "붉은사막",
+        "이용자",
+        "평점",
+        "8점",
+        "상승"
+      ]
+    },
+    {
+      "id": "5fd9482cf14f0ff14111dcd25cbff9edd276170b",
+      "title": "서울경제진흥원, 해외 진출을 위한 게임마켓 참가 희망 게임기업 모집",
+      "url": "https://game.donga.com/122065/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 07:00:36 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "서울경제진흥원",
+        "해외",
+        "진출",
+        "위한",
+        "게임마켓",
+        "참가",
+        "희망"
+      ]
+    },
+    {
+      "id": "2253d7c036b10261d729542c16d086c888f14e73",
+      "title": "[취재] ‘승리의 여신: 니케’ 오케스트라 콘서트, '음악을 통해 확장된 니케의 생명력'",
+      "url": "https://game.donga.com/122064/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 06:34:49 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "니케",
+        "취재",
+        "승리",
+        "여신",
+        "오케스트라",
+        "콘서트",
+        "음악"
+      ]
+    },
+    {
+      "id": "9afb96c99c1a6002bf38b708c847a825704cbe45",
+      "title": "[취재] 넥슨 CFO “2026년 더 적극적인 주주 환원 정책 펼친다”",
+      "url": "https://game.donga.com/122063/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 19:50:37 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "취재",
+        "넥슨",
+        "cfo",
+        "2026년",
+        "적극적인",
+        "주주",
+        "환원"
+      ]
+    },
+    {
+      "id": "b71d874b4003c98de3f3de2c36d588e8ce9b8123",
+      "title": "[취재] 넥슨이 추구하는 AI 방향성 “AI는 창작을 대체하지 않는다”",
+      "url": "https://game.donga.com/122062/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 19:41:27 +0900",
+      "collected_at": "2026-04-01T13:01:04+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ai",
+        "취재",
+        "넥슨",
+        "추구하",
+        "방향성",
+        "창작",
+        "대체하지"
+      ]
+    },
+    {
       "id": "2f2e5e3795b43f516a75f2c2e5765ea9847fb5a9",
       "title": "Epic Games to retire three Fortnite modes after failing to attract and retain players",
       "url": "https://www.pocketgamer.biz/epic-games-to-retire-three-fortnite-modes-after-failing-to-attract-and-retain-players/",
