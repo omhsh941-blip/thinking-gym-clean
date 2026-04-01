@@ -1,6 +1,194 @@
 {
   "articles": [
     {
+      "id": "20eeca396b515caaa5df6699c4b10b893b519def",
+      "title": "The Mobile Mavens reflect on Epic Games' latest layoffs",
+      "url": "https://www.pocketgamer.biz/the-mobile-mavens-reflect-on-epic-games-latest-layoffs/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 15:45:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mobile",
+        "mavens",
+        "reflect",
+        "epic",
+        "latest",
+        "layoffs"
+      ]
+    },
+    {
+      "id": "d48a8feaaa13e3e2551aa06a99ab5dd32fc8826d",
+      "title": "February 2026 mobile game charts: Have the top risers over the past few years all peaked?",
+      "url": "https://www.pocketgamer.biz/february-2026-mobile-game-charts-have-mobiles-fast-risers-peaked/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 15:44:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "february",
+        "mobile",
+        "charts",
+        "have",
+        "top",
+        "risers",
+        "over"
+      ]
+    },
+    {
+      "id": "133889e8595f759996a5acbe4f26da575a176b62",
+      "title": "Ninth Circuit denies Apple rehearing request in Epic Games App Store dispute",
+      "url": "https://www.pocketgamer.biz/ninth-circuit-denies-apple-rehearing-request-in-epic-games-app-store-dispute/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 15:42:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ninth",
+        "circuit",
+        "denies",
+        "apple",
+        "rehearing",
+        "request",
+        "epic"
+      ]
+    },
+    {
+      "id": "6d096b98a79d957dee905dab75a6dbce310953d1",
+      "title": "Fire Emblem Shadows earns just $578,000 in first six months, less than 1% of Fire Emblem Heroes",
+      "url": "https://www.pocketgamer.biz/fire-emblem-shadows-earns-just-578000-in-first-six-months/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 15:40:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "fire",
+        "emblem",
+        "shadows",
+        "earns",
+        "just",
+        "first",
+        "six"
+      ]
+    },
+    {
+      "id": "803feb12242109de1f11a255288bdbb595f3c6a4",
+      "title": "Pixelberry Studios reportedly lays off staff in another round of workforce reductions",
+      "url": "https://www.pocketgamer.biz/pixelberry-studios-reportedly-lays-off-staff-in-another-round-of-workforce-reductions/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 12:33:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pixelberry",
+        "studios",
+        "reportedly",
+        "lays",
+        "off",
+        "staff",
+        "another"
+      ]
+    },
+    {
+      "id": "bc710cc2bf10db46e5df8e55731142cf601bdd31",
+      "title": "Tracks uncovered: Gain essential knowledge through PGC Summit Malmö's conference programme",
+      "url": "https://www.pocketgamer.biz/tracks-uncovered-gain-essential-knowledge-through-pgc-summit-malms-conference-programme/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 11:50:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tracks",
+        "uncovered",
+        "gain",
+        "essential",
+        "knowledge",
+        "through",
+        "pgc"
+      ]
+    },
+    {
+      "id": "4c65106784828c160fb0bd50bd776584da727a90",
+      "title": "Bethesda to shut down The Elder Scrolls: Blades servers in June",
+      "url": "https://www.pocketgamer.biz/bethesda-to-shut-down-the-elder-scrolls-blades-servers-in-june/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 11:26:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "bethesda",
+        "shut",
+        "down",
+        "elder",
+        "scrolls",
+        "blades",
+        "servers"
+      ]
+    },
+    {
+      "id": "052de1bb4d3c6e2465c021bbb6e15d6668e614f3",
+      "title": "Maxim Krippa becomes co-owner of Burny Games expanding long-term investment role",
+      "url": "https://www.pocketgamer.biz/maksym-krippa-becomes-co-owner-of-burny-games-expanding-long-term-investment-role/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 11:08:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "maxim",
+        "krippa",
+        "becomes",
+        "co-owner",
+        "burny",
+        "expanding",
+        "long-term"
+      ]
+    },
+    {
+      "id": "2a94d404cc82201af1e9d9f91794cd5b9bd68c08",
+      "title": "Ustwo Games revealed as first keynote for Develop: Brighton 2026",
+      "url": "https://www.pocketgamer.biz/ustwo-games-revealed-as-first-keynote-for-develop-brighton-2026/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 11:00:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ustwo",
+        "revealed",
+        "first",
+        "keynote",
+        "develop",
+        "brighton"
+      ]
+    },
+    {
+      "id": "55f0d9ea5ca8837def200d496b69275c061f17e6",
+      "title": "Mistplay completes acquisition of Connected Rewards to link gameplay with real-world loyalty programs",
+      "url": "https://www.pocketgamer.biz/mistplay-completes-acquisition-of-connected-rewards-to-link-gameplay-with-real-world-loyalty-programs/",
+      "category": "Game Industry",
+      "published": "Tue, 31 Mar 2026 10:50:00 +0100",
+      "collected_at": "2026-04-01T13:01:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mistplay",
+        "completes",
+        "acquisition",
+        "connected",
+        "rewards",
+        "link",
+        "gameplay"
+      ]
+    },
+    {
       "id": "d7c8c852b5b32fe1ffc402aa72f7f7d94c9d94fa",
       "title": "ProbablyMonsters is betting on an Xbox 360-esque bonanza of single-player AA kookiness",
       "url": "https://www.gamesindustry.biz/probablymonsters-is-betting-on-an-xbox-360-esque-bonanza-of-single-player-aa-kookiness",
