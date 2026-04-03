@@ -1,6 +1,195 @@
 {
   "articles": [
     {
+      "id": "7f1bbd0eaa4a9a19f184f3f8794bfb425080554c",
+      "title": "Inside King’s London headquarters: \"We have people in the London studio working on all of our titles\"",
+      "url": "https://www.pocketgamer.biz/inside-kings-london-headquarters-we-have-people-in-the-london-studio-working-on-all-of-our-titles/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 15:30:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "london",
+        "inside",
+        "king",
+        "headquarters",
+        "have",
+        "people",
+        "studio"
+      ]
+    },
+    {
+      "id": "e7b1ec3c81d14d1afed6bc81f3672bc3cc697e05",
+      "title": "Coffee Stain Malmö shuts down months after Embracer spinoff",
+      "url": "https://www.pocketgamer.biz/coffee-stain-malm-shuts-down-months-after-embracer-spinoff/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 15:20:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "coffee",
+        "stain",
+        "malm",
+        "shuts",
+        "down",
+        "months",
+        "after"
+      ]
+    },
+    {
+      "id": "2e94b1ec5056b83a599eed01eadb79c883106444",
+      "title": "Closed beta for HoYoverse’s Petit Planet will feature new neighbours and enhanced Starsea Voyages",
+      "url": "https://www.pocketgamer.biz/closed-beta-for-hoyoverses-petit-planet-will-feature-new-neighbours-and-enhanced-starsea-voyages/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 13:15:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "closed",
+        "beta",
+        "hoyoverse",
+        "petit",
+        "planet",
+        "will",
+        "feature"
+      ]
+    },
+    {
+      "id": "570114f5a40c9727f89f2b7d0a05faea8fab4d06",
+      "title": "Harry Potter: Hogwarts Mystery surpasses 160m downloads eight years after launch",
+      "url": "https://www.pocketgamer.biz/harry-potter-hogwarts-mystery-surpasses-160m-downloads-eight-years-after-launch/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 12:58:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "harry",
+        "potter",
+        "hogwarts",
+        "mystery",
+        "surpasses",
+        "160m",
+        "downloads"
+      ]
+    },
+    {
+      "id": "0ef4cd935b6c37a235e171f1673fe454f37f6c84",
+      "title": "LY Corp acquires majority stake in Kakao Games with $198m investment",
+      "url": "https://www.pocketgamer.biz/ly-corp-acquires-majority-stake-in-kakao-games-with-198m-investment/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 12:54:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ly",
+        "corp",
+        "acquires",
+        "majority",
+        "stake",
+        "kakao",
+        "198m"
+      ]
+    },
+    {
+      "id": "4278efca102520b64c1f484c125d02b34ab62379",
+      "title": "Sonic Rumble rebranded to Sonic Rumble Party as it adds new features and removes game modes",
+      "url": "https://www.pocketgamer.biz/sonic-rumble-rebranded-to-sonic-rumble-party-as-it-adds-new-features-and-removes-game-modes/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 12:35:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "sonic",
+        "rumble",
+        "rebranded",
+        "party",
+        "adds",
+        "new",
+        "features"
+      ]
+    },
+    {
+      "id": "3be698923aa9c1e01f47b62e5653e09f7994c6a9",
+      "title": "11 essential tips for maximising your time during ChinaJoy",
+      "url": "https://www.pocketgamer.biz/11-essential-tips-for-maximising-your-networking-during-chinajoy/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 10:00:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "essential",
+        "tips",
+        "maximising",
+        "time",
+        "during",
+        "chinajoy"
+      ]
+    },
+    {
+      "id": "7bd801799d762fc4227fcad44e763200d83aad2b",
+      "title": "April Fool's Day 2026: Voodoo acquisition, Slush raises $4 trillion, a Warhammer 40,000 musical and KitKats",
+      "url": "https://www.pocketgamer.biz/april-fools-day-2026-voodoo-acquisition-slush-raises-4-trillion-a-warhammer-40000-musical-and-kitkats/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 17:58:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "april",
+        "fool",
+        "day",
+        "voodoo",
+        "acquisition",
+        "slush",
+        "raises"
+      ]
+    },
+    {
+      "id": "09370b95d35e28d7fe4c030631d540d50b0cad4b",
+      "title": "From Helix Jump to Little Farm Story: How h8games reinvented itself",
+      "url": "https://www.pocketgamer.biz/from-helix-jump-to-little-farm-story-how-h8games-reinvented-itself/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 15:40:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "helix",
+        "jump",
+        "little",
+        "farm",
+        "story",
+        "how",
+        "h8games"
+      ]
+    },
+    {
+      "id": "d2ee2cf5fb4c73adc872d95450bb66d4812c06b7",
+      "title": "Rec Room to shut down after failing to achieve profitability from 150m players",
+      "url": "https://www.pocketgamer.biz/rec-room-to-shut-down-after-failing-to-achieve-profitability-from-150m-players/",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 15:35:00 +0100",
+      "collected_at": "2026-04-03T09:41:39+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "rec",
+        "room",
+        "shut",
+        "down",
+        "after",
+        "failing",
+        "achieve"
+      ]
+    },
+    {
       "id": "5b635914ec5ea3ffb1a7d4a0bafdd3b6c4236b5c",
       "title": "A Game Pass for indie games: meet Indie Pass, a $6.99-a-month subscription launching with 70 titles",
       "url": "https://www.gamesindustry.biz/a-game-pass-for-indie-games-meet-indie-pass-a-7-a-month-subscription-that-brings-new-titles-every-month",
