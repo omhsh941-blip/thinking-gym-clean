@@ -1,6 +1,195 @@
 {
   "articles": [
     {
+      "id": "9f278f64aadb78005ad93bd39e5745f9e48970a1",
+      "title": "스마일게이트 희망스튜디오, ‘로스트아크’ 커뮤니티와 손잡고 소아암 환아 지원 기부 캠페인 전개",
+      "url": "https://game.donga.com/122097/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 16:20:31 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "스마일게이트",
+        "희망스튜디오",
+        "로스트아크",
+        "커뮤니티",
+        "손잡고",
+        "소아암",
+        "환아"
+      ]
+    },
+    {
+      "id": "4cb815de88ae763d1ce2d3c688f96499826b5eb6",
+      "title": "‘바람의나라’, 서비스 30주년 기념 업데이트 진행",
+      "url": "https://game.donga.com/122096/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 16:16:43 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "바람의나라",
+        "서비스",
+        "30주년",
+        "기념",
+        "업데이트",
+        "진행"
+      ]
+    },
+    {
+      "id": "3bdaec1b2836520a5460e50656a985b4c49b8f76",
+      "title": "“배우기는 쉽고 전략은 깊게”... 코리아보드게임즈, 신작 보드게임 3종 출시",
+      "url": "https://game.donga.com/122095/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 16:16:11 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "배우기",
+        "쉽고",
+        "전략",
+        "깊게",
+        "코리아보드게임즈",
+        "신작",
+        "보드게임"
+      ]
+    },
+    {
+      "id": "630f1fdbfc3c01dce0b4459b4dd8ef012ca1ab15",
+      "title": "크래프톤, AI 모델 브랜드 ‘Raon’ 출범. 4종 오픈소스 공개",
+      "url": "https://game.donga.com/122094/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 16:15:30 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "크래프톤",
+        "ai",
+        "모델",
+        "브랜드",
+        "raon",
+        "출범",
+        "4종"
+      ]
+    },
+    {
+      "id": "0a94e55e50b7d1d2f3d8bbad382bc489d66e1ce7",
+      "title": "[기획] 귀여운 해커부터 지옥의 악마까지 만날 수 있는 4월의 라인업",
+      "url": "https://game.donga.com/122093/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 16:08:21 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "기획",
+        "귀여운",
+        "해커",
+        "지옥",
+        "악마",
+        "만날",
+        "있는"
+      ]
+    },
+    {
+      "id": "affdebe343f3e4c7d19c5cd855ffc78534eef042",
+      "title": "세븐나이츠 키우기, 신규 영웅 ‘트루드’ 업데이트 기념 이벤트 진행",
+      "url": "https://game.donga.com/122091/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 15:24:42 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "세븐나이츠",
+        "키우기",
+        "신규",
+        "영웅",
+        "트루드",
+        "업데이트",
+        "기념"
+      ]
+    },
+    {
+      "id": "4537716b31f75e118045ce74ca5d8fda60febb9e",
+      "title": "컴투스 ‘서머너즈 워’, 12주년 기념 글로벌 팬 헌정 축제 전야제 이벤트 진행",
+      "url": "https://game.donga.com/122090/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 12:43:46 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "컴투스",
+        "서머너즈",
+        "12주년",
+        "기념",
+        "글로벌",
+        "헌정",
+        "축제"
+      ]
+    },
+    {
+      "id": "46fa29034491837f1b38091903246f62b5a5ad2b",
+      "title": "엔씨(NC), 새 사명 ‘Next & Creative’로 확정∙∙∙ 미래 도전과 창의성 강조",
+      "url": "https://game.donga.com/122089/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 12:25:10 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "엔씨",
+        "nc",
+        "사명",
+        "next",
+        "creative",
+        "확정",
+        "미래"
+      ]
+    },
+    {
+      "id": "6b666c2fc61e74cea33189571995c1ee0dd873c7",
+      "title": "\"티켓팅 실패한 빛바랜 자 주목!\", 엘든 링 내한 오케스트라 4월 6일 추가 티켓 오픈",
+      "url": "https://game.donga.com/122088/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 12:24:03 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "티켓팅",
+        "실패한",
+        "빛바랜",
+        "주목",
+        "엘든",
+        "내한",
+        "오케스트라"
+      ]
+    },
+    {
+      "id": "51ac6aad7657477a08cc488c2b4ee8a5ce6db84d",
+      "title": "라이엇, TFT 신규 세트 '우주의 신들' 출시 기념 이벤트 진행",
+      "url": "https://game.donga.com/122087/",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 10:57:15 +0900",
+      "collected_at": "2026-04-03T09:41:27+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "라이엇",
+        "tft",
+        "신규",
+        "세트",
+        "우주",
+        "신들",
+        "출시"
+      ]
+    },
+    {
       "id": "20eeca396b515caaa5df6699c4b10b893b519def",
       "title": "The Mobile Mavens reflect on Epic Games' latest layoffs",
       "url": "https://www.pocketgamer.biz/the-mobile-mavens-reflect-on-epic-games-latest-layoffs/",
