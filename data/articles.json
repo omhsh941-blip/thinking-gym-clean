@@ -1,6 +1,192 @@
 {
   "articles": [
     {
+      "id": "5b635914ec5ea3ffb1a7d4a0bafdd3b6c4236b5c",
+      "title": "A Game Pass for indie games: meet Indie Pass, a $6.99-a-month subscription launching with 70 titles",
+      "url": "https://www.gamesindustry.biz/a-game-pass-for-indie-games-meet-indie-pass-a-7-a-month-subscription-that-brings-new-titles-every-month",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 14:00:00 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pass",
+        "indie",
+        "meet",
+        "99-a-month",
+        "subscription",
+        "launching",
+        "titles"
+      ]
+    },
+    {
+      "id": "78fa2b6ba0a4b984955ba80defed8fc60635f1db",
+      "title": "Mobile-focused studio Coffee Stain Malmö shuts down",
+      "url": "https://www.gamesindustry.biz/mobile-focused-studio-coffee-stain-malmo-shuts-down",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 13:54:37 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mobile-focused",
+        "studio",
+        "coffee",
+        "stain",
+        "malm",
+        "shuts",
+        "down"
+      ]
+    },
+    {
+      "id": "189cead32249554c05eefc20735ffe2f8449cf6f",
+      "title": "MechWarrior dev Piranha Games reportedly affected by redundancies",
+      "url": "https://www.gamesindustry.biz/mechwarrior-dev-piranha-games-reportedly-affected-by-redundancies",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 10:04:24 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "mechwarrior",
+        "dev",
+        "piranha",
+        "reportedly",
+        "affected",
+        "redundancies"
+      ]
+    },
+    {
+      "id": "9e0d9c1224eb27060d9471d04b06caeb022a34b1",
+      "title": "US Patent Office rejects Nintendo's 'summon subcharacter and let it fight' patent",
+      "url": "https://www.gamesindustry.biz/us-patent-office-rejects-nintendos-summon-subcharacter-and-let-it-fight-patent",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 08:46:38 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "patent",
+        "us",
+        "office",
+        "rejects",
+        "nintendo",
+        "summon",
+        "subcharacter"
+      ]
+    },
+    {
+      "id": "ba4ff8b99e98cbe86eddef280e9576b0f331eb15",
+      "title": "\"There’s always work to be done\": Limit Break's mentorship program for under-represented groups returns for 2026",
+      "url": "https://www.gamesindustry.biz/theres-always-work-to-be-done-limit-breaks-mentorship-program-for-under-represented-groups-returns-for-2026",
+      "category": "Game Industry",
+      "published": "Thu, 02 Apr 2026 08:00:00 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "there",
+        "always",
+        "work",
+        "done",
+        "limit",
+        "break",
+        "mentorship"
+      ]
+    },
+    {
+      "id": "fc71a6a58e93823060291ea456628e545af22ba3",
+      "title": "Tickets go on sale for consumer event IGN Live 2026, returning to LA on 6 June",
+      "url": "https://www.gamesindustry.biz/tickets-go-on-sale-for-consumer-event-ign-live-2026-returning-to-la-on-6-june",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 16:02:56 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tickets",
+        "go",
+        "sale",
+        "consumer",
+        "event",
+        "ign",
+        "live"
+      ]
+    },
+    {
+      "id": "7960d94221c46c4e621705a545981132c3ab4070",
+      "title": "VR platform Rec Room to shut down in June 2026",
+      "url": "https://www.gamesindustry.biz/vr-platform-rec-room-to-shut-down-in-june-2026",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 13:35:09 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "vr",
+        "platform",
+        "rec",
+        "room",
+        "shut",
+        "down",
+        "june"
+      ]
+    },
+    {
+      "id": "ce8c54b879cfd966bea1b6a14e7e9c434ffdc899",
+      "title": "Ustwo Games to keynote Develop:Brighton 2026",
+      "url": "https://www.gamesindustry.biz/ustwo-games-to-keynote-developbrighton-2026",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 12:59:44 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "ustwo",
+        "keynote",
+        "develop",
+        "brighton"
+      ]
+    },
+    {
+      "id": "09259dd83b0264c169449488a13e90176219f2fa",
+      "title": "Stellar Blade developer Shift Up acquires Shinji Mikami's new studio",
+      "url": "https://www.gamesindustry.biz/stellar-blade-developer-shift-up-acquires-shinji-mikamis-new-studio",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 10:39:39 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "stellar",
+        "blade",
+        "developer",
+        "shift",
+        "up",
+        "acquires",
+        "shinji"
+      ]
+    },
+    {
+      "id": "59811004a997374a228eebfade5b28d388aead06",
+      "title": "\"We aren't just still going, we are growing.\" How The Division 2 has attracted more players than ever seven years on from release",
+      "url": "https://www.gamesindustry.biz/we-arent-just-still-going-we-are-growing-how-the-division-2-has-attracted-more-players-than-ever-seven-years-on-from-release",
+      "category": "Game Industry",
+      "published": "Wed, 01 Apr 2026 10:27:44 +0000",
+      "collected_at": "2026-04-03T09:41:36+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "aren",
+        "just",
+        "still",
+        "going",
+        "growing",
+        "how",
+        "division"
+      ]
+    },
+    {
       "id": "9f278f64aadb78005ad93bd39e5745f9e48970a1",
       "title": "스마일게이트 희망스튜디오, ‘로스트아크’ 커뮤니티와 손잡고 소아암 환아 지원 기부 캠페인 전개",
       "url": "https://game.donga.com/122097/",
