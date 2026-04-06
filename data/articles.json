@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "id": "3e19b2270cb4ad1027cbaf380874dead0636c86e",
+      "title": "Rec Room runs out of road and Fire Emblem Shadows' paltry earnings | Week in Views",
+      "url": "https://www.pocketgamer.biz/rec-room-runs-out-of-road-and-fire-emblem-shadows-paltry-earnings-week-in-views/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 13:00:00 +0100",
+      "collected_at": "2026-04-06T09:41:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "rec",
+        "room",
+        "runs",
+        "out",
+        "road",
+        "and",
+        "fire"
+      ]
+    },
+    {
+      "id": "57250c35140a6c6007f78526864fbaaef4c18414",
+      "title": "Quantic Lab exits Embracer Group to operate as an independent company under founder ownership",
+      "url": "https://www.pocketgamer.biz/quantic-lab-exits-embracer-group-to-operate-as-an-independent-company-under-founder-ownership/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 11:00:00 +0100",
+      "collected_at": "2026-04-06T09:41:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "quantic",
+        "lab",
+        "exits",
+        "embracer",
+        "operate",
+        "independent",
+        "company"
+      ]
+    },
+    {
+      "id": "29831eb6b130581884edd520fb7bd0b44146a211",
+      "title": "PlayDucky rolls out volcano and lava pool maps in new Melon Sandbox update",
+      "url": "https://www.pocketgamer.biz/melon-sandbox-adds-lava-themed-maps-as-sandbox-hit-maintains-10m-monthly-players/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 10:00:00 +0100",
+      "collected_at": "2026-04-06T09:41:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "playducky",
+        "rolls",
+        "out",
+        "volcano",
+        "and",
+        "lava",
+        "pool"
+      ]
+    },
+    {
+      "id": "473e09187f5ae2614afe0004fa3ba9684e7bf622",
+      "title": "Discover Barcelona's thriving games ecosystem on June 15th to 16th",
+      "url": "https://www.pocketgamer.biz/discover-barcelonas-thriving-games-ecosystem-on-june-15th-16th/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 09:00:00 +0100",
+      "collected_at": "2026-04-06T09:41:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "discover",
+        "barcelona",
+        "thriving",
+        "ecosystem",
+        "june",
+        "15th",
+        "16th"
+      ]
+    },
+    {
+      "id": "ba81bdd19b2a46930289b67cef6b5ac295dc414c",
+      "title": "New release roundup: The Division Resurgence, Dredge+, Toy Command, and more",
+      "url": "https://www.pocketgamer.biz/new-release-roundup-the-division-resurgence-dredge-toy-command-and-more/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 08:00:00 +0100",
+      "collected_at": "2026-04-06T09:41:50+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "new",
+        "release",
+        "roundup",
+        "division",
+        "resurgence",
+        "dredge",
+        "toy"
+      ]
+    },
+    {
       "id": "d749318493673d740df2c0e5252bd7067508f8bf",
       "title": "Schrödinger's Switch 2: Is it failing or soaring? | Opinion",
       "url": "https://www.gamesindustry.biz/schrodingers-switch-2-is-it-failing-or-soaring-opinion",
