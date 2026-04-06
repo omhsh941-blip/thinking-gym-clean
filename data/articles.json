@@ -1,6 +1,194 @@
 {
   "articles": [
     {
+      "id": "4fe3dc990d28794439f868ec4cdb3f932d3c9147",
+      "title": "'감보난자' 개발한 프랑스 인디 게임 개발자 블루쿨렐레",
+      "url": "https://game.donga.com/122109/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 17:25:07 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "감보난자",
+        "개발한",
+        "프랑스",
+        "인디",
+        "개발자",
+        "블루쿨렐레"
+      ]
+    },
+    {
+      "id": "d7a609d2bd0ce2a0e4c78b66b0ad31c199c544c0",
+      "title": "유비스 ‘루나 월영의 전쟁’ OST 공개 3일만에 100만 조회수. 정식 서비스 기대감 UP",
+      "url": "https://game.donga.com/122108/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 17:04:04 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "유비스",
+        "루나",
+        "월영",
+        "전쟁",
+        "ost",
+        "공개",
+        "3일만"
+      ]
+    },
+    {
+      "id": "e7ca7fb56b943d84c39ebd2064d1fc1c9fc3d009",
+      "title": "[한주의게임소식] \"이 게임은 장르가 뭐죠?\" 여전히 정상 등극 중인 붉은사막",
+      "url": "https://game.donga.com/122107/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 16:52:11 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "한주의게임소식",
+        "장르",
+        "뭐죠",
+        "여전히",
+        "정상",
+        "등극",
+        "중인"
+      ]
+    },
+    {
+      "id": "b32b48e638043124e21689d729b9d6b5947a11c8",
+      "title": "'로스트아크'의 첫 프리미엄 피규어, 전량 완판 후 오는 8일 추가 예약 오픈",
+      "url": "https://game.donga.com/122106/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 16:32:25 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "로스트아크",
+        "프리미엄",
+        "피규어",
+        "전량",
+        "완판",
+        "오는",
+        "8일"
+      ]
+    },
+    {
+      "id": "35902f60a5319c21081862ed16f5788197d12eff",
+      "title": "[겜덕연구소] 게임 생태계를 변화시킬 만큼 혁신이었던 레트로 게임들!",
+      "url": "https://game.donga.com/122104/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 14:59:03 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "겜덕연구소",
+        "생태계",
+        "변화시킬",
+        "만큼",
+        "혁신이었던",
+        "레트"
+      ]
+    },
+    {
+      "id": "3c77a13047ef60e41f5afa9b90e16e37f3068232",
+      "title": "초이락 ‘피닉스맨’, 불새 ‘아비타’와 ‘트라이기어’ 완구 3종 세트 출시",
+      "url": "https://game.donga.com/122102/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 11:43:44 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "초이락",
+        "피닉스맨",
+        "불새",
+        "아비타",
+        "트라이기어",
+        "완구",
+        "3종"
+      ]
+    },
+    {
+      "id": "aa0936ad29cf3f3bdb83eb9458dcd37459e719e8",
+      "title": "넥써쓰, ‘카오스W’ 사전등록 개시… 크로쓰 플랫폼 라인업 확대",
+      "url": "https://game.donga.com/122101/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 11:11:48 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넥써쓰",
+        "카오스w",
+        "사전등록",
+        "개시",
+        "크로쓰",
+        "플랫폼",
+        "라인업"
+      ]
+    },
+    {
+      "id": "024fd9f23f5bbd3fd613a7808e016157b8c9451a",
+      "title": "조이시티, '임진왜란: 조선의 반격’ 4월 28일 출시",
+      "url": "https://game.donga.com/122100/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 11:04:34 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "조이시티",
+        "임진왜란",
+        "조선",
+        "반격",
+        "4월",
+        "28일",
+        "출시"
+      ]
+    },
+    {
+      "id": "4e45a195c52caf83b5072e082152223298c8d17c",
+      "title": "미국 특허청, ‘팰월드’ 소송 중인 닌텐도의 포켓몬 전투 특허 거절",
+      "url": "https://game.donga.com/122099/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 11:00:47 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "미국",
+        "특허청",
+        "팰월드",
+        "소송",
+        "중인",
+        "닌텐도",
+        "포켓몬"
+      ]
+    },
+    {
+      "id": "ac38ada0e87e4176002437260fffe0ffbf0fc221",
+      "title": "“스팀도 이제 고환율 시대?” 게임 가격, 한국인 기준 20% 오를 수도 있다",
+      "url": "https://game.donga.com/122098/",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 10:31:38 +0900",
+      "collected_at": "2026-04-06T09:41:41+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "스팀",
+        "이제",
+        "고환율",
+        "시대",
+        "가격",
+        "한국인",
+        "기준"
+      ]
+    },
+    {
       "id": "7f1bbd0eaa4a9a19f184f3f8794bfb425080554c",
       "title": "Inside King’s London headquarters: \"We have people in the London studio working on all of our titles\"",
       "url": "https://www.pocketgamer.biz/inside-kings-london-headquarters-we-have-people-in-the-london-studio-working-on-all-of-our-titles/",
