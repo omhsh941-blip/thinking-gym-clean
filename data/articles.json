@@ -1,6 +1,44 @@
 {
   "articles": [
     {
+      "id": "d749318493673d740df2c0e5252bd7067508f8bf",
+      "title": "Schrödinger's Switch 2: Is it failing or soaring? | Opinion",
+      "url": "https://www.gamesindustry.biz/schrodingers-switch-2-is-it-failing-or-soaring-opinion",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 11:00:00 +0000",
+      "collected_at": "2026-04-06T09:41:48+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "schr",
+        "dinger",
+        "switch",
+        "failing",
+        "or",
+        "soaring",
+        "opinion"
+      ]
+    },
+    {
+      "id": "37ef71b5b01a6a562245b878f0a68ecee42d9f85",
+      "title": "Reddit posts can be more important than data, and other lessons from maintaining Candy Crush as a forever game",
+      "url": "https://www.gamesindustry.biz/reddit-posts-can-be-more-important-than-data-and-other-lessons-from-maintaining-candy-crush-as-a-forever-game",
+      "category": "Game Industry",
+      "published": "Fri, 03 Apr 2026 09:00:00 +0000",
+      "collected_at": "2026-04-06T09:41:48+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "reddit",
+        "posts",
+        "can",
+        "more",
+        "important",
+        "than",
+        "data"
+      ]
+    },
+    {
       "id": "4fe3dc990d28794439f868ec4cdb3f932d3c9147",
       "title": "'감보난자' 개발한 프랑스 인디 게임 개발자 블루쿨렐레",
       "url": "https://game.donga.com/122109/",
