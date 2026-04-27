@@ -1,6 +1,193 @@
 {
   "articles": [
     {
+      "id": "abf249beb48c96f6a3184e52abf92fbc49670c0f",
+      "title": "Metasports Interactive secures $20m non-dilutive user acquisition funding",
+      "url": "https://www.pocketgamer.biz/metasports-interactive-secures-20m-non-dilutive-user-acquisition-funding/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 11:36:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "metasports",
+        "interactive",
+        "secures",
+        "20m",
+        "non-dilutive",
+        "user",
+        "acquisition"
+      ]
+    },
+    {
+      "id": "d108c0b21dc88959adf2d283f2bd85aef499dbf3",
+      "title": "Soloband Games raises Series A led by Zubr Capital to scale flagship title",
+      "url": "https://www.pocketgamer.biz/soloband-games-raises-series-a-led-by-zubr-capital-to-scale-flagship-title/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 11:06:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "soloband",
+        "raises",
+        "series",
+        "led",
+        "zubr",
+        "capital",
+        "scale"
+      ]
+    },
+    {
+      "id": "5301b69d63823a0c1294a8b026ccdc3c36844db9",
+      "title": "Finland confirms stock option tax reform aimed at strengthening startup talent competition",
+      "url": "https://www.pocketgamer.biz/finland-confirms-stock-option-tax-reform-aimed-at-strengthening-startup-talent-competition/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 11:04:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "finland",
+        "confirms",
+        "stock",
+        "option",
+        "tax",
+        "reform",
+        "aimed"
+      ]
+    },
+    {
+      "id": "330685479d79ea55fc046dac19d0f5041f51532d",
+      "title": "Hot Five: Arknights: Endfield approaches $100m, Xbox mobile store still in development, and government support becomes a priority",
+      "url": "https://www.pocketgamer.biz/hot-five-arknights-endfield-approaches-100m-xbox-mobile-store-still-in-development-and-government-support-becomes-a-priority/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 11:00:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "hot",
+        "five",
+        "arknights",
+        "endfield",
+        "approaches",
+        "100m",
+        "xbox"
+      ]
+    },
+    {
+      "id": "b7f06276cfd25dfae84ad052dac85a7ad478c598",
+      "title": "Unbeatable ticket discounts to Pocket Gamer Connects Malmö and Nordics",
+      "url": "https://www.pocketgamer.biz/unbeatable-ticket-discounts-to-pocket-gamer-connects-malmo-and-nordics/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 09:58:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "unbeatable",
+        "ticket",
+        "discounts",
+        "pocket",
+        "connects",
+        "malm",
+        "and"
+      ]
+    },
+    {
+      "id": "86d905bf3dc129d448cf6130528dbf1211d1cbf5",
+      "title": "Tim Cook's Apple legacy | Week in Mobile Games podcast",
+      "url": "https://www.pocketgamer.biz/tim-cooks-apple-legacy-week-in-mobile-games-podcast/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 08:00:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tim",
+        "cook",
+        "apple",
+        "legacy",
+        "week",
+        "mobile",
+        "podcast"
+      ]
+    },
+    {
+      "id": "1ab7810109b4d46de2acd5005153fbb51aa2371e",
+      "title": "Game Pass price cuts and Super Mario Galaxy’s box office dominance | Week in Views",
+      "url": "https://www.pocketgamer.biz/game-pass-price-cuts-and-super-mario-galaxys-box-office-dominance-week-in-views/",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 16:20:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "pass",
+        "price",
+        "cuts",
+        "and",
+        "super",
+        "mario",
+        "galaxy"
+      ]
+    },
+    {
+      "id": "4231431d76055080db5650b16f52166784ef62a5",
+      "title": "Microsoft says Xbox mobile store “not dead” despite stalled rollout",
+      "url": "https://www.pocketgamer.biz/microsoft-says-xbox-mobile-store-not-dead-despite-stalled-rollout/",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 15:41:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "microsoft",
+        "says",
+        "xbox",
+        "mobile",
+        "store",
+        "not",
+        "dead"
+      ]
+    },
+    {
+      "id": "4f1d638f2e2d72a65fe28db93abf38266d4cd3a0",
+      "title": "New release roundup: Dragon Quest Smash/Grow, Dicero, MapleStory R- Evolution, and more",
+      "url": "https://www.pocketgamer.biz/new-release-roundup-dragon-quest-smashgrow-dicero-maplestory-r-evolution-and-more/",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 15:35:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "new",
+        "release",
+        "roundup",
+        "dragon",
+        "quest",
+        "smash",
+        "grow"
+      ]
+    },
+    {
+      "id": "a56ef3e1ee28f307d270383a42caa60e7a1eb6b1",
+      "title": "How Finland is reshaping its games industry",
+      "url": "https://www.pocketgamer.biz/how-finland-is-reshaping-its-games-industry/",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 14:00:00 +0100",
+      "collected_at": "2026-04-27T21:12:19+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "how",
+        "finland",
+        "reshaping",
+        "industry"
+      ]
+    },
+    {
       "id": "93a60d2d83147f0b1156845454afc76ce4c81fe8",
       "title": "Call of Duty was never the right fit for Game Pass | Opinion",
       "url": "https://www.gamesindustry.biz/call-of-duty-was-never-the-right-fit-for-game-pass-opinion",
