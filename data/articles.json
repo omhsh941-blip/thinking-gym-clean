@@ -1,6 +1,192 @@
 {
   "articles": [
     {
+      "id": "93a60d2d83147f0b1156845454afc76ce4c81fe8",
+      "title": "Call of Duty was never the right fit for Game Pass | Opinion",
+      "url": "https://www.gamesindustry.biz/call-of-duty-was-never-the-right-fit-for-game-pass-opinion",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 11:46:47 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "call",
+        "duty",
+        "never",
+        "right",
+        "fit",
+        "pass",
+        "opinion"
+      ]
+    },
+    {
+      "id": "0c94e81dd4d4f40999bc010f092784ebd46bc09d",
+      "title": "Benoit Richer, Assassin's Creed Codename Hexe game director, leaves Ubisoft",
+      "url": "https://www.gamesindustry.biz/benoit-richer-assassins-creed-codename-hexe-game-director-leaves-ubisoft",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 09:42:23 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "benoit",
+        "richer",
+        "assassin",
+        "creed",
+        "codename",
+        "hexe",
+        "director"
+      ]
+    },
+    {
+      "id": "9e4710c974f4007597eaf5941f832e66343ecaaa",
+      "title": "Bulletstorm dev People Can Fly acquires Cooldown Games",
+      "url": "https://www.gamesindustry.biz/bulletstorm-dev-people-can-fly-acquires-cooldown-games",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 07:46:59 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "bulletstorm",
+        "dev",
+        "people",
+        "can",
+        "fly",
+        "acquires",
+        "cooldown"
+      ]
+    },
+    {
+      "id": "a14e39af839c1e27bc0696fecf7b545a91e89de2",
+      "title": "\"More charities than ever are looking at games\": Meet Cause+Select, the platform linking the games industry to top charities",
+      "url": "https://www.gamesindustry.biz/more-charities-than-ever-are-looking-at-games-meet-causeselect-the-platform-linking-the-games-industry-to-top-charities",
+      "category": "Game Industry",
+      "published": "Sun, 26 Apr 2026 23:47:01 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "charities",
+        "more",
+        "than",
+        "ever",
+        "looking",
+        "meet",
+        "cause"
+      ]
+    },
+    {
+      "id": "fea0fc10ef3b207d21a09f40b8603aed780caed6",
+      "title": "Podcast: Call of Duty, Game Pass, and the Mario movie",
+      "url": "https://www.gamesindustry.biz/podcast-call-of-duty-game-pass-and-the-mario-movie",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 17:19:48 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "podcast",
+        "call",
+        "duty",
+        "pass",
+        "and",
+        "mario",
+        "movie"
+      ]
+    },
+    {
+      "id": "e30f8c633653aae37f20fcb50340bcfdf07d44cd",
+      "title": "Tools to tell if your game is broken",
+      "url": "https://www.gamesindustry.biz/tools-to-tell-if-your-game-is-broken",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 16:59:30 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "tools",
+        "tell",
+        "if",
+        "broken"
+      ]
+    },
+    {
+      "id": "057fedc8de21dbf51375c96d889f1fdc4635ae70",
+      "title": "Microsoft CEO sees Xbox as \"critical audience and category\" that's \"really important to the company’s future\" says Asha Sharma",
+      "url": "https://www.gamesindustry.biz/microsoft-ceo-sees-xbox-as-critical-audience-and-category-thats-really-important-to-the-companys-future-says-asha-sharma",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 16:19:19 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "microsoft",
+        "ceo",
+        "sees",
+        "xbox",
+        "critical",
+        "audience",
+        "and"
+      ]
+    },
+    {
+      "id": "f5e8e1f860fc692d8e36b8b94d92ca4b436cdd1e",
+      "title": "Atari acquires emulation studio Implicit Conversions",
+      "url": "https://www.gamesindustry.biz/atari-acquires-emulation-studio-implicit-conversions",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 14:37:05 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "atari",
+        "acquires",
+        "emulation",
+        "studio",
+        "implicit",
+        "conversions"
+      ]
+    },
+    {
+      "id": "ac860bf41373ffc10dc8d000e4d62cdc950898de",
+      "title": "Microsoft reportedly offers voluntary retirement program for 7% of US workforce",
+      "url": "https://www.gamesindustry.biz/microsoft-reportedly-offers-voluntary-retirement-program-for-7-of-us-workforce",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 13:36:26 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "microsoft",
+        "reportedly",
+        "offers",
+        "voluntary",
+        "retirement",
+        "program",
+        "us"
+      ]
+    },
+    {
+      "id": "c47d809d1fca6a11c3bf39a511c65a646432dceb",
+      "title": "Why Xbox took Call of Duty out of Game Pass",
+      "url": "https://www.gamesindustry.biz/why-xbox-took-call-of-duty-out-of-game-pass",
+      "category": "Game Industry",
+      "published": "Fri, 24 Apr 2026 12:17:35 +0000",
+      "collected_at": "2026-04-27T21:12:16+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "why",
+        "xbox",
+        "took",
+        "call",
+        "duty",
+        "out",
+        "pass"
+      ]
+    },
+    {
       "id": "2883060795b92f670a6e0a5476b7b238a322dfc9",
       "title": "Yat Siu Says Web3 Gaming’s Real Winners Won’t be AAA Studios",
       "url": "https://koreagamedesk.com/yat-siu-says-web3-gamings-real-winners-wont-be-aaa-studios/?utm_source=rss&utm_medium=rss&utm_campaign=yat-siu-says-web3-gamings-real-winners-wont-be-aaa-studios",
