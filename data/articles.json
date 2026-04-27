@@ -1,6 +1,193 @@
 {
   "articles": [
     {
+      "id": "699ed6af74e4fc36cd5cd4386a2ed158590366a9",
+      "title": "엔씨, '리니지 클래식' 역대급 소통 행보.. 몰려든 840명 '함박웃음'",
+      "url": "https://game.donga.com/122377/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 20:59:52 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "엔씨",
+        "리니지",
+        "클래식",
+        "역대급",
+        "소통",
+        "행보",
+        "몰려든"
+      ]
+    },
+    {
+      "id": "b2b765df1c84e776f2b056b758e3f4a26cc015b8",
+      "title": "소설 영역 힘주는 창작 플랫폼 픽시브, 전 세계를 대상으로 한 단편소설 창작 챌린지 개최",
+      "url": "https://game.donga.com/122375/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 17:18:51 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "창작",
+        "소설",
+        "영역",
+        "힘주",
+        "플랫폼",
+        "픽시브",
+        "세계"
+      ]
+    },
+    {
+      "id": "78fdff6c246644056e076f10a589b00ef48f583e",
+      "title": "열혈강호 인기 악역 ‘진풍백’은 열혈강호 온라인에서 어떻게 표현됐나?",
+      "url": "https://game.donga.com/122374/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 17:13:08 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "열혈강호",
+        "인기",
+        "악역",
+        "진풍백",
+        "온라인",
+        "어떻게",
+        "표현됐"
+      ]
+    },
+    {
+      "id": "52bdbc8c2da1b771e7ee2c36e59d312694c1394b",
+      "title": "넷마블, '왕좌의 게임: 킹스로드'와 'SOL: 인챈트'로 상반기 신작 공세 잇는다",
+      "url": "https://game.donga.com/122373/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 16:37:34 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "왕좌",
+        "킹스로드",
+        "sol",
+        "인챈트",
+        "상반기",
+        "신작"
+      ]
+    },
+    {
+      "id": "2111de16053cef9705cd13d0f926b39022572c07",
+      "title": "치지직과 경쟁하는 SOOP, 게임방송 장르 다변화로 차별화 노린다",
+      "url": "https://game.donga.com/122372/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 16:28:47 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "치지직",
+        "경쟁하",
+        "soop",
+        "게임방송",
+        "장르",
+        "다변화",
+        "차별화"
+      ]
+    },
+    {
+      "id": "d6050088265c650956776790ecf6e5ae3d827d3c",
+      "title": "넷마블, '나 혼자만 레벨업:어라이즈 챔피언십 2026' NightFall 우승...2주년 업데이트 공개",
+      "url": "https://game.donga.com/122371/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 15:32:17 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블",
+        "혼자",
+        "레벨업",
+        "어라이즈",
+        "챔피언십",
+        "nightfall",
+        "우승"
+      ]
+    },
+    {
+      "id": "704fe22a01ee000063a09de062890aa6235a4423",
+      "title": "[LCK] 창단 첫 8연승 달성한 KT 롤스터의 '파죽지세'",
+      "url": "https://game.donga.com/122370/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 15:20:58 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "lck",
+        "창단",
+        "8연승",
+        "달성한",
+        "kt",
+        "롤스터",
+        "파죽지세"
+      ]
+    },
+    {
+      "id": "6570ce62cb8e4cfa686ef7bc0f6dc68d996991b0",
+      "title": "넷마블게임박물관, 정식으로 ‘제1종 전문박물관’ 됐다",
+      "url": "https://game.donga.com/122369/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 14:46:15 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "넷마블게임박물관",
+        "정식",
+        "제1종",
+        "전문박물관",
+        "됐다"
+      ]
+    },
+    {
+      "id": "5578b826cb5d67a833e7e2e18a61fc50ffad9873",
+      "title": "서브컬처의 계절 여름, '승리의 여신: 니케' 한국 일본 '정상 탈환'",
+      "url": "https://game.donga.com/122367/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 14:04:43 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "서브컬처",
+        "계절",
+        "여름",
+        "승리",
+        "여신",
+        "니케",
+        "한국"
+      ]
+    },
+    {
+      "id": "ef7a3a07a2b9f82daf88dab4b414b3aa61b67051",
+      "title": "[동아게임백과사전] 알고 보면 별 것 아니었던 전설의 무기",
+      "url": "https://game.donga.com/122366/",
+      "category": "Game Industry",
+      "published": "Mon, 27 Apr 2026 13:16:59 +0900",
+      "collected_at": "2026-04-27T21:12:10+09:00",
+      "used_in_session": false,
+      "added_by": "auto",
+      "tags": [
+        "동아게임백과사전",
+        "알고",
+        "보면",
+        "아니었던",
+        "전설",
+        "무기"
+      ]
+    },
+    {
       "id": "3e19b2270cb4ad1027cbaf380874dead0636c86e",
       "title": "Rec Room runs out of road and Fire Emblem Shadows' paltry earnings | Week in Views",
       "url": "https://www.pocketgamer.biz/rec-room-runs-out-of-road-and-fire-emblem-shadows-paltry-earnings-week-in-views/",
